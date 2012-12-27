@@ -1,0 +1,29 @@
+on fs
+# mount mtd partitions
+    write /proc/bootprof "INIT:eMMC:Mount_START"
+    exec /sbin/e2fsck -p /dev/block/mmcblk0p6
+    # Mount /system rw first to give the filesystem a chance to save a checkpoint
+    #mount ext4 emmc@android /system commit=1,data=journal,noauto_da_alloc
+    mount ext4 emmc@android /system commit=1,noauto_da_alloc
+    mkdir /system/secro 0600 system system
+    # RIL need to do this before the folder /system changed to read only
+    chown radio system /system/etc/ril
+    chmod 0770 /system/etc/ril
+    chmod 0444 /system/etc/ril/oper.lis
+    mount ext4 emmc@android /system noatime ro remount 
+    exec /sbin/e2fsck -pfD /dev/block/mmcblk0p3
+    exec /sbin/tune2fs -O has_journal /dev/block/mmcblk0p3	
+    mount ext4 emmc@usrdata /data noatime nosuid nodev commit=1,nodelalloc,noauto_da_alloc
+    exec /sbin/e2fsck -p /dev/block/mmcblk0p2
+    exec /sbin/tune2fs -O has_journal /dev/block/mmcblk0p2
+    mount ext4 emmc@cache /cache noatime nosuid nodev noauto_da_alloc
+    write /proc/bootprof "INIT:eMMC:Mount_END"
+
+on post-fs
+# Add by Mtk
+    mount ext4 /emmc@sec_ro /system/secro ro remount
+
+
+on post-fs-data
+# Encrypt phone function
+    setprop vold.post_fs_data_done 1
