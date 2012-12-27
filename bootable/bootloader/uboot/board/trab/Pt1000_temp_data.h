@@ -1,0 +1,106 @@
+/* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2010. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */
+
+/*
+ * Data file for tsc2000 driver.
+ * Copyright (C) 2002, 2003 DENX Software Engineering, Wolfgang Denk, wd@denx.de
+ */
+
+#ifndef _PT1000_TEMP_DATA_H
+#define _PT1000_TEMP_DATA_H
+
+long Pt1000_temp_table[][2] = {
+	/* For quick range checking the largest element
+	 * is placed at index 0.
+	 * U, nV    T, C*100
+	 */
+	{ 44000000 , 12165 },
+	{ -10000000 , -2644 },
+	{ -9000000 , -2381 },
+	{ -8000000 , -2118 },
+	{ -7000000 , -1855 },
+	{ -6000000 , -1591 },
+	{ -5000000 , -1327 },
+	{ -4000000 , -1063 },
+	{ -3000000 , -798 },
+	{ -2000000 , -532 },
+	{ -1000000 , -266 },
+	{ 0 , 000 },
+	{ 1000000 , 267 },
+	{ 2000000 , 534 },
+	{ 3000000 , 802 },
+	{ 4000000 , 1070 },
+	{ 5000000 , 1338 },
+	{ 6000000 , 1607 },
+	{ 7000000 , 1876 },
+	{ 8000000 , 2146 },
+	{ 9000000 , 2416 },
+	{ 10000000 , 2687 },
+	{ 11000000 , 2958 },
+	{ 12000000 , 3230 },
+	{ 13000000 , 3502 },
+	{ 14000000 , 3774 },
+	{ 15000000 , 4047 },
+	{ 16000000 , 4321 },
+	{ 17000000 , 4595 },
+	{ 18000000 , 4869 },
+	{ 19000000 , 5144 },
+	{ 20000000 , 5419 },
+	{ 21000000 , 5694 },
+	{ 22000000 , 5971 },
+	{ 23000000 , 6247 },
+	{ 24000000 , 6524 },
+	{ 25000000 , 6802 },
+	{ 26000000 , 7080 },
+	{ 27000000 , 7358 },
+	{ 28000000 , 7637 },
+	{ 29000000 , 7916 },
+	{ 30000000 , 8196 },
+	{ 31000000 , 8476 },
+	{ 32000000 , 8757 },
+	{ 33000000 , 9039 },
+	{ 34000000 , 9320 },
+	{ 35000000 , 9602 },
+	{ 36000000 , 9885 },
+	{ 37000000 , 10168 },
+	{ 38000000 , 10452 },
+	{ 39000000 , 10736 },
+	{ 40000000 , 11021 },
+	{ 41000000 , 11306 },
+	{ 42000000 , 11592 },
+	{ 43000000 , 11879 },
+	{ 44000000 , 12165 },
+};
+#endif /* _PT1000_TEMP_DATA_H */

@@ -1,0 +1,191 @@
+/* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2010. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */
+
+/*
+ * Copyright (C) 2008 Freescale Semiconductor, Inc.
+ *		Dave Liu <daveliu@freescale.com>
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation; either version 2 of
+ * the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ * MA 02111-1307 USA
+ *
+ */
+
+#ifndef __FIS_H__
+#define __FIS_H__
+/*
+* Register - Host to Device FIS
+*/
+typedef struct sata_fis_h2d {
+	u8 fis_type;
+	u8 pm_port_c;
+	u8 command;
+	u8 features;
+	u8 lba_low;
+	u8 lba_mid;
+	u8 lba_high;
+	u8 device;
+	u8 lba_low_exp;
+	u8 lba_mid_exp;
+	u8 lba_high_exp;
+	u8 features_exp;
+	u8 sector_count;
+	u8 sector_count_exp;
+	u8 res1;
+	u8 control;
+	u8 res2[4];
+} __attribute__ ((packed)) sata_fis_h2d_t;
+
+/*
+* Register - Host to Device FIS for read/write FPDMA queued
+*/
+typedef struct sata_fis_h2d_ncq {
+	u8 fis_type;
+	u8 pm_port_c;
+	u8 command;
+	u8 sector_count_low;
+	u8 lba_low;
+	u8 lba_mid;
+	u8 lba_high;
+	u8 device;
+	u8 lba_low_exp;
+	u8 lba_mid_exp;
+	u8 lba_high_exp;
+	u8 sector_count_high;
+	u8 tag;
+	u8 res1;
+	u8 res2;
+	u8 control;
+	u8 res3[4];
+} __attribute__ ((packed)) sata_fis_h2d_ncq_t;
+
+/*
+* Register - Device to Host FIS
+*/
+typedef struct sata_fis_d2h {
+	u8 fis_type;
+	u8 pm_port_i;
+	u8 status;
+	u8 error;
+	u8 lba_low;
+	u8 lba_mid;
+	u8 lba_high;
+	u8 device;
+	u8 lba_low_exp;
+	u8 lba_mid_exp;
+	u8 lba_high_exp;
+	u8 res1;
+	u8 sector_count;
+	u8 sector_count_exp;
+	u8 res2[2];
+	u8 res3[4];
+} __attribute__ ((packed)) sata_fis_d2h_t;
+
+/*
+* DMA Setup - Device to Host or Host to Device FIS
+*/
+typedef struct sata_fis_dma_setup {
+	u8 fis_type;
+	u8 pm_port_dir_int_act;
+	u8 res1;
+	u8 res2;
+	u32 dma_buffer_id_low;
+	u32 dma_buffer_id_high;
+	u32 res3;
+	u32 dma_buffer_offset;
+	u32 dma_transfer_count;
+	u32 res4;
+} __attribute__ ((packed)) sata_fis_dma_setup_t;
+
+/*
+* PIO Setup - Device to Host FIS
+*/
+typedef struct sata_fis_pio_setup {
+	u8 fis_type;
+	u8 pm_port_dir_int;
+	u8 status;
+	u8 error;
+	u8 lba_low;
+	u8 lba_mid;
+	u8 lba_high;
+	u8 res1;
+	u8 lba_low_exp;
+	u8 lba_mid_exp;
+	u8 lba_high_exp;
+	u8 res2;
+	u8 sector_count;
+	u8 sector_count_exp;
+	u8 res3;
+	u8 e_status;
+	u16 transfer_count;
+	u16 res4;
+} __attribute__ ((packed)) sata_fis_pio_setup_t;
+
+/*
+* Data - Host to Device or Device to Host FIS
+*/
+typedef struct sata_fis_data {
+	u8 fis_type;
+	u8 pm_port;
+	u8 res1;
+	u8 res2;
+	u32 data[2048];
+} __attribute__ ((packed)) sata_fis_data_t;
+
+/* fis_type - SATA FIS type
+ */
+enum sata_fis_type {
+	SATA_FIS_TYPE_REGISTER_H2D		= 0x27,
+	SATA_FIS_TYPE_REGISTER_D2H		= 0x34,
+	SATA_FIS_TYPE_DMA_ACT_D2H		= 0x39,
+	SATA_FIS_TYPE_DMA_SETUP_BI		= 0x41,
+	SATA_FIS_TYPE_DATA_BI			= 0x46,
+	SATA_FIS_TYPE_BIST_ACT_BI		= 0x58,
+	SATA_FIS_TYPE_PIO_SETUP_D2H		= 0x5F,
+	SATA_FIS_TYPE_SET_DEVICE_BITS_D2H	= 0xA1,
+};
+
+#endif	/* __FIS_H__ */

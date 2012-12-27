@@ -1,0 +1,354 @@
+env_embedded.o: \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/common/env_embedded.c \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/config.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/config_defaults.h \
+ ../../../../mediatek/custom/out/simcom75_cu_ics/uboot/inc/configs/ubconfigs.h \
+ ../../../../mediatek/platform/mt6575/uboot/inc/asm/arch/mt65xx.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/asm/sizes.h \
+ ../../../../mediatek/custom/out/simcom75_cu_ics/kernel/dct/cust_kpd.h \
+ ../../../../mediatek/platform/mt6575/uboot/inc/linux/input.h \
+ ../../../../mediatek/custom/out/simcom75_cu_ics/kernel/dct/cust_eint.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/./config.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/asm/config.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/environment.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/compiler.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/stat.h /usr/include/byteswap.h
+image.o: \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/common/image.c \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/mkimage.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/os_support.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/compiler.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/stat.h /usr/include/byteswap.h /usr/include/sys/stat.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/sha1.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/fdt_host.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/libfdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/libfdt_env.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/compiler.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt_support.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/u-boot/md5.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/image.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/libfdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/fdt_support.h
+crc32.o: \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/crc32.c \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/compiler.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/stat.h /usr/include/byteswap.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/u-boot/crc.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/u-boot/zlib.h
+md5.o: /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/md5.c \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/compiler.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/stat.h /usr/include/byteswap.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/u-boot/md5.h
+sha1.o: \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/sha1.c \
+ /usr/include/string.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/include/xlocale.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/watchdog.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/sha1.h
+envcrc.o: \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/envcrc.c \
+ /usr/include/errno.h /usr/include/features.h /usr/include/bits/predefs.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/stdio.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/sys/types.h \
+ /usr/include/time.h /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/string.h /usr/include/xlocale.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/config.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/config_defaults.h \
+ ../../../../mediatek/custom/out/simcom75_cu_ics/uboot/inc/configs/ubconfigs.h \
+ ../../../../mediatek/platform/mt6575/uboot/inc/asm/arch/mt65xx.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/asm/sizes.h \
+ ../../../../mediatek/custom/out/simcom75_cu_ics/kernel/dct/cust_kpd.h \
+ ../../../../mediatek/platform/mt6575/uboot/inc/linux/input.h \
+ ../../../../mediatek/custom/out/simcom75_cu_ics/kernel/dct/cust_eint.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/./config.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/asm/config.h
+fdt.o: \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/libfdt/fdt.c \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/libfdt_env.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/compiler.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/stat.h /usr/include/byteswap.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/fdt_host.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/libfdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt_support.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/libfdt/libfdt_internal.h
+fdt_ro.o: \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/libfdt/fdt_ro.c \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/libfdt_env.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/compiler.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/stat.h /usr/include/byteswap.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/fdt_host.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/libfdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt_support.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/libfdt/libfdt_internal.h
+fdt_rw.o: \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/libfdt/fdt_rw.c \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/libfdt_env.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/compiler.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/stat.h /usr/include/byteswap.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/fdt_host.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/libfdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt_support.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/libfdt/libfdt_internal.h
+fdt_strerror.o: \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/libfdt/fdt_strerror.c \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/libfdt_env.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/compiler.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/stat.h /usr/include/byteswap.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/fdt_host.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/libfdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt_support.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/libfdt/libfdt_internal.h
+fdt_wip.o: \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/libfdt/fdt_wip.c \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/libfdt_env.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/compiler.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/stat.h /usr/include/byteswap.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/fdt_host.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/libfdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/include/fdt.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/tools/../include/fdt_support.h \
+ /media/others/E350_MDRR_104_WW/bootable/bootloader/uboot/lib/libfdt/libfdt_internal.h

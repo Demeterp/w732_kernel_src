@@ -1,0 +1,92 @@
+# Copyright Statement:
+#
+# This software/firmware and related documentation ("MediaTek Software") are
+# protected under relevant copyright laws. The information contained herein
+# is confidential and proprietary to MediaTek Inc. and/or its licensors.
+# Without the prior written permission of MediaTek inc. and/or its licensors,
+# any reproduction, modification, use or disclosure of MediaTek Software,
+# and information contained herein, in whole or in part, shall be strictly prohibited.
+#
+# MediaTek Inc. (C) 2010. All rights reserved.
+#
+# BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+# THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+# RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+# AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+# NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+# SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+# SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+# THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+# THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+# CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+# SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+# STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+# CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+# AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+# OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+# MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+#
+# The following software/firmware and/or related documentation ("MediaTek Software")
+# have been modified by MediaTek Inc. All revisions are subject to any receiver's
+# applicable license agreements with MediaTek Inc.
+
+
+CONFIG_NAND_SPL	= y
+
+include $(TOPDIR)/config.mk
+include $(TOPDIR)/nand_spl/board/$(BOARDDIR)/config.mk
+
+LDSCRIPT= $(TOPDIR)/nand_spl/board/$(BOARDDIR)/u-boot.lds
+LDFLAGS	= -Bstatic -T $(nandobj)u-boot.lds -Ttext $(TEXT_BASE) $(PLATFORM_LDFLAGS)
+AFLAGS	+= -DCONFIG_PRELOADER -DCONFIG_NAND_SPL
+CFLAGS	+= -DCONFIG_PRELOADER -DCONFIG_NAND_SPL
+
+SOBJS	= start.o lowlevel_init.o
+COBJS	= nand_boot_fsl_nfc.o
+
+SRCS	:= $(SRCTREE)/nand_spl/nand_boot_fsl_nfc.c
+SRCS	+= $(SRCTREE)/arch/arm/cpu/arm1136/start.S
+SRCS	+= $(SRCTREE)/board/freescale/mx31pdk/lowlevel_init.S
+OBJS	:= $(addprefix $(obj),$(SOBJS) $(COBJS))
+__OBJS	:= $(SOBJS) $(COBJS)
+LNDIR	:= $(OBJTREE)/nand_spl/board/$(BOARDDIR)
+
+nandobj	:= $(OBJTREE)/nand_spl/
+
+ALL	= $(nandobj)u-boot-spl $(nandobj)u-boot-spl.bin $(nandobj)u-boot-spl-16k.bin
+
+all:	$(obj).depend $(ALL)
+
+$(nandobj)u-boot-spl-16k.bin: $(nandobj)u-boot-spl
+	$(OBJCOPY) ${OBJCFLAGS} --pad-to=$(PAD_TO) -O binary $< $@
+
+$(nandobj)u-boot-spl.bin:	$(nandobj)u-boot-spl
+	$(OBJCOPY) ${OBJCFLAGS} -O binary $< $@
+
+$(nandobj)u-boot-spl:	$(OBJS) $(nandobj)u-boot.lds
+	cd $(LNDIR) && $(LD) $(LDFLAGS) $(__OBJS) \
+		-Map $(nandobj)u-boot-spl.map \
+		-o $@
+
+$(nandobj)u-boot.lds: $(LDSCRIPT)
+	$(CPP) $(CPPFLAGS) $(LDPPFLAGS) -ansi -D__ASSEMBLY__ -P - <$^ >$@
+
+#########################################################################
+
+$(obj)%.o:	$(SRCTREE)/arch/arm/cpu/arm1136/%.S
+	$(CC) $(AFLAGS) -c -o $@ $<
+
+$(obj)%.o:	$(SRCTREE)/board/freescale/mx31pdk/%.S
+	$(CC) $(AFLAGS) -c -o $@ $<
+
+$(obj)%.o:	$(SRCTREE)/nand_spl/%.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+# defines $(obj).depend target
+include $(SRCTREE)/rules.mk
+
+sinclude $(obj).depend
+
+#########################################################################

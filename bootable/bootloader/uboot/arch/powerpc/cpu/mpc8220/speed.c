@@ -1,0 +1,158 @@
+/* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2010. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */
+
+/*
+ * (C) Copyright 2004, Freescale, Inc
+ * TsiChung Liew, Tsi-Chung.Liew@freescale.com.
+ *
+ * See file CREDITS for list of people who contributed to this
+ * project.
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation; either version 2 of
+ * the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ * MA 02111-1307 USA
+ */
+
+#include <common.h>
+#include <mpc8220.h>
+#include <asm/processor.h>
+
+DECLARE_GLOBAL_DATA_PTR;
+
+typedef struct pllmultiplier {
+	u8 hid1;
+	int multi;
+	int vco_div;
+} pllcfg_t;
+
+/* ------------------------------------------------------------------------- */
+
+/*
+ *
+ */
+
+int get_clocks (void)
+{
+	pllcfg_t bus2core[] = {
+		{0x02, 2, 8},	/* 1 */
+		{0x01, 2, 4},
+		{0x0C, 3, 8},	/* 1.5 */
+		{0x00, 3, 4},
+		{0x18, 3, 2},
+		{0x05, 4, 4},	/* 2 */
+		{0x04, 4, 2},
+		{0x11, 5, 4},	/* 2.5 */
+		{0x06, 5, 2},
+		{0x10, 6, 4},	/* 3 */
+		{0x08, 6, 2},
+		{0x0E, 7, 2},	/* 3.5 */
+		{0x0A, 8, 2},	/* 4 */
+		{0x07, 9, 2},	/* 4.5 */
+		{0x0B, 10, 2},	/* 5 */
+		{0x09, 11, 2},	/* 5.5 */
+		{0x0D, 12, 2},	/* 6 */
+		{0x12, 13, 2},	/* 6.5 */
+		{0x14, 14, 2},	/* 7 */
+		{0x16, 15, 2},	/* 7.5 */
+		{0x1C, 16, 2}	/* 8 */
+	};
+	u32 hid1;
+	int i, size, pci2bus;
+
+#if !defined(CONFIG_SYS_MPC8220_CLKIN)
+#error clock measuring not implemented yet - define CONFIG_SYS_MPC8220_CLKIN
+#endif
+
+	gd->inp_clk = CONFIG_SYS_MPC8220_CLKIN;
+
+	/* Read XLB to PCI(INP) clock multiplier */
+	pci2bus = (*((volatile u32 *)PCI_REG_PCIGSCR) &
+		PCI_REG_PCIGSCR_PCI2XLB_CLK_MASK)>>PCI_REG_PCIGSCR_PCI2XLB_CLK_BIT;
+
+	/* XLB bus clock */
+	gd->bus_clk = CONFIG_SYS_MPC8220_CLKIN * pci2bus;
+
+	/* PCI clock is same as input clock */
+	gd->pci_clk = CONFIG_SYS_MPC8220_CLKIN;
+
+	/* FlexBus is temporary set as the same as input clock */
+	/* will do dynamic in the future */
+	gd->flb_clk = CONFIG_SYS_MPC8220_CLKIN;
+
+	/* CPU Clock - Read HID1 */
+	asm volatile ("mfspr %0, 1009":"=r" (hid1):);
+
+	size = sizeof (bus2core) / sizeof (pllcfg_t);
+
+	hid1 >>= 27;
+
+	for (i = 0; i < size; i++)
+		if (hid1 == bus2core[i].hid1) {
+			gd->cpu_clk = (bus2core[i].multi * gd->bus_clk) >> 1;
+			gd->vco_clk = CONFIG_SYS_MPC8220_SYSPLL_VCO_MULTIPLIER * (gd->pci_clk * bus2core[i].vco_div)/2;
+			break;
+		}
+
+	/* hardcoded 81MHz for now */
+	gd->pev_clk = 81000000;
+
+	return (0);
+}
+
+int prt_mpc8220_clks (void)
+{
+	char buf1[32], buf2[32], buf3[32], buf4[32];
+
+	printf ("       Bus %s MHz, CPU %s MHz, PCI %s MHz, VCO %s MHz\n",
+		strmhz(buf1, gd->bus_clk),
+		strmhz(buf2, gd->cpu_clk),
+		strmhz(buf3, gd->pci_clk),
+		strmhz(buf4, gd->vco_clk)
+	);
+	return (0);
+}
+
+/* ------------------------------------------------------------------------- */

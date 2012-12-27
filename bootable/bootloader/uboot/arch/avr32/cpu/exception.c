@@ -1,0 +1,156 @@
+/* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2010. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */
+
+/*
+ * Copyright (C) 2005-2006 Atmel Corporation
+ *
+ * See file CREDITS for list of people who contributed to this
+ * project.
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation; either version 2 of
+ * the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ * MA 02111-1307 USA
+ */
+#include <common.h>
+
+#include <asm/sysreg.h>
+#include <asm/ptrace.h>
+
+DECLARE_GLOBAL_DATA_PTR;
+
+static const char * const cpu_modes[8] = {
+	"Application", "Supervisor", "Interrupt level 0", "Interrupt level 1",
+	"Interrupt level 2", "Interrupt level 3", "Exception", "NMI"
+};
+
+static void dump_mem(const char *str, unsigned long bottom, unsigned long top)
+{
+	unsigned long p;
+	int i;
+
+	printf("%s(0x%08lx to 0x%08lx)\n", str, bottom, top);
+
+	for (p = bottom & ~31; p < top; ) {
+		printf("%04lx: ", p & 0xffff);
+
+		for (i = 0; i < 8; i++, p += 4) {
+			unsigned int val;
+
+			if (p < bottom || p >= top)
+				printf("         ");
+			else {
+				val = *(unsigned long *)p;
+				printf("%08x ", val);
+			}
+		}
+		printf("\n");
+	}
+}
+
+void do_unknown_exception(unsigned int ecr, struct pt_regs *regs)
+{
+	unsigned int mode;
+
+	printf("\n *** Unhandled exception %u at PC=0x%08lx\n", ecr, regs->pc);
+
+	switch (ecr) {
+	case ECR_BUS_ERROR_WRITE:
+	case ECR_BUS_ERROR_READ:
+		printf("Bus error at address 0x%08lx\n",
+		       sysreg_read(BEAR));
+		break;
+	case ECR_TLB_MULTIPLE:
+	case ECR_ADDR_ALIGN_X:
+	case ECR_PROTECTION_X:
+	case ECR_ADDR_ALIGN_R:
+	case ECR_ADDR_ALIGN_W:
+	case ECR_PROTECTION_R:
+	case ECR_PROTECTION_W:
+	case ECR_DTLB_MODIFIED:
+	case ECR_TLB_MISS_X:
+	case ECR_TLB_MISS_R:
+	case ECR_TLB_MISS_W:
+		printf("MMU exception at address 0x%08lx\n",
+		       sysreg_read(TLBEAR));
+		break;
+	}
+
+	printf("   pc: %08lx    lr: %08lx    sp: %08lx   r12: %08lx\n",
+	       regs->pc, regs->lr, regs->sp, regs->r12);
+	printf("  r11: %08lx   r10: %08lx    r9: %08lx    r8: %08lx\n",
+	       regs->r11, regs->r10, regs->r9, regs->r8);
+	printf("   r7: %08lx    r6: %08lx    r5: %08lx    r4: %08lx\n",
+	       regs->r7, regs->r6, regs->r5, regs->r4);
+	printf("   r3: %08lx    r2: %08lx    r1: %08lx    r0: %08lx\n",
+	       regs->r3, regs->r2, regs->r1, regs->r0);
+	printf("Flags: %c%c%c%c%c\n",
+	       regs->sr & SR_Q ? 'Q' : 'q',
+	       regs->sr & SR_V ? 'V' : 'v',
+	       regs->sr & SR_N ? 'N' : 'n',
+	       regs->sr & SR_Z ? 'Z' : 'z',
+	       regs->sr & SR_C ? 'C' : 'c');
+	printf("Mode bits: %c%c%c%c%c%c%c%c%c\n",
+	       regs->sr & SR_H ? 'H' : 'h',
+	       regs->sr & SR_R ? 'R' : 'r',
+	       regs->sr & SR_J ? 'J' : 'j',
+	       regs->sr & SR_EM ? 'E' : 'e',
+	       regs->sr & SR_I3M ? '3' : '.',
+	       regs->sr & SR_I2M ? '2' : '.',
+	       regs->sr & SR_I1M ? '1' : '.',
+	       regs->sr & SR_I0M ? '0' : '.',
+	       regs->sr & SR_GM ? 'G' : 'g');
+	mode = (regs->sr >> SYSREG_M0_OFFSET) & 7;
+	printf("CPU Mode: %s\n", cpu_modes[mode]);
+
+	/* Avoid exception loops */
+	if (regs->sp < (gd->stack_end - CONFIG_STACKSIZE)
+			|| regs->sp >= gd->stack_end)
+		printf("\nStack pointer seems bogus, won't do stack dump\n");
+	else
+		dump_mem("\nStack: ", regs->sp, gd->stack_end);
+
+	panic("Unhandled exception\n");
+}
