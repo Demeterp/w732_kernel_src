@@ -1,0 +1,1555 @@
+1931] [127:busybox] exit
+<7>[    5.052036] [127:busybox] sig 17 to [111:logwrapper]
+<7>[    5.052243] [111:logwrapper] exit
+<7>[    5.052430] [111:logwrapper] sig 17 to [1:init]
+<7>[    5.053761] [143:iptables] exit
+<7>[    5.053892] [143:iptables] sig 17 to [89:netd]
+<7>[    5.054003] [89:netd] fork err at pid
+<7>[    5.059495] [89:netd] fork [144:netd]
+<7>[    5.059525] [144:netd] set proc[144] name: ->[ip] 
+<7>[    5.068768] [144:ip] exit
+<7>[    5.068919] [144:ip] sig 17 to [89:netd]
+<7>[    5.069029] [89:netd] fork err at pid
+<7>[    5.069217] [89:netd] fork [145:netd]
+<7>[    5.069245] [145:netd] set proc[145] name: ->[ip] 
+<7>[    5.071791] [145:ip] exit
+<7>[    5.071940] [145:ip] sig 17 to [89:netd]
+<7>[    5.072070] [89:netd] fork err at pid
+<7>[    5.072936] [89:netd] fork [146:netd]
+<7>[    5.072966] [146:netd] set proc[146] name: ->[ip] 
+<7>[    5.091549] [146:ip] exit
+<7>[    5.091715] [146:ip] sig 17 to [89:netd]
+<7>[    5.091840] [89:netd] fork err at pid
+<7>[    5.093358] [89:netd] fork [147:netd]
+<7>[    5.093389] [147:netd] set proc[147] name: ->[ip] 
+<7>[    5.095571] [147:ip] exit
+<7>[    5.095728] [147:ip] sig 17 to [89:netd]
+<7>[    5.095843] [89:netd] fork err at pid
+<7>[    5.096019] [89:netd] fork [148:netd]
+<7>[    5.096047] [148:netd] set proc[148] name: ->[ip] 
+<7>[    5.098189] [148:ip] exit
+<7>[    5.098344] [148:ip] sig 17 to [89:netd]
+<7>[    5.098457] [89:netd] fork err at pid
+<7>[    5.098677] [89:netd] fork [149:netd]
+<7>[    5.098704] [149:netd] set proc[149] name: ->[ip] 
+<7>[    5.100837] [149:ip] exit
+<7>[    5.100993] [149:ip] sig 17 to [89:netd]
+<7>[    5.101106] [89:netd] fork err at pid
+<7>[    5.101279] [89:netd] fork [150:netd]
+<7>[    5.101307] [150:netd] set proc[150] name: ->[ip] 
+<7>[    5.103567] [150:ip] exit
+<7>[    5.103723] [150:ip] sig 17 to [89:netd]
+<7>[    5.103963] [89:netd] fork err at pid
+<7>[    5.103986] [89:netd] fork [151:netd]
+<7>[    5.104098] [89:netd] fork err at pid
+<7>[    5.104115] [89:netd] fork [152:netd]
+<7>[    5.104219] [89:netd] fork err at pid
+<7>[    5.104236] [89:netd] fork [153:netd]
+<7>[    5.104316] [89:netd] fork err at pid
+<7>[    5.104333] [89:netd] fork [154:netd]
+<7>[    5.104394] [89:netd] fork err at pid
+<7>[    5.104411] [89:netd] fork [155:netd]
+<5>[    5.117105] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[    5.118057] [108:boot_logo_updat] exit
+<7>[    5.118215] [108:boot_logo_updat] sig 17 to [1:init]
+<5>[    5.131024] [AppLaunch] LCD frame buffer update done !
+<7>[    5.166400] [109:dm_agent_binder] fork err at pid
+<7>[    5.166424] [109:dm_agent_binder] fork [156:dm_agent_binder]
+<7>[    5.166689] [115:GoogleOtaBinder] fork err at pid
+<7>[    5.166709] [115:GoogleOtaBinder] fork [157:GoogleOtaBinder]
+<7>[    5.166861] [156:dm_agent_binder] set proc[156] name: ->[Binder Thread #] 
+<7>[    5.166934] [157:GoogleOtaBinder] set proc[157] name: ->[Binder Thread #] 
+<7>[    5.194045] [112:mtkbt] fork err at pid
+<7>[    5.194069] [112:mtkbt] fork [158:mtkbt]
+<7>[    5.268748] [2:kthreadd] fork err at pid
+<7>[    5.268771] [2:kthreadd] fork [159:kthreadd]
+<7>[    5.269414] [88:pvrsrvinit] exit
+<7>[    5.269578] [88:pvrsrvinit] sig 17 to [1:init]
+<5>[    5.457407] [Power/Battery] [BATTERY:AVG] BatTemp:32 Vbat:3702 VBatSen:3698 SOC:29 ChrDet:1 Vchrin:5055 Icharging:55 ChrType:1 USBstate:2 gADC_I_SENSE_offset:5
+<6>[    5.459424] [Power/Battery] [BATTERY] gFG_booting_counter_I_FLAG!=2 (1)
+<6>[    5.464424] [Power/Battery] [BATTERY] wait gFG_booting_counter_I_FLAG==2 (1)
+<3>[    5.524950] [ccci/ctl] /etc/firmware/modem.img image size=0x4c3c14,read size:4996116, tail:0
+<3>[    5.526052] [ccci/ctl] 
+<3>[    5.526344] [ccci/ctl] **********************MD image check***************************
+<3>[    5.527332] [ccci/ctl] Modem header check OK!
+<3>[    5.527872] [ccci/ctl] (MD)[type]=3G, (AP)[type]=3G
+<3>[    5.528684] [ccci/ctl] (MD)[plat]=MT6575_S01, (AP)[plat]=MT6575_S01
+<3>[    5.529455] [ccci/ctl] (MD)[build_ver]=MAUI.11AMD.W11.50, [build_time]=2012/08/09 11:16
+<3>[    5.530452] [ccci/ctl] (MD)[product_ver]=Release
+<3>[    5.531224] [ccci/ctl] **********************MD image check***************************
+<3>[    5.533267] [ccci/ctl] Load /etc/firmware/modem.img (size=4996116) to 0x0
+<3>[    5.534119] [ccci/ctl] open /etc/firmware/DSP_ROM_E2 
+<3>[    5.534781] [ccci/ctl] open /etc/firmware/DSP_ROM_E2 fail(-2), try to open modem.img/DSP_ROM
+<3>[    5.535823] [ccci/ctl] open /etc/firmware/DSP_ROM 
+<7>[    5.554210] [93:nvram_daemon] fork err at pid
+<7>[    5.554235] [93:nvram_daemon] fork [160:nvram_daemon]
+<7>[    5.554298] [93:nvram_daemon] fork err at pid
+<7>[    5.554316] [93:nvram_daemon] fork [161:nvram_daemon]
+<7>[    5.554367] [93:nvram_daemon] fork err at pid
+<7>[    5.554384] [93:nvram_daemon] fork [162:nvram_daemon]
+<7>[    5.554425] [93:nvram_daemon] fork err at pid
+<7>[    5.554442] [93:nvram_daemon] fork [163:nvram_daemon]
+<7>[    5.554489] [93:nvram_daemon] fork err at pid
+<7>[    5.554507] [93:nvram_daemon] fork [164:nvram_daemon]
+<7>[    5.554551] [93:nvram_daemon] fork err at pid
+<7>[    5.554568] [93:nvram_daemon] fork [165:nvram_daemon]
+<7>[    5.554613] [93:nvram_daemon] fork err at pid
+<7>[    5.554629] [93:nvram_daemon] fork [166:nvram_daemon]
+<3>[    5.585901] [ccci/ctl] /etc/firmware/DSP_ROM image size=0xa6ff4,read size:684020, tail:0
+<3>[    5.586962] [ccci/ctl] 
+<3>[    5.587254] [ccci/ctl] **********************DSP image check****************************
+<3>[    5.588263] [ccci/ctl] GFH_FILE_INFO header and GFH_CHECK_HEADER check OK!
+<7>[    5.589485] [165:nvram_daemon] exit
+<3>[    5.589538] [ccci/ctl] (DSP)[type]=DSP_ROM
+<3>[    5.590666] [ccci/ctl] (DSP)[ver]=3G, (AP)[ver]=3G
+<3>[    5.591258] [ccci/ctl] (DSP)[plat]=MT6575_S01, (AP)[plat]=MT6575_S01
+<3>[    5.592050] [ccci/ctl] (DSP)[build_Ver]=MAUI.11AMDW1150SP.W12.12, [build_time]=2012/04/10 17:49:41
+<3>[    5.593167] [ccci/ctl] (DSP)[product_ver]=Release
+<3>[    5.593752] [ccci/ctl] **********************DSP image check****************************
+<3>[    5.595762] [ccci/ctl] 
+<3>[    5.609337] tpd_setting.tpd_calmat: can only take 8 arguments
+<7>[    5.610110] [163:nvram_daemon] exit
+<7>[    5.615010] [166:nvram_daemon] exit
+<3>[    5.616880] [Gsensor] OLDOFF: ( +0  +0  +0): ( +0  +0  +0) / ( +0  +0  +0)
+<3>[    5.617732] [Gsensor] UPDATE: (-27  -4 -58)
+<7>[    5.618319] [164:nvram_daemon] exit
+<4>[    5.628130] Load /etc/firmware/DSP_ROM (size=684020) to 0x1300000
+<7>[    5.629196] [162:nvram_daemon] exit
+<3>[    5.629345] [ccci/ctl] load firmware successful!
+<3>[    5.631387] [ccci/rst] ungate_md
+<3>[    5.631779] [ccci/ctl] wait MD_INIT_START_BOOT
+<3>[    5.652877] [ccci/ctl] receive MD_INIT_START_BOOT
+<5>[    5.653456] [Sound] CCCI_AudDrv_Clk_On(0+1)
+<7>[    5.679568] [161:nvram_daemon] exit
+<4>[    5.698706] auxadc_cali_slop[0] = 1000
+<4>[    5.699165] auxadc_cali_slop[1] = 1000
+<4>[    5.699630] auxadc_cali_slop[2] = 1000
+<4>[    5.700096] auxadc_cali_slop[3] = 1000
+<4>[    5.700562] auxadc_cali_slop[4] = 1000
+<4>[    5.701029] auxadc_cali_slop[5] = 1000
+<4>[    5.701495] auxadc_cali_slop[6] = 1000
+<4>[    5.701961] auxadc_cali_slop[7] = 1000
+<4>[    5.702428] auxadc_cali_slop[8] = 1000
+<4>[    5.702894] auxadc_cali_slop[9] = 1000
+<4>[    5.703361] auxadc_cali_slop[10] = 1000
+<4>[    5.703838] auxadc_cali_slop[11] = 1000
+<4>[    5.710739] auxadc_cali_slop[12] = 1000
+<4>[    5.711209] auxadc_cali_slop[13] = 1000
+<4>[    5.711684] **** MT6573 auxadc_cali ioctl : SET_ADC_CALI_Slop Done!
+<4>[    5.712472] auxadc_cali_offset[0] = 0
+<4>[    5.712921] auxadc_cali_offset[1] = 0
+<4>[    5.713376] auxadc_cali_offset[2] = 0
+<4>[    5.713832] auxadc_cali_offset[3] = 0
+<4>[    5.714287] auxadc_cali_offset[4] = 0
+<4>[    5.714743] auxadc_cali_offset[5] = 0
+<4>[    5.715198] auxadc_cali_offset[6] = 0
+<4>[    5.715654] auxadc_cali_offset[7] = 0
+<4>[    5.774821] auxadc_cali_offset[8] = 0
+<4>[    5.775366] auxadc_cali_offset[9] = 0
+<4>[    5.775810] auxadc_cali_offset[10] = 0
+<4>[    5.776276] auxadc_cali_offset[11] = 0
+<4>[    5.776742] auxadc_cali_offset[12] = 0
+<4>[    5.777208] auxadc_cali_offset[13] = 0
+<4>[    5.777674] **** MT6573 auxadc_cali ioctl : SET_ADC_CALI_Offset Done!
+<4>[    5.782001] auxadc_cali_cal[0] = 0
+<4>[    5.782416] **** MT6573 auxadc_cali ioctl : SET_ADC_CALI_Cal Done!
+<7>[    5.788046] [93:nvram_daemon] exit
+<7>[    5.788704] [160:nvram_daemon] exit
+<7>[    5.788928] [160:nvram_daemon] sig 17 to [1:init]
+<7>[    6.305367] [95:app_process] set proc[95] name: ->[zygote] 
+<7>[    6.318905] [117:em_svr] fork err at pid
+<7>[    6.318932] [117:em_svr] fork [167:em_svr]
+<6>[    6.327870] warning: `surfaceflinger' uses 32-bit capabilities (legacy support in use)
+<7>[    6.328334] [94:surfaceflinger] fork err at pid
+<7>[    6.328363] [94:surfaceflinger] fork [168:surfaceflinger]
+<7>[    6.329718] [168:surfaceflinger] set proc[168] name: ->[SurfaceFlinger] 
+<7>[    6.329892] [168:SurfaceFlinger] fork err at pid
+<7>[    6.329913] [168:SurfaceFlinger] fork [169:SurfaceFlinger]
+<7>[    6.330234] [169:SurfaceFlinger] set proc[169] name: ->[DisplayEventThr] 
+<7>[    6.339576] [97:drmserver] fork err at pid
+<7>[    6.339600] [97:drmserver] fork [170:drmserver]
+<7>[    6.339751] [170:drmserver] set proc[170] name: ->[Binder Thread #] 
+<7>[    6.434982] [2:kthreadd] fork err at pid
+<7>[    6.435007] [2:kthreadd] fork [171:kthreadd]
+<4>[    6.439030] MTKFB_GETFPS = 5738
+<7>[    6.551094] [168:SurfaceFlinger] fork err at pid
+<7>[    6.551119] [168:SurfaceFlinger] fork [172:SurfaceFlinger]
+<7>[    6.551725] [172:SurfaceFlinger] set proc[172] name: ->[FBThread] 
+<7>[    6.552057] [94:surfaceflinger] fork err at pid
+<7>[    6.552081] [94:surfaceflinger] fork [173:surfaceflinger]
+<7>[    6.552219] [173:surfaceflinger] set proc[173] name: ->[Binder Thread #] 
+<6>[    6.580472] [ALS/PS] tmd2771_WriteCalibration  1 200,
+<6>[    6.580482] [ALS/PS] tmd2771_WriteCalibration  2 150,
+<6>[    6.580489] [ALS/PS] tmd2771_WriteCalibration  3 1,
+<6>[    6.580497] [ALS/PS]  ALSPS_SET_PS_CALI 200,150,1	
+<7>[    6.584003] [120:pscali] exit
+<7>[    6.585163] [120:pscali] sig 17 to [1:init]
+<5>[    6.679920] [Sound] AudDrv INIT_DL1_STREAM bsize(12288),AFE(3),AFEp(0)
+<5>[    6.680726] [Sound] AudDrv INIT_DL1_STREAM I2S(0),I2Sp(0)
+<5>[    6.681399] [Sound] AudDrv_Init_DL1_Stream MTxxx_SYSRAM_ALLOC 
+<7>[    6.682128] [SYSRAM][CheckClock]u4AllocatedTbl = 0x00000001, EnableClk = 1
+<7>[    6.682156] [SYSRAM][CheckClock]u4AllocatedTbl = 0x00000000, EnableClk = 0
+<5>[    6.682195] [Sound] AudDrv_Init_DL1_Stream pucVirtBufAddr=f2038000, pucPhysBufAddr=c2038000, ptr=c2038000
+<3>[    6.686379] init: sys_prop: permission denied uid:1000  name:persist.mdp_msg
+<6>[    6.687362] [USB20] enable_store: device_attr->attr.name: enable
+<7>[    6.687379] [USB20] enable_store: enable 1->0 case, device_desc.idVendor = 0x471, device_desc.idProduct = 0x2008, 
+<0>[    6.687397] [MUSB]musb_pullup 1917: MUSB: gadget pull up 0 start
+<0>[    6.688136] [MUSB]musb_stop 650: start, is_host=0
+<7>[    6.689292] [USB20] android_disconnect: 
+<7>[    6.689308] [1:init] sig 10 to [55:file-storage]
+<6>[    6.689325] [USB20] composite_disconnect:  reassign the complete function!!
+<7>[    6.689373] [USB20] android_disconnect: dev->connected = 0 
+<4>[    6.689408] ep in list 1
+<5>[    6.689734] [Power/PMIC] [mt_charger_type_detection] Got data !!, 1, 1
+<7>[    6.690546] [USB20] android_work: is_hwconnected=1 
+<6>[    6.690594] android_work: sent uevent USB_STATE=DISCONNECTED
+<4>[    6.690721] ep out list 1
+<4>[    6.691044] musb_platform_disable, 1, 1
+<4>[    6.692320] enable(0), count(0)
+<4>[    6.692697] usb save current success
+<6>[    6.693145] [Power/PMIC] [hwPowerDown] 0,NOP,1
+<6>[    6.693156] [Power/PMIC] [hwPowerDown] 1,VUSB_LDO,1
+<5>[    6.693167] [Power/PMIC] [hwPowerDown] powerId:6 index:1 mod_name: VUSB_LDO
+<5>[    6.694032] [Power/PMIC] [6] PMU LDO Disable
+<6>[    6.694575] [Power/PMIC] [hwPowerDown] disable 6 by VUSB_LDO 
+<6>[    6.694586] [Power/PMIC] [pmic_ldo_enable] Receive powerId 6, action is 0
+<6>[    6.694598] [Power/PMIC] [dct_pmic_VUSB_enable] 0
+<7>[    6.695158] [98:mediaserver] fork err at pid
+<7>[    6.695183] [98:mediaserver] fork [174:mediaserver]
+<7>[    6.695362] [174:mediaserver] set proc[174] name: ->[CCCIReadThread] 
+<4>[    6.695434] musb_platform_disable, disable VUSB and UPLL before disconnect
+<0>[    6.696287] [MUSB]mtk_set_vbus 137: mt65xx_usb20_vbus++,is_on=0
+<4>[    6.697085] enable(1), count(1)
+<4>[    6.697463] [MUSB]:access musb_writel function when usb clock is off 0xA8
+<4>[    6.698310] enable(0), count(0)
+<4>[    6.698798] enable(1), count(1)
+<4>[    6.699177] [MUSB]:access musb_readl function when usb clock is off 0xA4
+<4>[    6.700013] enable(0), count(0)
+<4>[    6.700453] enable(1), count(1)
+<4>[    6.700831] [MUSB]:access musb_writel function when usb clock is off 0xA4
+<4>[    6.701677] enable(0), count(0)
+<0>[    6.702712] [MUSB]switch_int_to_host 229: switch_int_to_host is done
+<0>[    6.704022] [MUSB]musb_stop 670: disabled
+<0>[    6.704515] [MUSB]musb_pullup 1923: MUSB: gadget pull up 0 end
+<0>[    6.705240] [MUSB]musb_gadget_pullup 1962: musb pullup 0
+<4>[    6.706187] BOOTPROF:      6706.179230:BOOT_Animation:START
+<4>[    6.706907] mtsched_proc input stream:1, count 1.
+<4>[    6.707483] mtsched_proc input stream:1
+<4>[    6.707960] Original mtsched enabled = 0, on = 1.
+<4>[    6.708712] Current mtsched enabled = 1
+<7>[    6.709757] [1:init] fork err at pid
+<7>[    6.709784] [1:init] fork [175:init]
+<6>[    6.710448] [USB20] functions_store: 
+<6>[    6.710464] [USB20] functions_store: name = mass_storage 
+<6>[    6.710475] [USB20] android_enable_function: name = mass_storage, f->name=adb 
+<6>[    6.710487] [USB20] android_enable_function: name = mass_storage, f->name=acm 
+<6>[    6.710498] [USB20] android_enable_function: name = mass_storage, f->name=mtp 
+<6>[    6.710509] [USB20] android_enable_function: name = mass_storage, f->name=ptp 
+<6>[    6.710520] [USB20] android_enable_function: name = mass_storage, f->name=rndis 
+<6>[    6.710532] [USB20] android_enable_function: name = mass_storage, f->name=mass_storage 
+<6>[    6.710544] [USB20] functions_store: name = adb 
+<6>[    6.710553] [USB20] android_enable_function: name = adb, f->name=adb 
+<6>[    6.711131] [USB20] enable_store: device_attr->attr.name: enable
+<6>[    6.711150] [USB20] android_bind_enabled_functions: 
+<6>[    6.711162] [USB20] usb_add_function: 
+<6>[    6.711178] drivers/usb/gadget/f_adb.c adb_bind_config 629 
+<6>[    6.711186] [USB20] usb_add_function: 
+<0>[    6.711210] [MUSB]musb_pullup 1917: MUSB: gadget pull up 1 start
+<0>[    6.711952] [MUSB]musb_start 566: start, is_host=0 is_active=0
+<4>[    6.712676] musb_platform_enable, 0, 0
+<4>[    6.713900] enable(1), count(1)
+<4>[    6.714283] [MUSB]:access musb_readl function when usb clock is off 0xA4
+<4>[    6.715119] enable(0), count(0)
+<4>[    6.715751] enable(1), count(1)
+<4>[    6.716131] [MUSB]:access musb_writel function when usb clock is off 0xA4
+<4>[    6.716978] enable(0), count(0)
+<6>[    6.718806] [Power/PMIC] [hwPowerOn] 0,NOP,0
+<5>[    6.718822] [Power/PMIC] [hwPowerOn] acquire powerId:6 index:0 mod_name: VUSB_LDO
+<5>[    6.719754] [Power/PMIC] [6] PMU LDO Enable
+<6>[    6.720285] [Power/PMIC] [hwPowerOn] enable 6 by VUSB_LDO 
+<6>[    6.720296] [Power/PMIC] [pmic_ldo_enable] Receive powerId 6, action is 1
+<6>[    6.720308] [Power/PMIC] [dct_pmic_VUSB_enable] 1
+<4>[    6.720448] musb_platform_enable, enable VUSB and UPLL before connect
+<4>[    6.732940] enable(1), count(1)
+<4>[    6.734182] usb recovery success
+<0>[    6.734575] [MUSB]musb_start 615: enabled
+<0>[    6.735071] [MUSB]musb_pullup 1923: MUSB: gadget pull up 1 end
+<0>[    6.735798] [MUSB]musb_gadget_pullup 1962: musb pullup 1
+<7>[    6.736461] [USB20] enable_store: enable 0->1 case, device_desc.idVendor = 0x471, device_desc.idProduct = 0xc03, 
+<7>[    6.736689] [1:init] fork err at pid
+<7>[    6.736714] [1:init] fork [176:init]
+<7>[    6.737372] [176:init] set proc[176] name: ->[adbd] 
+<7>[    6.738057] [176:adbd] fork err at pid
+<7>[    6.738084] [176:adbd] fork [177:adbd]
+<6>[    6.738203] drivers/usb/gadget/f_adb.c adb_open 477: c030cbc8 check adb_release c030cb40 
+<4>[    6.738214] Backtrace: 
+<4>[    6.738551] [<c0042544>] (dump_backtrace+0x0/0x10c) from [<c052ef20>] (dump_stack+0x18/0x1c)
+<4>[    6.739594]  r6:dd0efc28 r5:dc2b2120 r4:c07d5bb0 r3:00000000
+<4>[    6.740308] [<c052ef08>] (dump_stack+0x0/0x1c) from [<c030cc10>] (adb_open+0x48/0x130)
+<4>[    6.742060] [<c030cbc8>] (adb_open+0x0/0x130) from [<c02908b0>] (misc_open+0x228/0x578)
+<4>[    6.743081]  r6:dc2b2120 r5:c030cbc8 r4:c058acf8
+<4>[    6.743666] [<c0290688>] (misc_open+0x0/0x578) from [<c0130c34>] (chrdev_open+0x128/0x2a0)
+<4>[    6.745778] [<c0130b0c>] (chrdev_open+0x0/0x2a0) from [<c012af10>] (__dentry_open.isra.14+0x188/0x374)
+<4>[    6.747214] [<c012ad88>] (__dentry_open.isra.14+0x0/0x374) from [<c012be6c>] (nameidata_to_filp+0x48/0x54)
+<4>[    6.749302] [<c012be24>] (nameidata_to_filp+0x0/0x54) from [<c013aa04>] (do_last.isra.38+0x314/0x510)
+<7>[    6.750704] [175:init] set proc[175] name: ->[bootanimation] 
+<4>[    6.750896]  r6:00000000 r5:00020002 r4:dbf5beb8 r3:00002000
+<4>[    6.758927] [<c013a6f0>] (do_last.isra.38+0x0/0x510) from [<c013ae44>] (path_openat+0xc0/0x3a8)
+<4>[    6.760010] [<c013ad84>] (path_openat+0x0/0x3a8) from [<c013b214>] (do_filp_open+0x34/0x88)
+<4>[    6.761054] [<c013b1e0>] (do_filp_open+0x0/0x88) from [<c012bf78>] (do_sys_open+0x100/0x31c)
+<4>[    6.762097]  r7:00000005 r6:ffffff9c r5:00000001 r4:00020002
+<4>[    6.775795] [<c012be78>] (do_sys_open+0x0/0x31c) from [<c012c1bc>] (sys_open+0x28/0x2c)
+<4>[    6.776797] [<c012c194>] (sys_open+0x0/0x2c) from [<c003ee40>] (ret_fast_syscall+0x0/0x30)
+<7>[    6.778017] [176:adbd] fork err at pid
+<7>[    6.778042] [176:adbd] fork [178:adbd]
+<7>[    6.778094] [176:adbd] fork err at pid
+<7>[    6.778111] [176:adbd] fork [179:adbd]
+<7>[    6.851080] [175:bootanimation] fork err at pid
+<7>[    6.851110] [175:bootanimation] fork [180:bootanimation]
+<7>[    6.851523] binder: 36: call  from 175:175 to 94:0 node 29 handle 1 (SurfaceFlinger) size 64:0 code 4 start 6.833016
+<7>[    6.851894] binder: 42: call  from 175:175 to 94:0 node 29 handle 1 (SurfaceFlinger) size 64:0 code 2 start 6.833392
+<7>[    6.852109] [175:bootanimation] fork err at pid
+<7>[    6.852133] [175:bootanimation] fork [181:bootanimation]
+<7>[    6.852286] [181:bootanimation] set proc[181] name: ->[BootAnimation] 
+<5>[    6.864564] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[    6.867900] [180:bootanimation] set proc[180] name: ->[Binder Thread #] 
+<5>[    6.873970] [AppLaunch] LCD frame buffer update done !
+<7>[    6.883766] binder: 66: call  from 175:181 to 94:0 node 29 handle 1 (SurfaceFlinger) size 172:4 code 5 start 6.865250
+<5>[    6.885777] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    6.890021] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    6.891428] [AppLaunch] LCD frame buffer update done !
+<5>[    6.896735] [Power/Battery] [BATTERY] BAT_SetUSBState Success! Set 0
+<5>[    6.897553] [Power/Battery] [BATTERY] BAT_SetUSBState Success! Set 1
+<4>[    6.898345] ep in list 1
+<4>[    6.898662] ep out list 1
+<4>[    6.898987] [MUSB]ep0 fifo flush!
+<5>[    6.899462] [Power/Battery] [FGADC] FGADC_Reset_SW_Parameter : Start 
+<5>[    6.902253] [Power/Battery] [use_chip_trim_value] 0 -> 0
+<5>[    6.902908] [Power/Battery] #
+<5>[    6.903254] [Power/Battery] [FGADC] FGADC_Reset_SW_Parameter : Done 
+<5>[    6.904799] [Power/Battery] [FGADC] Update DOD0(70) by 70 
+<5>[    6.908483] [AppLaunch] LCD frame buffer update done !
+<5>[    6.915239] [Power/Battery] [use_chip_trim_value] 4807 -> 4831
+<5>[    6.931319] [Power/Battery] [use_chip_trim_value] 4949 -> 4973
+<5>[    6.933241] [Power/Battery] [use_chip_trim_value] 0 -> 0
+<5>[    6.942838] [Power/Battery] [FGADC] update DOD0 after booting 10 s
+<6>[    6.943613] [Power/Battery] [fgauge_read_v_by_capacity] ret_volt=3713
+<6>[    6.943625] [Power/Battery] [fgauge_read_v_by_capacity] (profile_p+i)->percentag=84
+<6>[    6.943636] [Power/Battery] [fgauge_read_v_by_capacity] ((profile_p+i+1)->percentage)=86
+<6>[    6.943648] [Power/Battery] [fgauge_read_v_by_capacity] ((profile_p+i)->voltage)=3724
+<6>[    6.943660] [Power/Battery] [fgauge_read_v_by_capacity] ((profile_p+i+1)->voltage) =3713
+<5>[    6.943672] [Power/Battery] [FGADC] gFG_15_vlot = 3713mV
+<5>[    6.944331] [Power/Battery] [FGADC] Detect Rfg, use FG report. (3813=38132/10)(0)
+<5>[    6.945275] [Power/Battery] [FGADC] 0,4973,0,0,3817,40,40,40,1245,1254,124,0,0,1000,0,3693,1000,60,60,4852,102,103
+<5>[    7.053997] [Power/PMIC] [mt_charger_type_detection] Got data !!, 1, 1
+<7>[    7.054815] [USB20] android_work: is_hwconnected=1 
+<6>[    7.054872] android_work: sent uevent USB_STATE=CONNECTED
+<5>[    7.058598] [Power/Battery] [BATTERY] BAT_SetUSBState Success! Set 1
+<4>[    7.059399] ep in list 1
+<4>[    7.059710] ep out list 1
+<4>[    7.060035] [MUSB]ep0 fifo flush!
+<7>[    7.075277] [95:zygote] fork err at pid
+<7>[    7.075306] [95:zygote] fork [182:zygote]
+<7>[    7.075361] [182:zygote] set proc[182] name: ->[ReferenceQueueD] 
+<7>[    7.075579] [95:zygote] fork err at pid
+<7>[    7.075606] [95:zygote] fork [183:zygote]
+<7>[    7.075694] [183:zygote] set proc[183] name: ->[FinalizerDaemon] 
+<7>[    7.075892] [95:zygote] fork err at pid
+<7>[    7.075913] [95:zygote] fork [184:zygote]
+<7>[    7.075986] [184:zygote] set proc[184] name: ->[FinalizerWatchd] 
+<3>[    7.132809] [ccci/ctl] set modem runtime
+<3>[    7.143086] [ccci/ctl] send /data/mdl/mdl_config =0 to modem!
+<3>[    7.143799] [ccci/ctl] wait for NORMAL_BOOT_ID
+<3>[    7.144349] [ccci/ctl] MPU Start protect MD(4996116)/DSP(684020) region...
+<3>[    7.145205] [ccci/ctl] MPU Start protect AP region...
+<3>[    7.145834] [ccci/ctl] MPU Start MM MAU...
+<5>[    7.146368] [MAU] [INFO]: mtk_mau_config() mau:0 ID:0 en:1 m:0 {0xffffffff 0xfffffe7f 0xffffffff 0xfffffffc} R:1 W:1 [0x0 0x1600000]
+<5>[    7.147908] [MAU] [INFO]: mtk_mau_config() mau:1 ID:0 en:1 m:0 {0xffffffff 0xfffffe7f 0xffffffff 0xfffffffc} R:1 W:1 [0x0 0x1600000]
+<5>[    7.149923] [MAU] [INFO]: mtk_mau_config() mau:2 ID:0 en:1 m:0 {0xffffffff 0xfffffe7f 0xffffffff 0xfffffffc} R:1 W:1 [0x0 0x1600000]
+<5>[    7.151400] [MAU] [INFO]: mtk_mau_config() mau:3 ID:0 en:1 m:0 {0xffffffff 0xfffffe7f 0xffffffff 0xfffffffc} R:1 W:1 [0x0 0x1600000]
+<5>[    7.152928] [MAU] [INFO]: mtk_mau_config() mau:0 ID:1 en:1 m:0 {0xffffffff 0xfffffe7f 0xfffff3fc 0xfffffffc} R:1 W:1 [0x1da00004 0x1dae8000]
+<5>[    7.154490] [MAU] [INFO]: mtk_mau_config() mau:1 ID:1 en:1 m:0 {0xffffffff 0xfffffe7f 0xfffff3fc 0xfffffffc} R:1 W:1 [0x1da00004 0x1dae8000]
+<5>[    7.156062] [MAU] [INFO]: mtk_mau_config() mau:2 ID:1 en:1 m:0 {0xffffffff 0xfffffe7f 0xfffff3fc 0xfffffffc} R:1 W:1 [0x1da00004 0x1dae8000]
+<5>[    7.157635] [MAU] [INFO]: mtk_mau_config() mau:3 ID:1 en:1 m:0 {0xffffffff 0xfffffe7f 0xfffff3fc 0xfffffffc} R:1 W:1 [0x1da00004 0x1dae8000]
+<5>[    7.159268] [MAU] [INFO]: mtk_mau_config() mau:0 ID:2 en:1 m:0 {0xffffffff 0xfffffe7f 0xfffff3fc 0xfffffffc} R:1 W:1 [0x20000000 0xffffffff]
+<5>[    7.160830] [MAU] [INFO]: mtk_mau_config() mau:1 ID:2 en:1 m:0 {0xffffffff 0xfffffe7f 0xfffff3fc 0xfffffffc} R:1 W:1 [0x20000000 0xffffffff]
+<5>[    7.164369] [MAU] [INFO]: mtk_mau_config() mau:2 ID:2 en:1 m:0 {0xffffffff 0xfffffe7f 0xfffff3fc 0xfffffffc} R:1 W:1 [0x20000000 0xffffffff]
+<5>[    7.165934] [MAU] [INFO]: mtk_mau_config() mau:3 ID:2 en:1 m:0 {0xffffffff 0xfffffe7f 0xfffff3fc 0xfffffffc} R:1 W:1 [0x20000000 0xffffffff]
+<4>[    7.168133] 0x0,0xbe,0x13,0xbb
+<4>[    7.339313] emmc_read_proc: partno:    start_sect   nr_sects  partition_name
+<4>[    7.339319] emmc_p1: 00000020 00000002 "ebr1"
+<4>[    7.339322] emmc_p2: 0010f720 00100000 "cache"
+<4>[    7.339326] emmc_p3: 0020ff20 0020b800 "usrdata"
+<4>[    7.339330] emmc_p4: 0041bf20 003170e0 "fat"
+<4>[    7.339333] emmc_p5: 00009f00 00002800 "sec_ro"
+<4>[    7.339337] emmc_p6: 0000ef20 00100000 "android"
+<4>[    7.339341]  
+<7>[    7.347480] [84:vold] fork err at pid
+<7>[    7.347504] [84:vold] fork [185:vold]
+<3>[    7.441936] [ccci/ctl] receive NORMAL_BOOT_ID
+<5>[    7.442486] [Sound] CCCI_AudDrv_Clk_Off(1-1)
+<7>[    7.448664] [1:init] fork err at pid
+<7>[    7.448690] [1:init] fork [186:init]
+<7>[    7.449273] [1:init] fork err at pid
+<7>[    7.449301] [1:init] fork [187:init]
+<3>[    7.449547] [ccci/rpc] [0x00004004]: dram_clk: 260, dram_type:2 
+<7>[    7.450524] [86:ccci_mdinit] fork err at pid
+<5>[    7.460020] [Sound] Fail to backup Ana Register @Offset=0xfd11431c
+<5>[    7.460804] [Sound] AudDrv AUDDRV_LOG_PRINT 
+<5>[    7.461323] [Sound] AUDIO_TOP_CON0  = 0x0
+<5>[    7.461821] [Sound] AFE_DAC_CON0    = 0x0
+<5>[    7.462321] [Sound] AFE_DAC_CON1    = 0x0
+<5>[    7.462819] [Sound] AFE_I2S_IN_CON  = 0x0
+<5>[    7.463318] [Sound] AFE_FOC_CON     = 0x5a00
+<5>[    7.463849] [Sound] AFE_DAIBT_CON   = 0x0
+<5>[    7.464348] [Sound] AFE_CONN0       = 0x0
+<5>[    7.464847] [Sound] AFE_CONN1       = 0x0
+<5>[    7.465346] [Sound] AFE_CONN2       = 0x0
+<5>[    7.465845] [Sound] AFE_CONN3       = 0x570
+<5>[    7.466366] [Sound] AFE_CONN4       = 0x80000000
+<5>[    7.466941] [Sound] AFE_I2S_OUT_CON = 0x0
+<5>[    7.467439] [Sound] AFE_DL1_BASE    = 0xc2038000
+<5>[    7.468014] [Sound] AFE_DL1_CUR     = 0x0
+<5>[    7.468549] [Sound] AFE_DL1_END     = 0xc203afff
+<5>[    7.469112] [Sound] AFE_IRQ_CON     = 0x0
+<5>[    7.469611] [Sound] AFE_IR_STATUS   = 0x0
+<5>[    7.470109] [Sound] AFE_IR_CLR      = 0x0
+<5>[    7.470608] [Sound] AFE_IRQ_CNT1    = 0x0
+<5>[    7.471107] [Sound] AFE_IRQ_CNT2    = 0x0
+<5>[    7.471606] [Sound] AFE_MODEM_IRQ_CON   = 0x0
+<5>[    7.472148] [Sound] AFE_MODEM_IR_STATUS = 0x0
+<5>[    7.472691] [Sound] AFE_MODEM_IR_CLR    = 0x0
+<5>[    7.473233] [Sound] AFE_MODEM_IRQ_CNT1  = 0x0
+<5>[    7.473775] [Sound] AFE_MODEM_IRQ_CNT2  = 0x0
+<5>[    7.474318] [Sound] AFE_DL_SDM_CON0 = 0x8800000
+<5>[    7.474882] [Sound] AFE_DL_SRC2_1   = 0x3000600
+<5>[    7.475446] [Sound] AFE_DL_SRC2_2   = 0xffffffff
+<5>[    7.476021] [Sound] AFE_DL_SRC1_1   = 0x0
+<5>[    7.476519] [Sound] AFE_UL_SRC_0      = 0x400
+<5>[    7.477062] [Sound] AFE_UL_SRC_1      = 0x0
+<5>[    7.477582] [Sound] AFE_SDM_GAIN_STAGE  = 0x1e
+<5>[    7.478136] [Sound] Afe_Mem_Pwr_on   = 0
+<5>[    7.478642] [Sound] I2S_Pwr_on       = 0
+<5>[    7.479117] [Sound] Aud_AFE_Clk_cntr = 2
+<5>[    7.479605] [Sound] Aud_ADC_Clk_cntr = 0
+<5>[    7.480093] [Sound] Aud_I2S_Clk_cntr = 0
+<5>[    7.480583] [Sound] PLL_CON2   = 0x0
+<5>[    7.481028] [Sound] AUDIO_CON0 = 0x0
+<5>[    7.481472] [Sound] AUDIO_CON1 = 0xc
+<5>[    7.481917] [Sound] AUDIO_CON2 = 0xc
+<5>[    7.482362] [Sound] AUDIO_CON3 = 0x0
+<5>[    7.482806] [Sound] AUDIO_CON4 = 0x404
+<5>[    7.483273] [Sound] AUDIO_CON5 = 0x440
+<5>[    7.483739] [Sound] AUDIO_CON6 = 0x1b
+<5>[    7.484194] [Sound] AUDIO_CON7 = 0x0
+<5>[    7.484639] [Sound] AUDIO_CON8 = 0x7000
+<5>[    7.485116] [Sound] AUDIO_CON9 = 0x1
+<5>[    7.485561] [Sound] AUDIO_CON10 = 0x1a1
+<5>[    7.486038] [Sound] AUDIO_CON20 = 0x0
+<5>[    7.486494] [Sound] AUDIO_CON21 = 0x100
+<5>[    7.486971] [Sound] AUDIO_CON22 = 0x200
+<5>[    7.487448] [Sound] AUDIO_CON23 = 0x4400
+<5>[    7.487936] [Sound] AUDIO_CON24 = 0x0
+<5>[    7.488392] [Sound] AUDIO_CON25 = 0x0
+<5>[    7.488849] [Sound] AUDIO_CON26 = 0x0
+<5>[    7.489303] [Sound] AUDIO_CON27 = 0x0
+<5>[    7.489758] [Sound] AUDIO_CON28 = 0x0
+<5>[    7.490214] [Sound] AUDIO_CON29 = 0x1154
+<5>[    7.490702] [Sound] AUDIO_CON30 = 0x154
+<5>[    7.491180] [Sound] AUDIO_CON31 = 0x0
+<5>[    7.491635] [Sound] AUDIO_CON32 = 0x1f1f
+<5>[    7.492123] [Sound] AUDIO_NCP0 = 0x2b
+<5>[    7.492579] [Sound] AUDIO_NCP1 = 0xe00
+<5>[    7.493045] [Sound] AUDIO_LDO0 = 0x0
+<5>[    7.493490] [Sound] AUDIO_LDO1 = 0x0
+<5>[    7.493934] [Sound] AUDIO_LDO2 = 0x0
+<5>[    7.494379] [Sound] AUDIO_LDO3 = 0x0
+<5>[    7.494824] [Sound] AUDIO_GLB0 = 0x2920
+<5>[    7.495301] [Sound] AUDIO_GLB1 = 0x0
+<5>[    7.495745] [Sound] AUDIO_GLB2 = 0x0
+<5>[    7.496190] [Sound] AUDIO_REG0 = 0x0
+<5>[    7.496635] [Sound] AUDIO_REG1 = 0x0
+<5>[    7.497080] [Sound] WR_PATH0 = 0xffe0
+<5>[    7.497534] [Sound] Speech_on  = 0
+<5>[    7.497956] [Sound] BGS_on     = 0
+<5>[    7.498379] [Sound] Record_on  = 0
+<5>[    7.498803] [Sound] TTY_on     = 0
+<5>[    7.499225] [Sound] VT_on      = 0
+<5>[    7.499648] [Sound] Aud_on     = 0
+<7>[    7.505185] [174:CCCIReadThread] fork err at pid
+<7>[    7.505211] [174:CCCIReadThread] fork [189:CCCIReadThread]
+<7>[    7.515125] [86:ccci_mdinit] fork [188:ccci_mdinit]
+<7>[    7.515262] [188:ccci_mdinit] set proc[188] name: ->[sh] 
+<7>[    7.517187] [188:sh] fork err at pid
+<7>[    7.517217] [188:sh] fork [190:sh]
+<7>[    7.520225] [189:CCCIReadThread] exit
+<7>[    7.529612] [186:init] set proc[186] name: ->[gsm0710muxd] 
+<7>[    7.530250] [190:sh] set proc[190] name: ->[sh] 
+<7>[    7.532293] [190:sh] set proc[190] name: ->[app_process] 
+<7>[    7.541310] [187:init] set proc[187] name: ->[mdlogger] 
+<3>[    7.541582] [ccci/tty] [tty_open]gsm0710muxd open ttyC0, CCCI_MODEM, nb_flag:800
+<3>[    7.542496] [ccci/ctl] Register a reset handle
+<7>[    7.546734] [187:mdlogger] fork err at pid
+<7>[    7.546764] [187:mdlogger] fork [191:mdlogger]
+<3>[    7.546884] [ccci/ctl] Register a reset handle by gsm0710muxd(1)
+<7>[    7.556057] [191:mdlogger] exit
+<6>[    7.723012] android_usb gadget: high speed config #1: android
+<7>[    7.723028] [85:ccci_fsd] sig 10 to [55:file-storage]
+<0>[    7.723056] [MUSB]musb_gadget_enable 1384: mt_usb periph: enabled ep3in-bulk for bulk IN, dma, maxpacket 512
+<0>[    7.724281] [MUSB]musb_gadget_enable 1384: mt_usb periph: enabled ep3out-bulk for bulk OUT, dma, maxpacket 512
+<5>[    7.725537] [Power/Battery] [BATTERY] BAT_SetUSBState Success! Set 2
+<4>[    7.726333] [ISR Monitor] Warning! ISR40:mt_usb too long, 3341616 ns > 3 ms, t1:7722986076, t2:7726327692
+<0>[    7.727542] [MUSB]musb_gadget_enable 1384: mt_usb periph: enabled ep2in-bulk for bulk IN, dma, maxpacket 512
+<5>[    7.728944] [Power/PMIC] [mt_charger_type_detection] Got data !!, 1, 1
+<7>[    7.729759] [USB20] android_work: is_hwconnected=1 
+<6>[    7.729821] android_work: sent uevent USB_STATE=CONFIGURED
+<0>[    7.748767] [MUSB]musb_gadget_enable 1384: mt_usb periph: enabled ep2out-bulk for bulk OUT, dma, maxpacket 512
+<5>[    7.784170] [Sound] AudDrv bBgsFlag:0,bRecordFlag:0,bSpeechFlag:0,bTtyFlag:0,bVT:0,bAudio:0 
+<7>[    7.866492] [98:mediaserver] fork err at pid
+<7>[    7.866520] [98:mediaserver] fork [192:mediaserver]
+<7>[    7.867373] [192:mediaserver] set proc[192] name: ->[HeadSetDetect 0] 
+<7>[    7.947658] [ISP][mt_isp_open]
+<6>[    7.949107] [kd_sensorlist]kdSetDriver: [kdSetDriver] :1,0,ov5647,32
+<4>[    7.949123] SENSOR_OV5647_RAW_PWR_ON'
+<6>[    7.949550] [Power/PMIC] [hwPowerOn] 0,NOP,0
+<5>[    7.949573] [Power/PMIC] [hwPowerOn] acquire powerId:8 index:0 mod_name: kd_camera_hw
+<5>[    7.950554] [Power/PMIC] [8] PMU LDO Enable
+<6>[    7.951086] [Power/PMIC] [hwPowerOn] enable 8 by kd_camera_hw 
+<6>[    7.951097] [Power/PMIC] [pmic_ldo_vol_sel] Receive powerId 8, action is 2800
+<6>[    7.951109] [Power/PMIC] ****[dct_pmic_VCAM_IO_sel] value=2800 
+<6>[    7.951250] [Power/PMIC] [pmic_ldo_enable] Receive powerId 8, action is 1
+<6>[    7.951264] [Power/PMIC] [dct_pmic_VCAM_IO_enable] 1
+<6>[    7.979985] [Power/PMIC] [hwPowerOn] 0,NOP,0
+<5>[    7.980001] [Power/PMIC] [hwPowerOn] acquire powerId:19 index:0 mod_name: kd_camera_hw
+<5>[    7.980987] [Power/PMIC] [19] PMU LDO Enable
+<6>[    7.981529] [Power/PMIC] [hwPowerOn] enable 19 by kd_camera_hw 
+<6>[    7.981541] [Power/PMIC] [pmic_ldo_vol_sel] Receive powerId 19, action is 2800
+<6>[    7.981553] [Power/PMIC] ****[dct_pmic_VCAMA_sel] value=2800 
+<7>[    7.982791] binder: 116: call  from 175:181 to 98:0 node 102 handle 6 (media.audio_flinger) size 80:4 code 15 start 7.964298
+<6>[    7.983161] [Power/PMIC] [pmic_ldo_enable] Receive powerId 19, action is 1
+<6>[    7.983178] [Power/PMIC] [dct_pmic_VCAMA_enable] 1
+<7>[    7.993163] [190:app_process] fork err at pid
+<7>[    7.993190] [190:app_process] fork [193:app_process]
+<6>[    7.993573] [Power/PMIC] [hwPowerOn] 0,NOP,0
+<5>[    7.993586] [Power/PMIC] [hwPowerOn] acquire powerId:7 index:0 mod_name: kd_camera_hw
+<5>[    7.994562] [Power/PMIC] [7] PMU LDO Enable
+<6>[    7.995092] [Power/PMIC] [hwPowerOn] enable 7 by kd_camera_hw 
+<6>[    7.995104] [Power/PMIC] [pmic_ldo_vol_sel] Receive powerId 7, action is 1500
+<6>[    7.995116] [Power/PMIC] ****[dct_pmic_VCAMD_sel] value=1500 
+<7>[    7.995163] [193:app_process] set proc[193] name: ->[ReferenceQueueD] 
+<7>[    7.995433] [190:app_process] fork err at pid
+<7>[    7.995457] [190:app_process] fork [194:app_process]
+<6>[    7.995488] [Power/PMIC] [pmic_ldo_enable] Receive powerId 7, action is 1
+<6>[    7.995501] [Power/PMIC] [dct_pmic_VCAMD_enable] 1
+<7>[    7.995627] [194:app_process] set proc[194] name: ->[FinalizerDaemon] 
+<7>[    8.008622] [190:app_process] fork err at pid
+<7>[    8.008648] [190:app_process] fork [195:app_process]
+<7>[    8.010385] [195:app_process] set proc[195] name: ->[FinalizerWatchd] 
+<7>[    8.010829] [190:app_process] fork err at pid
+<7>[    8.010853] [190:app_process] fork [196:app_process]
+<7>[    8.015732] [196:app_process] set proc[196] name: ->[GC] 
+<7>[    8.016711] [190:app_process] fork err at pid
+<7>[    8.016736] [190:app_process] fork [197:app_process]
+<5>[    8.017930] [Power/Battery] [BATTERY:AVG] BatTemp:31 Vbat:3701 VBatSen:3693 SOC:40 ChrDet:1 Vchrin:5066 Icharging:50 ChrType:1 USBstate:2 gADC_I_SENSE_offset:14
+<5>[    8.023968] [Power/Battery] [FGADC] FGADC_Reset_SW_Parameter : Start 
+<7>[    8.025618] [197:app_process] set proc[197] name: ->[Signal Catcher] 
+<5>[    8.025836] [Power/Battery] [use_chip_trim_value] 0 -> 0
+<5>[    8.026488] [Power/Battery] #
+<5>[    8.026834] [Power/Battery] [FGADC] FGADC_Reset_SW_Parameter : Done 
+<5>[    8.027658] [Power/Battery] [FGADC] Update DOD0(60) by 60 
+<6>[    8.028353] [Power/Battery] [BATTERY] wait g_fg_ready_flag (1)
+<5>[    8.028367] [Power/Battery] 
+<6>[    8.030163] [Power/PMIC] [hwPowerOn] 0,NOP,0
+<5>[    8.030179] [Power/PMIC] [hwPowerOn] acquire powerId:9 index:0 mod_name: kd_camera_hw
+<5>[    8.031161] [Power/PMIC] [9] PMU LDO Enable
+<6>[    8.031691] [Power/PMIC] [hwPowerOn] enable 9 by kd_camera_hw 
+<6>[    8.031703] [Power/PMIC] [pmic_ldo_vol_sel] Receive powerId 9, action is 2800
+<6>[    8.031715] [Power/PMIC] ****[dct_pmic_VCAM_AF_sel] value=2800 
+<7>[    8.034680] [190:app_process] fork err at pid
+<7>[    8.034707] [190:app_process] fork [198:app_process]
+<4>[    8.034738] [FGADC] FGADC_Reset_SW_Parameter : Start 
+<7>[    8.035504] [198:app_process] set proc[198] name: ->[JDWP] 
+<7>[    8.035742] [190:app_process] fork err at pid
+<7>[    8.035765] [190:app_process] fork [199:app_process]
+<7>[    8.036841] [199:app_process] set proc[199] name: ->[Compiler] 
+<6>[    8.037054] [Power/PMIC] [pmic_ldo_enable] Receive powerId 9, action is 1
+<6>[    8.037070] [Power/PMIC] [dct_pmic_VCAM_AF_enable] 1
+<5>[    8.059628] [Power/Battery] [use_chip_trim_value] 0 -> 0
+<5>[    8.060284] [Power/Battery] #
+<5>[    8.060630] [Power/Battery] [FGADC] FGADC_Reset_SW_Parameter : Done 
+<5>[    8.061464] [Power/Battery] [FGADC] Update DOD0(60) by 60 
+<5>[    8.063729] [Power/Battery] [use_chip_trim_value] 3760 -> 3778
+<5>[    8.082964] [Power/Battery] [use_chip_trim_value] 2242 -> 2253
+<5>[    8.085489] [Power/Battery] [use_chip_trim_value] 0 -> 0
+<5>[    8.092821] [Power/Battery] [FGADC] 0,2253,0,0,3818,40,40,40,1245,1254,91,0,0,1000,0,3792,1000,60,60,2199,102,103
+<7>[    8.359385] [190:app_process] fork err at pid
+<7>[    8.359413] [190:app_process] fork [200:app_process]
+<7>[    8.362275] [190:app_process] fork err at pid
+<7>[    8.362303] [190:app_process] fork [201:app_process]
+<7>[    8.362425] [200:app_process] set proc[200] name: ->[Binder Thread #] 
+<7>[    8.362650] [200:Binder Thread #] fork err at pid
+<7>[    8.362673] [200:Binder Thread #] fork [202:Binder Thread #]
+<7>[    8.368537] [201:app_process] set proc[201] name: ->[Thread-9] 
+<7>[    8.380682] [193:ReferenceQueueD] exit
+<7>[    8.380752] [194:FinalizerDaemon] exit
+<7>[    8.380786] [195:FinalizerWatchd] exit
+<7>[    8.380815] [196:GC] exit
+<7>[    8.380845] [197:Signal Catcher] exit
+<7>[    8.380877] [198:JDWP] exit
+<7>[    8.380907] [199:Compiler] exit
+<7>[    8.380943] [200:Binder Thread #] exit
+<7>[    8.380973] [201:Thread-9] exit
+<7>[    8.381001] [202:Binder Thread #] exit
+<7>[    8.381027] [190:app_process] exit
+<7>[    8.383901] [190:app_process] sig 17 to [188:sh]
+<7>[    8.384117] [188:sh] exit
+<7>[    8.384253] [188:sh] sig 17 to [86:ccci_mdinit]
+<6>[    8.425423] [kd_sensorlist]KD_IMGSENSOR_PROFILE: [kdModulePowerOn]Profile = 476294
+<6>[    8.426221] [kd_sensorlist]adopt_CAMERA_HW_CheckIsAlive:  Sensor found ID = 0x5647
+<6>[    8.426238] [Power/PMIC] [hwPowerDown] 0,kd_camera_hw,1
+<5>[    8.426251] [Power/PMIC] [hwPowerDown] powerId:19 index:0 mod_name: kd_camera_hw
+<5>[    8.439290] [Power/PMIC] [19] PMU LDO Disable
+<6>[    8.439837] [Power/PMIC] [hwPowerDown] disable 19 by kd_camera_hw 
+<6>[    8.439850] [Power/PMIC] [pmic_ldo_enable] Receive powerId 19, action is 0
+<6>[    8.439862] [Power/PMIC] [dct_pmic_VCAMA_enable] 0
+<6>[    8.444995] [Power/PMIC] [hwPowerDown] 0,kd_camera_hw,1
+<5>[    8.445010] [Power/PMIC] [hwPowerDown] powerId:7 index:0 mod_name: kd_camera_hw
+<5>[    8.445919] [Power/PMIC] [7] PMU LDO Disable
+<6>[    8.446461] [Power/PMIC] [hwPowerDown] disable 7 by kd_camera_hw 
+<6>[    8.446472] [Power/PMIC] [pmic_ldo_enable] Receive powerId 7, action is 0
+<6>[    8.446484] [Power/PMIC] [dct_pmic_VCAMD_enable] 0
+<6>[    8.457394] [Power/PMIC] [hwPowerDown] 0,kd_camera_hw,1
+<5>[    8.457412] [Power/PMIC] [hwPowerDown] powerId:8 index:0 mod_name: kd_camera_hw
+<5>[    8.458322] [Power/PMIC] [8] PMU LDO Disable
+<6>[    8.468768] [Power/PMIC] [hwPowerDown] disable 8 by kd_camera_hw 
+<6>[    8.468782] [Power/PMIC] [pmic_ldo_enable] Receive powerId 8, action is 0
+<6>[    8.468795] [Power/PMIC] [dct_pmic_VCAM_IO_enable] 0
+<6>[    8.473918] [Power/PMIC] [hwPowerDown] 0,kd_camera_hw,1
+<5>[    8.473932] [Power/PMIC] [hwPowerDown] powerId:9 index:0 mod_name: kd_camera_hw
+<5>[    8.474842] [Power/PMIC] [9] PMU LDO Disable
+<6>[    8.475384] [Power/PMIC] [hwPowerDown] disable 9 by kd_camera_hw 
+<6>[    8.475395] [Power/PMIC] [pmic_ldo_enable] Receive powerId 9, action is 0
+<6>[    8.475406] [Power/PMIC] [dct_pmic_VCAM_AF_enable] 0
+<6>[    8.476735] [kd_sensorlist]KD_IMGSENSOR_PROFILE: [CheckIsAlive]Profile = 51312
+<3>[    8.476833] [kd_sensorlist]kdSetDriver: ERROR:kdSetDriver()
+<4>[    8.477532] SENSOR_OV5647_RAW_PWR_ON'
+<6>[    8.477958] [Power/PMIC] [hwPowerOn] 0,NOP,0
+<5>[    8.477981] [Power/PMIC] [hwPowerOn] acquire powerId:8 index:0 mod_name: kd_camera_hw
+<5>[    8.479004] [Power/PMIC] [8] PMU LDO Enable
+<6>[    8.479523] [Power/PMIC] [hwPowerOn] enable 8 by kd_camera_hw 
+<6>[    8.479535] [Power/PMIC] [pmic_ldo_vol_sel] Receive powerId 8, action is 2800
+<6>[    8.479547] [Power/PMIC] ****[dct_pmic_VCAM_IO_sel] value=2800 
+<6>[    8.479687] [Power/PMIC] [pmic_ldo_enable] Receive powerId 8, action is 1
+<6>[    8.479701] [Power/PMIC] [dct_pmic_VCAM_IO_enable] 1
+<6>[    8.504289] [Power/PMIC] [hwPowerOn] 0,NOP,0
+<5>[    8.504306] [Power/PMIC] [hwPowerOn] acquire powerId:19 index:0 mod_name: kd_camera_hw
+<5>[    8.505293] [Power/PMIC] [19] PMU LDO Enable
+<6>[    8.505835] [Power/PMIC] [hwPowerOn] enable 19 by kd_camera_hw 
+<6>[    8.505846] [Power/PMIC] [pmic_ldo_vol_sel] Receive powerId 19, action is 2800
+<6>[    8.505859] [Power/PMIC] ****[dct_pmic_VCAMA_sel] value=2800 
+<6>[    8.518625] [Power/PMIC] [pmic_ldo_enable] Receive powerId 19, action is 1
+<6>[    8.518643] [Power/PMIC] [dct_pmic_VCAMA_enable] 1
+<6>[    8.523752] [Power/PMIC] [hwPowerOn] 0,NOP,0
+<5>[    8.523765] [Power/PMIC] [hwPowerOn] acquire powerId:7 index:0 mod_name: kd_camera_hw
+<5>[    8.524742] [Power/PMIC] [7] PMU LDO Enable
+<6>[    8.525273] [Power/PMIC] [hwPowerOn] enable 7 by kd_camera_hw 
+<6>[    8.525284] [Power/PMIC] [pmic_ldo_vol_sel] Receive powerId 7, action is 1500
+<6>[    8.525296] [Power/PMIC] ****[dct_pmic_VCAMD_sel] value=1500 
+<6>[    8.538604] [Power/PMIC] [pmic_ldo_enable] Receive powerId 7, action is 1
+<6>[    8.538622] [Power/PMIC] [dct_pmic_VCAMD_enable] 1
+<6>[    8.558765] [Power/PMIC] [hwPowerOn] 0,NOP,0
+<5>[    8.558781] [Power/PMIC] [hwPowerOn] acquire powerId:9 index:0 mod_name: kd_camera_hw
+<5>[    8.559757] [Power/PMIC] [9] PMU LDO Enable
+<6>[    8.560288] [Power/PMIC] [hwPowerOn] enable 9 by kd_camera_hw 
+<6>[    8.560300] [Power/PMIC] [pmic_ldo_vol_sel] Receive powerId 9, action is 2800
+<6>[    8.560312] [Power/PMIC] ****[dct_pmic_VCAM_AF_sel] value=2800 
+<6>[    8.560450] [Power/PMIC] [pmic_ldo_enable] Receive powerId 9, action is 1
+<6>[    8.560464] [Power/PMIC] [dct_pmic_VCAM_AF_enable] 1
+<6>[    8.786891] [kd_sensorlist]KD_IMGSENSOR_PROFILE: [kdModulePowerOn]Profile = 309353
+<3>[    8.786991] i2c i2c-1: I2C_ACKERR
+<3>[    8.787397] i2c i2c-1: addr: 36, transfer error
+<3>[    8.787964] i2c i2c-1: I2C structure:
+<3>[    8.787968] Mode_ch1 1
+<3>[    8.787970] St_rs 0
+<3>[    8.787973] Op 1
+<3>[    8.787975] Trans_len 2
+<3>[    8.787978] Trans_num 1
+<3>[    8.787980] Trans_auxlen 0
+<3>[    8.787983] Data_size ffff
+<3>[    8.787986] Irq_stat 3
+<3>[    8.787989] Trans_stop 1
+<3>[    8.787991] Trans_comp 1
+<3>[    8.787994] Trans_error 2
+<3>[    8.792807] i2c i2c-1: I2C register:
+<3>[    8.792811] SLAVE_ADDR 6c
+<3>[    8.792813] INTR_MASK f8
+<3>[    8.792816] INTR_STAT 0
+<3>[    8.792819] CONTROL 28
+<3>[    8.792821] TRANSFER_LEN 2
+<3>[    8.792824] TRANSAC_LEN 1
+<3>[    8.792827] DELAY_LEN 2
+<3>[    8.792829] TIMING 1028
+<3>[    8.792832] START 0
+<3>[    8.792834] FIFO_STAT 1210
+<3>[    8.792837] IO_CONFIG 0
+<3>[    8.792840] HS 102
+<3>[    8.792842] DEBUGSTAT 40
+<3>[    8.797245] i2c i2c-1: Power register:
+<3>[    8.797249] CG 57bf55ff
+<3>[    8.798015] i2c i2c-1: [mt6575_i2c_start_xfer] SOFTRESET mt6575-i2c:base(f1013000)
+<6>[    8.798986] [kd_sensorlist]iReadRegI2C: [CAMERA SENSOR] I2C send failed!!, Addr = 0x30
+<3>[    8.799075] i2c i2c-1: I2C_ACKERR
+<3>[    8.799478] i2c i2c-1: addr: 36, transfer error
+<3>[    8.800046] i2c i2c-1: I2C structure:
+<3>[    8.800049] Mode_ch1 1
+<3>[    8.800052] St_rs 0
+<3>[    8.800055] Op 1
+<3>[    8.800057] Trans_len 2
+<3>[    8.800060] Trans_num 1
+<3>[    8.800062] Trans_auxlen 0
+<3>[    8.800065] Data_size ffff
+<3>[    8.800068] Irq_stat 3
+<3>[    8.800070] Trans_stop 1
+<3>[    8.800073] Trans_comp 1
+<3>[    8.800075] Trans_error 2
+<3>[    8.803833] i2c i2c-1: I2C register:
+<3>[    8.803836] SLAVE_ADDR 6c
+<3>[    8.803839] INTR_MASK f8
+<3>[    8.803842] INTR_STAT 0
+<3>[    8.803844] CONTROL 28
+<3>[    8.803847] TRANSFER_LEN 2
+<3>[    8.803850] TRANSAC_LEN 1
+<3>[    8.803853] DELAY_LEN 2
+<3>[    8.803855] TIMING 1028
+<3>[    8.803858] START 0
+<3>[    8.803860] FIFO_STAT 1210
+<3>[    8.803863] IO_CONFIG 0
+<3>[    8.803866] HS 102
+<3>[    8.803868] DEBUGSTAT 40
+<3>[    8.815996] i2c i2c-1: Power register:
+<3>[    8.816001] CG 57bf55ff
+<3>[    8.816763] i2c i2c-1: [mt6575_i2c_start_xfer] SOFTRESET mt6575-i2c:base(f1013000)
+<6>[    8.817712] [kd_sensorlist]iReadRegI2C: [CAMERA SENSOR] I2C send failed!!, Addr = 0x30
+<6>[    8.817723] [kd_sensorlist]adopt_CAMERA_HW_CheckIsAlive:  No Sensor Found
+<6>[    8.817732] [kd_sensorlist]adopt_CAMERA_HW_CheckIsAlive: ERROR:adopt_CAMERA_HW_CheckIsAlive(), No imgsensor alive 
+<6>[    8.817750] [Power/PMIC] [hwPowerDown] 0,kd_camera_hw,1
+<5>[    8.817762] [Power/PMIC] [hwPowerDown] powerId:19 index:0 mod_name: kd_camera_hw
+<5>[    8.818722] [Power/PMIC] [19] PMU LDO Disable
+<6>[    8.819264] [Power/PMIC] [hwPowerDown] disable 19 by kd_camera_hw 
+<6>[    8.819276] [Power/PMIC] [pmic_ldo_enable] Receive powerId 19, action is 0
+<6>[    8.819288] [Power/PMIC] [dct_pmic_VCAMA_enable] 0
+<6>[    8.824411] [Power/PMIC] [hwPowerDown] 0,kd_camera_hw,1
+<5>[    8.824425] [Power/PMIC] [hwPowerDown] powerId:7 index:0 mod_name: kd_camera_hw
+<5>[    8.825334] [Power/PMIC] [7] PMU LDO Disable
+<6>[    8.825876] [Power/PMIC] [hwPowerDown] disable 7 by kd_camera_hw 
+<6>[    8.825887] [Power/PMIC] [pmic_ldo_enable] Receive powerId 7, action is 0
+<6>[    8.825899] [Power/PMIC] [dct_pmic_VCAMD_enable] 0
+<6>[    8.832597] [Power/PMIC] [hwPowerDown] 0,kd_camera_hw,1
+<5>[    8.832612] [Power/PMIC] [hwPowerDown] powerId:8 index:0 mod_name: kd_camera_hw
+<5>[    8.833521] [Power/PMIC] [8] PMU LDO Disable
+<6>[    8.834064] [Power/PMIC] [hwPowerDown] disable 8 by kd_camera_hw 
+<6>[    8.834075] [Power/PMIC] [pmic_ldo_enable] Receive powerId 8, action is 0
+<6>[    8.834086] [Power/PMIC] [dct_pmic_VCAM_IO_enable] 0
+<6>[    8.839228] [Power/PMIC] [hwPowerDown] 0,kd_camera_hw,1
+<5>[    8.839240] [Power/PMIC] [hwPowerDown] powerId:9 index:0 mod_name: kd_camera_hw
+<5>[    8.840149] [Power/PMIC] [9] PMU LDO Disable
+<6>[    8.840691] [Power/PMIC] [hwPowerDown] disable 9 by kd_camera_hw 
+<6>[    8.840703] [Power/PMIC] [pmic_ldo_enable] Receive powerId 9, action is 0
+<6>[    8.840714] [Power/PMIC] [dct_pmic_VCAM_AF_enable] 0
+<6>[    8.840844] [kd_sensorlist]KD_IMGSENSOR_PROFILE: [CheckIsAlive]Profile = 53957
+<7>[    8.841997] [ISP][mt_isp_release]
+<4>[    8.842121] [MDPK W]: MT6575_MDP_Flush(): FLUSH() by different process. owner:0, current = ( process, pid, tgid ) = ( mediaserver, 98, 98 ) Rsc=0x00000000
+<7>[    8.844573] [98:mediaserver] fork err at pid
+<7>[    8.844599] [98:mediaserver] fork [203:mediaserver]
+<7>[    8.844665] [98:mediaserver] fork err at pid
+<7>[    8.844684] [98:mediaserver] fork [204:mediaserver]
+<7>[    8.845027] [204:mediaserver] set proc[204] name: ->[ApmCommandThrea] 
+<7>[    8.845230] [203:mediaserver] set proc[203] name: ->[AudioCommandThr] 
+<7>[    8.881527] [98:mediaserver] fork err at pid
+<7>[    8.881553] [98:mediaserver] fork [205:mediaserver]
+<7>[    8.881906] [205:mediaserver] set proc[205] name: ->[AudioOut_1] 
+<7>[    8.885166] [98:mediaserver] fork err at pid
+<7>[    8.885192] [98:mediaserver] fork [206:mediaserver]
+<7>[    8.885298] [98:mediaserver] fork err at pid
+<7>[    8.885318] [98:mediaserver] fork [207:mediaserver]
+<7>[    8.885814] binder: 142: call  from 175:181 to 98:0 node 102 handle 6 (media.audio_flinger) size 64:0 code 31 start 8.867325
+<7>[    8.885977] binder: 144: call  from 175:181 to 98:0 node 102 handle 6 (media.audio_flinger) size 68:0 code 32 start 8.867492
+<7>[    8.886256] binder: 149: call  from 175:181 to 98:0 node 106 handle 7 (media.player) size 100:4 code 1 start 8.867768
+<7>[    8.887299] [207:mediaserver] set proc[207] name: ->[Binder Thread #] 
+<7>[    8.887432] [207:Binder Thread #] fork err at pid
+<7>[    8.887457] [207:Binder Thread #] fork [208:Binder Thread #]
+<7>[    8.887510] [206:mediaserver] set proc[206] name: ->[Binder Thread #] 
+<7>[    8.887571] [208:Binder Thread #] set proc[208] name: ->[Binder Thread #] 
+<7>[    8.891405] [98:mediaserver] fork err at pid
+<7>[    8.891430] [98:mediaserver] fork [209:mediaserver]
+<7>[    8.891607] [209:mediaserver] set proc[209] name: ->[TimedEventQueue] 
+<7>[    8.891973] binder: 167: call  from 98:209 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 1 start 8.873465
+<7>[    8.892139] binder: 169: call  from 98:209 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 3 start 8.873638
+<7>[    8.892353] binder: 171: call  from 98:209 to 97:0 node 24 handle 3 (drm.drmManager) size 92:4 code 19 start 8.873850
+<7>[    8.931546] binder: 173: call  from 98:209 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 2 start 8.913048
+<7>[    8.931690] binder: 175: call  from 98:209 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 4 start 8.913201
+<7>[    8.931863] binder: 177: call  from 98:209 to 97:0 node 24 handle 3 (drm.drmManager) size 76:0 code 5 start 8.913374
+<7>[    8.972647] [209:TimedEventQueue] fork err at pid
+<7>[    8.972676] [209:TimedEventQueue] fork [210:TimedEventQueue]
+<7>[    8.972730] [209:TimedEventQueue] fork err at pid
+<7>[    8.972748] [209:TimedEventQueue] fork [211:TimedEventQueue]
+<7>[    8.972875] [209:TimedEventQueue] fork err at pid
+<7>[    8.972894] [209:TimedEventQueue] fork [212:TimedEventQueue]
+<7>[    8.973332] [209:TimedEventQueue] fork err at pid
+<7>[    8.973357] [209:TimedEventQueue] fork [213:TimedEventQueue]
+<7>[    8.975786] [213:TimedEventQueue] set proc[213] name: ->[TableOfContentT] 
+<7>[    8.976303] [213:TableOfContentT] exit
+<7>[    8.976410] [212:TimedEventQueue] set proc[212] name: ->[OMXCallbackDisp] 
+<7>[    8.988579] [211:TimedEventQueue] set proc[211] name: ->[MtkOmxAudioDec] 
+<7>[    8.988665] [210:TimedEventQueue] set proc[210] name: ->[MtkOmxAudioCmd] 
+<7>[    8.989234] [209:TimedEventQueue] fork err at pid
+<7>[    8.989265] [209:TimedEventQueue] fork [214:TimedEventQueue]
+<7>[    8.989526] [214:TimedEventQueue] set proc[214] name: ->[NotifySender 0x] 
+<7>[    9.048077] [208:Binder Thread #] fork err at pid
+<7>[    9.048107] [208:Binder Thread #] fork [215:Binder Thread #]
+<7>[    9.053718] [215:Binder Thread #] set proc[215] name: ->[AudioTrackThrea] 
+<5>[    9.059191] [Sound] !! AudDrv START_DL1_STREAM, AFE(2),AFEp(1)
+<7>[    9.059931] [SYSRAM][CheckClock]u4AllocatedTbl = 0x00000001, EnableClk = 1
+<5>[    9.059965] [Sound] -Aud START_DL1_STREAM AFE(3),AFEp(1)
+<5>[    9.064830] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.066496] [Sound] AudDrv_write m_first_write =0
+<5>[    9.067052] [Sound] aud_top  =0 Aud_AFE_Clk_cntr = 1 Afe_Mem_Pwr_on = 1 Aud_ANA_Clk_cntr = 0
+<6>[    9.068729] [Power/PMIC] [hw2in1SpeakerSetting]...........
+<6>[    9.069004] [Power/PMIC] [hwSPKClassDTurnOn]...........
+<5>[    9.069260] [AppLaunch] LCD frame buffer update done !
+<7>[    9.070034] [94:surfaceflinger] fork err at pid
+<7>[    9.070059] [94:surfaceflinger] fork [216:surfaceflinger]
+<7>[    9.098384] [216:surfaceflinger] set proc[216] name: ->[Binder Thread #] 
+<5>[    9.123410] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.139048] [AppLaunch] LCD frame buffer update done !
+<7>[    9.158856] [176:adbd] fork err at pid
+<7>[    9.158888] [176:adbd] fork [217:adbd]
+<5>[    9.159129] [Power/Battery] [BATTERY:AVG] BatTemp:29 Vbat:3702 VBatSen:3707 SOC:40 ChrDet:1 Vchrin:4766 Icharging:80 ChrType:1 USBstate:2 gADC_I_SENSE_offset:9
+<5>[    9.163196] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.173852] [AppLaunch] LCD frame buffer update done !
+<7>[    9.207654] [217:adbd] sig 13 to [217:adbd]
+<7>[    9.207732] [217:adbd] exit
+<5>[    9.214314] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.226124] [AppLaunch] LCD frame buffer update done !
+<5>[    9.258225] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[    9.270139] [176:adbd] fork err at pid
+<7>[    9.270168] [176:adbd] fork [218:adbd]
+<7>[    9.270339] [176:adbd] fork err at pid
+<7>[    9.270359] [176:adbd] fork [219:adbd]
+<5>[    9.278431] [AppLaunch] LCD frame buffer update done !
+<7>[    9.281114] [218:adbd] set proc[218] name: ->[sh] 
+<7>[    9.290145] [218:sh] set proc[218] name: ->[logcat] 
+<5>[    9.312189] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.330714] [AppLaunch] LCD frame buffer update done !
+<5>[    9.368173] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.382981] [AppLaunch] LCD frame buffer update done !
+<7>[    9.384339] [84:vold] fork err at pid
+<7>[    9.384366] [84:vold] fork [220:vold]
+<5>[    9.431033] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.436503] [AppLaunch] LCD frame buffer update done !
+<5>[    9.486725] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.504928] [AppLaunch] LCD frame buffer update done !
+<5>[    9.554735] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.574629] [AppLaunch] LCD frame buffer update done !
+<5>[    9.618375] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.626963] [AppLaunch] LCD frame buffer update done !
+<5>[    9.676466] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.696619] [AppLaunch] LCD frame buffer update done !
+<5>[    9.737571] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.748924] [AppLaunch] LCD frame buffer update done !
+<5>[    9.798692] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.818596] [AppLaunch] LCD frame buffer update done !
+<5>[    9.853823] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.870899] [AppLaunch] LCD frame buffer update done !
+<5>[    9.902483] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.907008] [AppLaunch] LCD frame buffer update done !
+<5>[    9.944411] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.958041] [AppLaunch] LCD frame buffer update done !
+<5>[    9.989070] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[    9.994125] [AppLaunch] LCD frame buffer update done !
+<5>[   10.026504] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.045166] [AppLaunch] LCD frame buffer update done !
+<5>[   10.082521] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.097450] [AppLaunch] LCD frame buffer update done !
+<5>[   10.121920] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.132242] [AppLaunch] LCD frame buffer update done !
+<5>[   10.169013] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.184573] [AppLaunch] LCD frame buffer update done !
+<5>[   10.219042] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.236806] [AppLaunch] LCD frame buffer update done !
+<5>[   10.244708] [Power/Battery] [use_chip_trim_value] 686 -> 689
+<5>[   10.252561] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.263879] [Power/Battery] [use_chip_trim_value] 727 -> 730
+<5>[   10.271708] [AppLaunch] LCD frame buffer update done !
+<5>[   10.289426] [Power/Battery] [use_chip_trim_value] 0 -> 0
+<5>[   10.303556] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.307450] [Power/Battery] [FGADC] 1,730,0,0,3817,40,40,40,1245,1254,-17,0,0,1000,0,3796,1000,60,60,713,102,103
+<5>[   10.323941] [AppLaunch] LCD frame buffer update done !
+<5>[   10.357119] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.376206] [AppLaunch] LCD frame buffer update done !
+<5>[   10.410176] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.428789] [AppLaunch] LCD frame buffer update done !
+<5>[   10.450875] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.463390] [AppLaunch] LCD frame buffer update done !
+<5>[   10.498739] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.515814] [AppLaunch] LCD frame buffer update done !
+<5>[   10.538393] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.550514] [AppLaunch] LCD frame buffer update done !
+<5>[   10.581893] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.586614] [AppLaunch] LCD frame buffer update done !
+<5>[   10.629006] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.638014] [AppLaunch] LCD frame buffer update done !
+<5>[   10.656537] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.664898] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.672445] [AppLaunch] LCD frame buffer update done !
+<7>[   10.674378] WQ_WARN: cpu:1, proc:kworker/u:1, dur: 9481384 > 8ms
+<7>[   10.674407] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   10.689898] [AppLaunch] LCD frame buffer update done !
+<5>[   10.699979] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.707829] [AppLaunch] LCD frame buffer update done !
+<5>[   10.709226] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.724762] [AppLaunch] LCD frame buffer update done !
+<5>[   10.743602] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.753639] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.759611] [AppLaunch] LCD frame buffer update done !
+<5>[   10.777005] [AppLaunch] LCD frame buffer update done !
+<5>[   10.786914] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.794984] [AppLaunch] LCD frame buffer update done !
+<5>[   10.798185] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.811859] [AppLaunch] LCD frame buffer update done !
+<5>[   10.830853] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.841102] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.846697] [AppLaunch] LCD frame buffer update done !
+<5>[   10.864131] [AppLaunch] LCD frame buffer update done !
+<5>[   10.874158] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.882052] [AppLaunch] LCD frame buffer update done !
+<5>[   10.885541] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.898978] [AppLaunch] LCD frame buffer update done !
+<5>[   10.917613] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.928361] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.933836] [AppLaunch] LCD frame buffer update done !
+<5>[   10.951256] [AppLaunch] LCD frame buffer update done !
+<5>[   10.962243] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.969149] [AppLaunch] LCD frame buffer update done !
+<5>[   10.972869] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   10.986121] [AppLaunch] LCD frame buffer update done !
+<5>[   11.005531] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.015734] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.020974] [AppLaunch] LCD frame buffer update done !
+<5>[   11.038387] [AppLaunch] LCD frame buffer update done !
+<5>[   11.049041] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.056255] [AppLaunch] LCD frame buffer update done !
+<5>[   11.059958] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.073272] [AppLaunch] LCD frame buffer update done !
+<5>[   11.092635] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.102920] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.108075] [AppLaunch] LCD frame buffer update done !
+<5>[   11.125499] [AppLaunch] LCD frame buffer update done !
+<5>[   11.135807] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.143373] [AppLaunch] LCD frame buffer update done !
+<5>[   11.147439] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.160367] [AppLaunch] LCD frame buffer update done !
+<5>[   11.179204] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.190392] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.195213] [AppLaunch] LCD frame buffer update done !
+<5>[   11.212629] [AppLaunch] LCD frame buffer update done !
+<5>[   11.222656] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.230528] [AppLaunch] LCD frame buffer update done !
+<5>[   11.234626] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.247484] [AppLaunch] LCD frame buffer update done !
+<5>[   11.266079] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.277462] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.282343] [AppLaunch] LCD frame buffer update done !
+<5>[   11.299784] [AppLaunch] LCD frame buffer update done !
+<5>[   11.310438] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.317681] [AppLaunch] LCD frame buffer update done !
+<5>[   11.321839] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.334614] [AppLaunch] LCD frame buffer update done !
+<7>[   11.354549] [215:AudioTrackThrea] exit
+<5>[   11.355032] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.364978] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.369486] [AppLaunch] LCD frame buffer update done !
+<5>[   11.379257] [Power/Battery] [BATTERY:AVG] BatTemp:29 Vbat:3702 VBatSen:3707 SOC:40 ChrDet:1 Vchrin:4766 Icharging:111 ChrType:1 USBstate:2 gADC_I_SENSE_offset:14
+<5>[   11.386909] [AppLaunch] LCD frame buffer update done !
+<5>[   11.397361] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.404879] [AppLaunch] LCD frame buffer update done !
+<5>[   11.409664] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.421743] [AppLaunch] LCD frame buffer update done !
+<5>[   11.440893] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.452268] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.456615] [AppLaunch] LCD frame buffer update done !
+<5>[   11.474064] [AppLaunch] LCD frame buffer update done !
+<5>[   11.484340] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.492033] [AppLaunch] LCD frame buffer update done !
+<5>[   11.496796] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.508890] [AppLaunch] LCD frame buffer update done !
+<5>[   11.527691] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.539341] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.543738] [AppLaunch] LCD frame buffer update done !
+<5>[   11.561157] [AppLaunch] LCD frame buffer update done !
+<5>[   11.571175] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.579145] [AppLaunch] LCD frame buffer update done !
+<5>[   11.583773] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.596072] [AppLaunch] LCD frame buffer update done !
+<5>[   11.614602] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.626279] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.630878] [AppLaunch] LCD frame buffer update done !
+<5>[   11.648299] [AppLaunch] LCD frame buffer update done !
+<5>[   11.658131] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.666153] [AppLaunch] LCD frame buffer update done !
+<5>[   11.670448] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.683166] [AppLaunch] LCD frame buffer update done !
+<5>[   11.701960] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.713350] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.717999] [AppLaunch] LCD frame buffer update done !
+<5>[   11.735412] [AppLaunch] LCD frame buffer update done !
+<5>[   11.745424] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.753407] [AppLaunch] LCD frame buffer update done !
+<5>[   11.757860] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.770316] [AppLaunch] LCD frame buffer update done !
+<5>[   11.788967] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.800620] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.805144] [AppLaunch] LCD frame buffer update done !
+<5>[   11.822605] [AppLaunch] LCD frame buffer update done !
+<5>[   11.832842] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.840620] [AppLaunch] LCD frame buffer update done !
+<5>[   11.845555] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.857414] [AppLaunch] LCD frame buffer update done !
+<5>[   11.876287] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.887989] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.892267] [AppLaunch] LCD frame buffer update done !
+<5>[   11.909668] [AppLaunch] LCD frame buffer update done !
+<5>[   11.919723] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.927661] [AppLaunch] LCD frame buffer update done !
+<5>[   11.932409] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.944521] [AppLaunch] LCD frame buffer update done !
+<5>[   11.963256] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.975233] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   11.979436] [AppLaunch] LCD frame buffer update done !
+<5>[   11.996802] [AppLaunch] LCD frame buffer update done !
+<5>[   12.006658] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.014811] [AppLaunch] LCD frame buffer update done !
+<5>[   12.019586] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.031675] [AppLaunch] LCD frame buffer update done !
+<5>[   12.050243] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.062225] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.066555] [AppLaunch] LCD frame buffer update done !
+<5>[   12.083941] [AppLaunch] LCD frame buffer update done !
+<5>[   12.094198] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.101989] [AppLaunch] LCD frame buffer update done !
+<5>[   12.106816] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.118780] [AppLaunch] LCD frame buffer update done !
+<5>[   12.137278] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.149628] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.153632] [AppLaunch] LCD frame buffer update done !
+<5>[   12.171074] [AppLaunch] LCD frame buffer update done !
+<5>[   12.181171] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.189151] [AppLaunch] LCD frame buffer update done !
+<5>[   12.194356] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.205935] [AppLaunch] LCD frame buffer update done !
+<6>[   12.215308] [Power/PMIC] [hwSPKClassDTurnOff]...........
+<5>[   12.224021] [Sound] +Aud STANDBY_DL1_STREAM, AFE(3),AFEp(1)
+<7>[   12.224733] [SYSRAM][CheckClock]u4AllocatedTbl = 0x00000000, EnableClk = 0
+<5>[   12.224753] [Sound] -Aud STANDBY_DL1_STREAM AFE(2),AFEp(0)
+<5>[   12.236177] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.241219] [AppLaunch] LCD frame buffer update done !
+<5>[   12.248127] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.258223] [AppLaunch] LCD frame buffer update done !
+<5>[   12.289629] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.294898] [AppLaunch] LCD frame buffer update done !
+<5>[   12.298254] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.310469] [AppLaunch] LCD frame buffer update done !
+<5>[   12.331984] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.340741] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.345341] [AppLaunch] LCD frame buffer update done !
+<5>[   12.362764] [AppLaunch] LCD frame buffer update done !
+<5>[   12.375237] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.380811] [AppLaunch] LCD frame buffer update done !
+<5>[   12.386221] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.397619] [AppLaunch] LCD frame buffer update done !
+<5>[   12.418911] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.429057] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.432467] [AppLaunch] LCD frame buffer update done !
+<5>[   12.449932] [AppLaunch] LCD frame buffer update done !
+<5>[   12.463568] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.469131] [AppLaunch] LCD frame buffer update done !
+<5>[   12.473168] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   12.477590] [176:adbd] fork err at pid
+<7>[   12.477615] [176:adbd] fork [221:adbd]
+<5>[   12.484799] [AppLaunch] LCD frame buffer update done !
+<5>[   12.506548] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.518348] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.519920] [AppLaunch] LCD frame buffer update done !
+<5>[   12.537024] [AppLaunch] LCD frame buffer update done !
+<5>[   12.550217] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.556231] [AppLaunch] LCD frame buffer update done !
+<5>[   12.562448] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.571860] [AppLaunch] LCD frame buffer update done !
+<5>[   12.594188] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.606080] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.607123] [AppLaunch] LCD frame buffer update done !
+<5>[   12.624196] [AppLaunch] LCD frame buffer update done !
+<5>[   12.637715] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.643218] [AppLaunch] LCD frame buffer update done !
+<5>[   12.649899] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.659053] [AppLaunch] LCD frame buffer update done !
+<5>[   12.681022] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.693754] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.694375] [AppLaunch] LCD frame buffer update done !
+<5>[   12.711277] [AppLaunch] LCD frame buffer update done !
+<5>[   12.724918] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.730368] [AppLaunch] LCD frame buffer update done !
+<5>[   12.737414] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.746123] [AppLaunch] LCD frame buffer update done !
+<5>[   12.768538] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.781262] [AppLaunch] 
+<5>[   12.781557] [AppLaunch] LCD frame buffer update done !
+<4>[   12.782215] mtkfb_pan_display_proxy.
+<5>[   12.798413] [AppLaunch] LCD frame buffer update done !
+<5>[   12.811876] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.817365] [AppLaunch] LCD frame buffer update done !
+<5>[   12.824855] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   12.826615] [186:gsm0710muxd] fork err at pid
+<7>[   12.826642] [186:gsm0710muxd] fork [222:gsm0710muxd]
+<7>[   12.826709] [186:gsm0710muxd] fork err at pid
+<7>[   12.826727] [186:gsm0710muxd] fork [223:gsm0710muxd]
+<7>[   12.827145] [186:gsm0710muxd] fork err at pid
+<7>[   12.827168] [186:gsm0710muxd] fork [224:gsm0710muxd]
+<7>[   12.828003] [186:gsm0710muxd] fork err at pid
+<7>[   12.828030] [186:gsm0710muxd] fork [225:gsm0710muxd]
+<7>[   12.828470] [186:gsm0710muxd] fork err at pid
+<7>[   12.828939] [186:gsm0710muxd] fork [226:gsm0710muxd]
+<7>[   12.829365] [186:gsm0710muxd] fork err at pid
+<7>[   12.829389] [186:gsm0710muxd] fork [227:gsm0710muxd]
+<3>[   12.831154] [ccci/cci] 
+<3>[   12.831450] [ccci/cci] Process:gsm0710muxd @ 2012-12-26 17:21:51.568853
+<3>[   12.832328] [ccci/cci] 
+<5>[   12.833254] [AppLaunch] LCD frame buffer update done !
+<4>[   12.835679] 00000000, 00000004, 12, 00000000
+<3>[   12.836208] [ccci/cci] dump CCIF TX history: 
+<3>[   12.836755] [ccci/cci] FFFFFFFF 00000001 11 00000000   2012-12-26 17:21:50.557961   000   0.000094s
+<3>[   12.839482] [ccci/cci] 00000000 00000011 12 00000000   2012-12-26 17:21:50.558273   000   0.000312s
+<3>[   12.845020] [ccci/cci] 00000000 00000001 12 00000000   2012-12-26 17:21:50.558281   000   0.000008s
+<3>[   12.851038] [ccci/cci] 1DA9D000 00000024 15 00000000   2012-12-26 17:21:50.558566   000   0.000285s
+<5>[   12.855335] [AppLaunch] mtkfb_pan_display_proxy.
+<3>[   12.857148] [ccci/cci] FFFFFFFF 00000001 11 00000000   2012-12-26 17:21:50.563952   000   0.005386s
+<3>[   12.863876] [ccci/cci] 1DA9D000 00000010 15 00000000   2012-12-26 17:21:50.564233   000   0.000281s
+<5>[   12.868654] [AppLaunch] LCD frame buffer update done !
+<5>[   12.869645] [AppLaunch] mtkfb_pan_display_proxy.
+<3>[   12.871008] [ccci/cci] 00000000 00000004 12 00000000   2012-12-26 17:21:51.564500   000   1.000267s
+<3>[   12.873127] [ccci/cci] 00000000 00000002 12 00000000   2012-12-26 17:21:51.564509   000   0.000009s
+<3>[   12.879910] [ccci/cci] 00000000 00000004 12 00000000   2012-12-26 17:21:51.564922   000   0.000413s
+<3>[   12.884481] [ccci/cci] 00000000 00000002 12 00000000   2012-12-26 17:21:51.564930   000   0.000008s
+<5>[   12.885619] [AppLaunch] LCD frame buffer update done !
+<3>[   12.892163] [ccci/cci] 00000000 00000004 12 00000000   2012-12-26 17:21:51.565818   000   0.000888s
+<3>[   12.897470] [ccci/cci] 00000000 00000002 12 00000000   2012-12-26 17:21:51.565826   000   0.000008s
+<5>[   12.899305] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   12.904446] [AppLaunch] LCD frame buffer update done !
+<3>[   12.906065] [ccci/cci] 00000000 00000004 12 00000000   2012-12-26 17:21:51.566703   000   0.000877s
+<5>[   12.912235] [AppLaunch] mtkfb_pan_display_proxy.
+<3>[   12.913877] [ccci/cci] 00000000 00000002 12 00000000   2012-12-26 17:21:51.566710   000   0.000007s
+<3>[   12.919767] [ccci/cci] FFFFFFFF 00000001 11 00000000   2012-12-26 17:21:51.570391   000   0.003681s
+<5>[   12.920893] [AppLaunch] LCD frame buffer update done !
+<7>[   12.939079] [186:gsm0710muxd] fork err at pid
+<7>[   12.939112] [186:gsm0710muxd] fork [228:gsm0710muxd]
+<7>[   12.939543] [186:gsm0710muxd] fork err at pid
+<7>[   12.939567] [186:gsm0710muxd] fork [229:gsm0710muxd]
+<7>[   12.940356] [186:gsm0710muxd] fork err at pid
+<7>[   12.940384] [186:gsm0710muxd] fork [230:gsm0710muxd]
+<7>[   12.940844] [186:gsm0710muxd] fork err at pid
+<7>[   12.940872] [186:gsm0710muxd] fork [231:gsm0710muxd]
+<5>[   12.942459] [AppLaunch] mtkfb_pan_display_proxy.
+<3>[   12.943218] [ccci/cci] 
+<3>[   12.943511] [ccci/cci] Process:gsm0710muxd @ 2012-12-26 17:21:51.680925
+<3>[   12.944808] [ccci/cci] 00000000, 00000004, 12, 00000000
+<3>[   12.945450] [ccci/cci] dump CCIF TX history: 
+<3>[   12.945994] [ccci/cci] 00000000 00000004 12 00000000   2012-12-26 17:21:51.565818   000   0.000888s
+<3>[   12.954509] [ccci/cci] 00000000 00000002 12 00000000   2012-12-26 17:21:51.565826   000   0.000008s
+<5>[   12.955696] [AppLaunch] LCD frame buffer update done !
+<5>[   12.957010] [AppLaunch] mtkfb_pan_display_proxy.
+<3>[   12.963378] [ccci/cci] 00000000 00000004 12 00000000   2012-12-26 17:21:51.566703   000   0.000877s
+<3>[   12.965510] [ccci/cci] 00000000 00000002 12 00000000   2012-12-26 17:21:51.566710   000   0.000007s
+<3>[   12.969810] [ccci/cci] FFFFFFFF 00000001 11 00000000   2012-12-26 17:21:51.570391   000   0.003681s
+<3>[   12.971941] [ccci/cci] 00000000 00000004 12 00000000   2012-12-26 17:21:51.676264   000   0.105873s
+<5>[   12.973060] [AppLaunch] LCD frame buffer update done !
+<3>[   12.982027] [ccci/cci] 00000000 00000002 12 00000000   2012-12-26 17:21:51.676295   000   0.000031s
+<5>[   12.985971] [AppLaunch] mtkfb_pan_display_proxy.
+<3>[   12.987763] [ccci/cci] 00000000 00000004 12 00000000   2012-12-26 17:21:51.676879   000   0.000584s
+<5>[   12.991321] [AppLaunch] LCD frame buffer update done !
+<3>[   12.994566] [ccci/cci] 00000000 00000002 12 00000000   2012-12-26 17:21:51.676886   000   0.000007s
+<3>[   12.999796] [ccci/cci] 00000000 00000004 12 00000000   2012-12-26 17:21:51.677353   000   0.000467s
+<5>[   13.001264] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.007506] [AppLaunch] LCD frame buffer update done !
+<3>[   13.008224] [ccci/cci] 00000000 00000002 12 00000000   2012-12-26 17:21:51.677362   000   0.000009s
+<3>[   13.013234] [ccci/cci] 00000000 00000004 12 00000000   2012-12-26 17:21:51.678154   000   0.000792s
+<3>[   13.015364] [ccci/cci] 00000000 00000002 12 00000000   2012-12-26 17:21:51.678164   000   0.000010s
+<3>[   13.024590] [ccci/cci] FFFFFFFF 00000001 11 00000000   2012-12-26 17:21:51.682134   000   0.003970s
+<3>[   13.029191] [ccci/cci] 
+<5>[   13.029634] [AppLaunch] mtkfb_pan_display_proxy.
+<4>[   13.030281] FFFFFFFF 00000001 11 00000000   2012-12-26 17:21:51.682228   000   0.000094s
+<5>[   13.042939] [AppLaunch] LCD frame buffer update done !
+<5>[   13.045336] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   13.049188] [186:gsm0710muxd] fork err at pid
+<7>[   13.049243] [186:gsm0710muxd] fork [232:gsm0710muxd]
+<7>[   13.049634] [186:gsm0710muxd] fork err at pid
+<7>[   13.049657] [186:gsm0710muxd] fork [233:gsm0710muxd]
+<7>[   13.050008] [186:gsm0710muxd] fork err at pid
+<7>[   13.050030] [186:gsm0710muxd] fork [234:gsm0710muxd]
+<3>[   13.054529] [ccci/tty] ttyC0 share memory is empty! 
+<7>[   13.055955] [1:init] fork err at pid
+<7>[   13.055982] [1:init] fork [235:init]
+<7>[   13.058303] [235:init] set proc[235] name: ->[rild] 
+<5>[   13.059861] [AppLaunch] LCD frame buffer update done !
+<5>[   13.073529] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.078529] [AppLaunch] LCD frame buffer update done !
+<5>[   13.088883] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.094683] [AppLaunch] LCD frame buffer update done !
+<7>[   13.101102] [235:rild] fork err at pid
+<7>[   13.101129] [235:rild] fork [236:rild]
+<7>[   13.101380] [235:rild] fork err at pid
+<7>[   13.101402] [235:rild] fork [237:rild]
+<7>[   13.101478] [235:rild] fork err at pid
+<7>[   13.101497] [235:rild] fork [238:rild]
+<7>[   13.101555] [235:rild] fork err at pid
+<7>[   13.101572] [235:rild] fork [239:rild]
+<7>[   13.101632] [235:rild] fork err at pid
+<7>[   13.101649] [235:rild] fork [240:rild]
+<7>[   13.101707] [235:rild] fork err at pid
+<7>[   13.101728] [235:rild] fork [241:rild]
+<7>[   13.101790] [235:rild] fork err at pid
+<7>[   13.101807] [235:rild] fork [242:rild]
+<7>[   13.101859] [235:rild] fork err at pid
+<7>[   13.101877] [235:rild] fork [243:rild]
+<7>[   13.101935] [235:rild] fork err at pid
+<7>[   13.101953] [235:rild] fork [244:rild]
+<7>[   13.105305] [235:rild] fork err at pid
+<7>[   13.105330] [235:rild] fork [245:rild]
+<7>[   13.110079] [245:rild] fork err at pid
+<7>[   13.110110] [245:rild] fork [246:rild]
+<7>[   13.110239] [245:rild] fork err at pid
+<7>[   13.110260] [245:rild] fork [247:rild]
+<7>[   13.110359] [245:rild] fork err at pid
+<7>[   13.110378] [245:rild] fork [248:rild]
+<7>[   13.110477] [245:rild] fork err at pid
+<7>[   13.110497] [245:rild] fork [249:rild]
+<7>[   13.110595] [245:rild] fork err at pid
+<7>[   13.110614] [245:rild] fork [250:rild]
+<7>[   13.110702] [245:rild] fork err at pid
+<7>[   13.110721] [245:rild] fork [251:rild]
+<7>[   13.110821] [245:rild] fork err at pid
+<7>[   13.110841] [245:rild] fork [252:rild]
+<7>[   13.110937] [245:rild] fork err at pid
+<7>[   13.110955] [245:rild] fork [253:rild]
+<5>[   13.117018] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.130101] [AppLaunch] LCD frame buffer update done !
+<5>[   13.133218] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.146936] [AppLaunch] LCD frame buffer update done !
+<5>[   13.160605] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.165678] [AppLaunch] LCD frame buffer update done !
+<5>[   13.176138] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.181796] [AppLaunch] LCD frame buffer update done !
+<5>[   13.204256] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.217128] [AppLaunch] LCD frame buffer update done !
+<5>[   13.220881] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.234111] [AppLaunch] LCD frame buffer update done !
+<5>[   13.248005] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.252710] [AppLaunch] LCD frame buffer update done !
+<5>[   13.263659] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.268957] [AppLaunch] LCD frame buffer update done !
+<5>[   13.291288] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.304371] [AppLaunch] LCD frame buffer update done !
+<5>[   13.308069] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.321175] [AppLaunch] LCD frame buffer update done !
+<5>[   13.335156] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.339923] [AppLaunch] LCD frame buffer update done !
+<5>[   13.351179] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.356035] [AppLaunch] LCD frame buffer update done !
+<5>[   13.378605] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.391431] [AppLaunch] LCD frame buffer update done !
+<5>[   13.395589] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.408375] [AppLaunch] LCD frame buffer update done !
+<5>[   13.422322] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.426973] [AppLaunch] LCD frame buffer update done !
+<5>[   13.438093] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.443242] [AppLaunch] LCD frame buffer update done !
+<5>[   13.465575] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.478641] [AppLaunch] LCD frame buffer update done !
+<5>[   13.482855] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.495437] [AppLaunch] LCD frame buffer update done !
+<5>[   13.509195] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.514133] [AppLaunch] LCD frame buffer update done !
+<5>[   13.525914] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.530372] [AppLaunch] LCD frame buffer update done !
+<5>[   13.552518] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.565837] [AppLaunch] LCD frame buffer update done !
+<5>[   13.570439] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.582570] [AppLaunch] LCD frame buffer update done !
+<5>[   13.596172] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.601307] [AppLaunch] LCD frame buffer update done !
+<5>[   13.613021] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.617432] [AppLaunch] LCD frame buffer update done !
+<5>[   13.640240] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.652814] [AppLaunch] LCD frame buffer update done !
+<5>[   13.657085] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.669746] [AppLaunch] LCD frame buffer update done !
+<5>[   13.683698] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.688372] [AppLaunch] LCD frame buffer update done !
+<5>[   13.700114] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.704549] [AppLaunch] LCD frame buffer update done !
+<5>[   13.727104] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.739919] [AppLaunch] LCD frame buffer update done !
+<5>[   13.744603] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.756856] [AppLaunch] LCD frame buffer update done !
+<5>[   13.770622] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.775489] [AppLaunch] LCD frame buffer update done !
+<5>[   13.787633] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.792953] [AppLaunch] LCD frame buffer update done !
+<5>[   13.814069] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.827167] [AppLaunch] LCD frame buffer update done !
+<5>[   13.831989] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.843949] [AppLaunch] LCD frame buffer update done !
+<5>[   13.858094] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.874657] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.878810] [AppLaunch] LCD frame buffer update done !
+<5>[   13.896873] [AppLaunch] LCD frame buffer update done !
+<5>[   13.902731] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.914243] [AppLaunch] LCD frame buffer update done !
+<5>[   13.919047] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.931104] [AppLaunch] LCD frame buffer update done !
+<5>[   13.945525] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.961907] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   13.965949] [AppLaunch] LCD frame buffer update done !
+<5>[   13.983929] [AppLaunch] LCD frame buffer update done !
+<5>[   13.990045] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.001533] [AppLaunch] LCD frame buffer update done !
+<5>[   14.006731] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.018210] [AppLaunch] LCD frame buffer update done !
+<5>[   14.032932] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.049132] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.053114] [AppLaunch] LCD frame buffer update done !
+<5>[   14.070955] [AppLaunch] LCD frame buffer update done !
+<5>[   14.077290] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.088716] [AppLaunch] LCD frame buffer update done !
+<5>[   14.094087] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.105592] [AppLaunch] LCD frame buffer update done !
+<5>[   14.120608] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.136897] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.140353] [AppLaunch] LCD frame buffer update done !
+<5>[   14.158064] [AppLaunch] LCD frame buffer update done !
+<5>[   14.164593] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.175772] [AppLaunch] LCD frame buffer update done !
+<5>[   14.181870] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.192496] [AppLaunch] LCD frame buffer update done !
+<5>[   14.207710] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.226709] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.227713] [AppLaunch] LCD frame buffer update done !
+<5>[   14.245122] [AppLaunch] LCD frame buffer update done !
+<5>[   14.252044] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.262643] [AppLaunch] LCD frame buffer update done !
+<5>[   14.269141] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.279620] [AppLaunch] LCD frame buffer update done !
+<5>[   14.295122] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.312808] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.314778] [AppLaunch] LCD frame buffer update done !
+<5>[   14.332257] [AppLaunch] LCD frame buffer update done !
+<5>[   14.339115] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.349720] [AppLaunch] LCD frame buffer update done !
+<5>[   14.357035] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.366751] [AppLaunch] LCD frame buffer update done !
+<5>[   14.382491] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.402187] [AppLaunch] LCD frame buffer update done !
+<5>[   14.402902] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.419410] [AppLaunch] LCD frame buffer update done !
+<5>[   14.426883] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.436473] [AppLaunch] LCD frame buffer update done !
+<5>[   14.445338] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.453863] [AppLaunch] LCD frame buffer update done !
+<5>[   14.470454] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.489337] [AppLaunch] LCD frame buffer update done !
+<5>[   14.490163] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.506279] [AppLaunch] LCD frame buffer update done !
+<5>[   14.514380] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.523561] [AppLaunch] LCD frame buffer update done !
+<5>[   14.533791] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.541012] [AppLaunch] LCD frame buffer update done !
+<5>[   14.558607] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.576475] [AppLaunch] LCD frame buffer update done !
+<5>[   14.577790] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.593278] [AppLaunch] LCD frame buffer update done !
+<5>[   14.602586] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.610714] [AppLaunch] LCD frame buffer update done !
+<5>[   14.621044] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.628121] [AppLaunch] LCD frame buffer update done !
+<5>[   14.646403] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.663469] [AppLaunch] LCD frame buffer update done !
+<5>[   14.665128] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.680452] [AppLaunch] LCD frame buffer update done !
+<5>[   14.690460] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.697825] [AppLaunch] LCD frame buffer update done !
+<5>[   14.708125] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.715353] [AppLaunch] LCD frame buffer update done !
+<5>[   14.733814] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.750770] [AppLaunch] LCD frame buffer update done !
+<5>[   14.752558] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.767523] [AppLaunch] LCD frame buffer update done !
+<5>[   14.777542] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.785040] [AppLaunch] LCD frame buffer update done !
+<5>[   14.795592] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.802410] [AppLaunch] LCD frame buffer update done !
+<5>[   14.821452] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.837821] [AppLaunch] LCD frame buffer update done !
+<5>[   14.839898] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.854706] [AppLaunch] LCD frame buffer update done !
+<5>[   14.865373] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.872133] [AppLaunch] LCD frame buffer update done !
+<5>[   14.882892] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.889528] [AppLaunch] LCD frame buffer update done !
+<5>[   14.908891] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.924982] [AppLaunch] LCD frame buffer update done !
+<5>[   14.927155] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.941780] [AppLaunch] LCD frame buffer update done !
+<5>[   14.952302] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.959240] [AppLaunch] LCD frame buffer update done !
+<5>[   14.970141] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   14.976636] [AppLaunch] LCD frame buffer update done !
+<5>[   14.995896] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.012008] [AppLaunch] LCD frame buffer update done !
+<5>[   15.014083] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   15.015913] [182:ReferenceQueueD] exit
+<7>[   15.016123] [183:FinalizerDaemon] exit
+<7>[   15.016297] [184:FinalizerWatchd] exit
+<7>[   15.024559] [95:zygote] fork err at pid
+<7>[   15.024593] [95:zygote] fork [254:zygote]
+<7>[   15.025355] [95:zygote] fork err at pid
+<7>[   15.025384] [95:zygote] fork [255:zygote]
+<7>[   15.025538] [255:zygote] set proc[255] name: ->[ReferenceQueueD] 
+<7>[   15.026229] [254:zygote] fork err at pid
+<7>[   15.026255] [254:zygote] fork [256:zygote]
+<7>[   15.026552] [95:zygote] fork err at pid
+<7>[   15.026576] [95:zygote] fork [257:zygote]
+<7>[   15.026748] [257:zygote] set proc[257] name: ->[FinalizerDaemon] 
+<7>[   15.027100] [95:zygote] fork err at pid
+<7>[   15.027125] [95:zygote] fork [258:zygote]
+<7>[   15.027244] [256:zygote] set proc[256] name: ->[GC] 
+<7>[   15.027894] [254:zygote] fork err at pid
+<7>[   15.027925] [254:zygote] fork [259:zygote]
+<7>[   15.028016] [258:zygote] set proc[258] name: ->[FinalizerWatchd] 
+<5>[   15.029004] [AppLaunch] LCD frame buffer update done !
+<7>[   15.030067] [259:zygote] set proc[259] name: ->[Signal Catcher] 
+<7>[   15.030332] [254:zygote] fork err at pid
+<7>[   15.030357] [254:zygote] fork [260:zygote]
+<7>[   15.030446] [260:zygote] set proc[260] name: ->[Compiler] 
+<7>[   15.032964] [254:zygote] fork err at pid
+<7>[   15.032997] [254:zygote] fork [261:zygote]
+<7>[   15.033129] [261:zygote] set proc[261] name: ->[ReferenceQueueD] 
+<7>[   15.033442] [254:zygote] fork err at pid
+<7>[   15.033470] [254:zygote] fork [262:zygote]
+<7>[   15.033578] [262:zygote] set proc[262] name: ->[FinalizerDaemon] 
+<7>[   15.033956] [254:zygote] fork err at pid
+<7>[   15.033984] [254:zygote] fork [263:zygote]
+<7>[   15.034112] [263:zygote] set proc[263] name: ->[FinalizerWatchd] 
+<7>[   15.035195] [254:zygote] set proc[254] name: ->[system_server] 
+<5>[   15.039947] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   15.040744] [254:system_server] fork err at pid
+<7>[   15.040770] [254:system_server] fork [264:system_server]
+<7>[   15.042598] [264:system_server] set proc[264] name: ->[Binder Thread #] 
+<7>[   15.043683] [264:Binder Thread #] fork err at pid
+<7>[   15.044206] [264:Binder Thread #] fork [265:Binder Thread #]
+<7>[   15.044300] [265:Binder Thread #] set proc[265] name: ->[Binder Thread #] 
+<5>[   15.046390] [AppLaunch] LCD frame buffer update done !
+<5>[   15.056926] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.063760] [AppLaunch] LCD frame buffer update done !
+<5>[   15.083184] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.098953] [AppLaunch] LCD frame buffer update done !
+<5>[   15.101387] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.116017] [AppLaunch] LCD frame buffer update done !
+<5>[   15.126521] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.133450] [AppLaunch] LCD frame buffer update done !
+<5>[   15.144418] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.150878] [AppLaunch] LCD frame buffer update done !
+<5>[   15.170427] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.186117] [AppLaunch] LCD frame buffer update done !
+<5>[   15.188106] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.203148] [AppLaunch] LCD frame buffer update done !
+<4>[   15.208956] <HWMSEN> hwmsen_open
+<3>[   15.210697] [Gsensor] KXTF9_SetPowerMode 0!
+<3>[   15.210702]  
+<5>[   15.213746] [AppLaunch] mtkfb_pan_display_proxy.
+<4>[   15.217716] <HWMSEN> update_workqueue_polling_rate
+<4>[   15.218306] <HWMSEN> set old fastest sensor delay as workqueue base time=200
+<4>[   15.219430] <HWMSEN> sensor(0), flag(0)
+<6>[   15.220339] [ALS/PS] tmd2771 power off
+<4>[   15.220353] <HWMSEN> update_workqueue_polling_rate
+<5>[   15.220946] [AppLaunch] LCD frame buffer update done !
+<4>[   15.221712] <HWMSEN> set old fastest sensor delay as workqueue base time=200
+<4>[   15.222623] <HWMSEN> sensor(7), flag(0)
+<6>[   15.225662] [ALS/PS] tmd2771 power off
+<4>[   15.225678] <HWMSEN> update_workqueue_polling_rate
+<4>[   15.226267] <HWMSEN> set old fastest sensor delay as workqueue base time=200
+<4>[   15.227227] <HWMSEN> sensor(4), flag(0)
+<7>[   15.229012] [254:system_server] fork err at pid
+<7>[   15.229041] [254:system_server] fork [266:system_server]
+<7>[   15.230711] [254:system_server] fork err at pid
+<7>[   15.230743] [254:system_server] fork [267:system_server]
+<7>[   15.230825] [267:system_server] set proc[267] name: ->[.ProcessManager] 
+<5>[   15.232329] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.238073] [AppLaunch] LCD frame buffer update done !
+<7>[   15.242058] [266:system_server] set proc[266] name: ->[SensorService] 
+<7>[   15.242841] [254:system_server] fork err at pid
+<7>[   15.242868] [254:system_server] fork [268:system_server]
+<7>[   15.250921] [268:system_server] set proc[268] name: ->[rm] 
+<7>[   15.251935] [254:system_server] fork err at pid
+<7>[   15.251973] [254:system_server] fork [269:system_server]
+<7>[   15.256140] [268:rm] exit
+<7>[   15.256356] [268:rm] sig 17 to [254:system_server]
+<7>[   15.256437] [269:system_server] set proc[269] name: ->[er.ServerThread] 
+<5>[   15.257741] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.273218] [AppLaunch] LCD frame buffer update done !
+<5>[   15.276501] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.290284] [AppLaunch] LCD frame buffer update done !
+<5>[   15.301390] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.307757] [AppLaunch] LCD frame buffer update done !
+<7>[   15.309899] [269:er.ServerThread] fork err at pid
+<7>[   15.310223] [269:er.ServerThread] fork [270:er.ServerThread]
+<7>[   15.310268] [270:er.ServerThread] set proc[270] name: ->[ActivityManager] 
+<5>[   15.320728] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.323360] [Power/Alarm] alarm_open (254:270)
+<5>[   15.325210] [AppLaunch] LCD frame buffer update done !
+<7>[   15.327912] [270:ActivityManager] fork err at pid
+<7>[   15.327941] [270:ActivityManager] fork [271:ActivityManager]
+<7>[   15.328144] [271:ActivityManager] set proc[271] name: ->[BatteryStats-Wr] 
+<5>[   15.344327] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.360460] [AppLaunch] LCD frame buffer update done !
+<5>[   15.364387] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   15.373865] [271:BatteryStats-Wr] exit
+<5>[   15.377440] [AppLaunch] LCD frame buffer update done !
+<5>[   15.388223] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.394846] [AppLaunch] LCD frame buffer update done !
+<5>[   15.407036] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.412276] [AppLaunch] LCD frame buffer update done !
+<5>[   15.431989] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.447809] [AppLaunch] LCD frame buffer update done !
+<5>[   15.452331] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.464606] [AppLaunch] LCD frame buffer update done !
+<5>[   15.475753] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.482021] [AppLaunch] LCD frame buffer update done !
+<5>[   15.494698] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   15.496789] [270:ActivityManager] fork err at pid
+<7>[   15.496824] [270:ActivityManager] fork [272:ActivityManager]
+<7>[   15.496873] [272:ActivityManager] set proc[272] name: ->[ProcessStats] 
+<7>[   15.499245] binder: 2251: call  from 254:269 to 94:0 node 29 handle 1 (SurfaceFlinger) size 64:0 code 4 start 15.480743
+<5>[   15.499474] [AppLaunch] LCD frame buffer update done !
+<7>[   15.515017] [269:er.ServerThread] fork err at pid
+<7>[   15.515050] [269:er.ServerThread] fork [273:er.ServerThread]
+<7>[   15.515098] [273:er.ServerThread] set proc[273] name: ->[PackageManager] 
+<5>[   15.519217] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.534846] [AppLaunch] LCD frame buffer update done !
+<5>[   15.539009] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.551763] [AppLaunch] LCD frame buffer update done !
+<5>[   15.562463] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.569198] [AppLaunch] LCD frame buffer update done !
+<5>[   15.581573] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.586580] [AppLaunch] LCD frame buffer update done !
+<5>[   15.605950] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.621849] [AppLaunch] LCD frame buffer update done !
+<5>[   15.625618] [AppLaunch] mtkfb_pan_display_proxy.

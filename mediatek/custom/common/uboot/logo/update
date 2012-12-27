@@ -1,0 +1,15 @@
+#!/bin/bash
+if [ "$1" = "" ]; then
+	echo "Please input resolution,"
+	echo "Such as: qvga, wqvga, wvga, hvga"
+	exit
+fi
+p=$1
+./tool/bmp_to_raw ./temp0.raw ./$p/"${p}_uboot".bmp
+./tool/bmp_to_raw ./temp1.raw ./$p/"${p}_battery".bmp
+./tool/bmp_to_raw ./temp2.raw ./$p/"${p}_low_battery".bmp
+./tool/bmp_to_raw ./temp3.raw ./$p/"${p}_charger_ov".bmp
+./tool/bmp_to_raw ./boot_logo ./$p/"${p}_kernel".bmp
+./tool/zpipe -l 9 ./"${p}.raw" temp0.raw temp1.raw temp2.raw temp3.raw
+rm -rf ./temp0.raw ./temp1.raw ./temp2.raw ./temp3.raw ./bootlogo.raw
+echo "conversion finished"

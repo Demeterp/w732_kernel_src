@@ -1,0 +1,915 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MediaTek Inc. (C) 2005
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*****************************************************************************/
+
+#include <linux/init.h>
+#include <linux/kernel.h>
+#include <linux/module.h>
+#include <linux/types.h>
+#include <linux/delay.h>
+#include <linux/irq.h>
+#include <linux/kthread.h>
+#include <linux/hrtimer.h>
+#include <linux/ktime.h>
+#include <linux/spinlock.h>
+#include <linux/interrupt.h>
+#include <linux/proc_fs.h>
+#include <linux/earlysuspend.h>
+#include <linux/platform_device.h>
+#include <linux/aee.h>
+#include <linux/xlog.h>
+
+#include <asm/system.h>
+
+#include "mach/irqs.h"
+#include "mach/mt6575_boot.h"
+#include "mach/mt6575_thermal.h"
+#include "mach/mt6575_auxadc_hw.h"
+#include "mach/mt6575_clock_manager.h"
+
+#define THERMAL_NAME "mtk-thermal"
+
+#define THERMAL_CHANNEL 0x5
+
+#define MS_TO_NS(x) (x * 1000 * 1000)
+
+#define thermal_dprintk(fmt, args...)   \
+do {                                    \
+    if (thermal_debug) {                \
+        xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", fmt, ##args); \
+    }                                   \
+} while(0)
+
+#ifdef CONFIG_HAS_EARLYSUSPEND
+static struct early_suspend thermal_early_suspend_handler = 
+{
+    .level = EARLY_SUSPEND_LEVEL_BLANK_SCREEN,
+    .suspend = NULL,
+    .resume  = NULL,
+};
+#endif
+
+static struct hrtimer thermal_timer;
+static struct task_struct *thermal_thread = NULL;
+
+static DECLARE_WAIT_QUEUE_HEAD(thermal_timer_waiter);
+
+static int thermal_timer_flag = 0;
+
+unsigned long delay_in_ms = 500; //ms, suggest from MH
+
+static int T_HIGH_LIMIT = 1200; // 120.0 degC
+
+static int thermal_period = 10;
+static int thermal_period_temp = 10;
+static bool thermal_debug = true;
+static bool thermal_abb_test = false;
+static bool thermal_vbgr_test = false;
+static bool thermal_keep_on = false; // for power saving, early suspend. stop at suspend
+static bool thermal_enable = false;
+static bool thermal_test_mode = false;
+static int thermal_test_value = 0;
+
+static int first_do_thermal = 1;
+
+static kal_int32 g_adc_ge = 0;
+static kal_int32 g_adc_oe = 0;
+static kal_int32 g_o_vts = 0;
+static kal_int32 g_o_vbg = 0;
+static kal_int32 g_degc_cali = 0;
+static kal_int32 g_adc_cali_en = 0;
+static kal_int32 g_o_vts_abb = 0;
+static kal_int32 g_o_slope = 0;
+static kal_int32 g_o_slope_sign = 0;
+static kal_int32 g_id = 0;
+
+static kal_int32 g_ge = 0;
+static kal_int32 g_oe = 0;
+static kal_int32 y_vts_plus = 0;
+static kal_int32 g_gain = 0;
+static kal_int32 g_x_roomt = 0;
+static kal_int32 y_vts_abb_plus = 0;
+static kal_int32 g_x_roomt_abb = 0;
+
+//static int y_vbg_plus_repeat_times = 100;
+static int y_vbg_plus_repeat_times = 10;
+
+//static int y_curr_repeat_times = 20;
+static int y_curr_repeat_times = 10;
+
+static int g_thermal_check_times = 0;
+static int g_thermal_check_times_default= 3;
+
+//CPU thermal_throttling----------------------------
+#define CPU_NORMAL_MODE 1
+#define CPU_EARLY_HOT_MODE 2
+#define CPU_HOT_MODE 3
+#define CPU_VERY_HOT_MODE 4
+#define CPU_DANGER_MODE 5
+
+static int g_cpu_tt_mode = CPU_NORMAL_MODE;
+static int g_t_cpu_t1 = 900; // 90.0 deg C
+static int g_t_cpu_t2 = 1000; // 100.0 deg C
+static int g_t_cpu_t3 = 1100; // 110.0 deg C
+static int g_t_cpu_t4 = 1200; // 120.0 deg C
+static int g_t_cpu_y = 50; // 5.0 deg C
+
+static int thermal_throttling_enable = 0;
+
+#define DVFS_F1 (1001000)   // KHz
+#define DVFS_F2 ( 500500)   // KHz
+#define DVFS_F3 ( 250250)   // KHz
+#define DVFS_F4 ( 166833)   // KHz
+
+extern void cpufreq_thermal_protect(int limited_freq);
+//void cpufreq_thermal_protect(int limited_freq)
+//{
+    // wait DVFS driver ready
+//    thermal_dprintk("[cpufreq_thermal_protect]: limited_freq = %d.\n", limited_freq);
+//}
+//-----------------------------------------------
+
+extern int IMM_GetOneChannelValue(int dwChannel, int data[4], int* rawdata);
+extern int IMM_IsAdcInitReady(void);
+
+static void thermal_cal_prepare(void)
+{
+    kal_uint32 temp = 0;
+	
+    temp = DRV_Reg32(0xF1019048);
+    g_adc_ge = (temp & 0x000000FF);
+    xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "temp = 0x%x, g_adc_ge = 0x%x\n", temp, g_adc_ge);
+	
+    temp = DRV_Reg32(0xF1019044);
+    g_adc_oe = (temp & 0x000000FF);
+    xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "temp = 0x%x, g_adc_oe = 0x%x\n", temp, g_adc_oe);
+	
+    temp = DRV_Reg32(0xF1019040);
+    //g_o_vts_abb   = ((temp & 0xFC000000) >> 26);
+    g_o_vts       = ((temp & 0x03FE0000) >> 17);
+    g_o_vbg       = ((temp & 0x0001FF00) >> 8);
+    //g_degc_cali   = ((temp & 0x000000FE) >> 1);
+    g_degc_cali   = ((temp & 0x0000007E) >> 1);
+    g_adc_cali_en = ((temp & 0x00000001) >> 0);
+
+    g_o_slope     = ((temp & 0xFC000000) >> 26);
+    g_o_slope_sign= ((temp & 0x00000080) >> 7);    
+
+    temp = DRV_Reg32(0xF1019100);
+    g_id = ((temp & 0x80000000) >> 31);
+
+    if(g_id==0)
+    {
+        g_o_slope = 0;
+    }
+    
+    if(g_adc_cali_en == 1)
+    {
+        //thermal_enable = true;        
+    }
+    else
+    {
+        g_adc_ge = 128;
+        g_adc_oe = 128;
+        g_o_vts = 292;
+        g_o_vbg = 167;
+        g_degc_cali = 40;
+        g_o_slope = 0;
+        g_o_slope_sign = 0;
+    }
+    xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "[thermal_cal_prepare] thermal_enable = %d\n", thermal_enable);
+	
+    xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "temp = 0x%x, g_o_vts = 0x%x, g_o_vbg = 0x%x, g_degc_cali = 0x%x, g_adc_cali_en = 0x%x, g_o_vts_abb = 0x%x, g_o_slope = 0x%x, g_o_slope_sign = 0x%x, g_id = 0x%x\n", 
+        temp, g_o_vts, g_o_vbg, g_degc_cali, g_adc_cali_en, g_o_vts_abb, g_o_slope, g_o_slope_sign, g_id);
+}
+
+static void thermal_cal_prepare_2(kal_uint32 ret)
+{
+    kal_int32 y_vbg_plus = ret;
+    kal_int32 format_1 = 0;
+    kal_int32 format_2 = 0;
+    kal_int32 format_3 = 0;
+    kal_int32 format_3_abb = 0;
+    kal_int32 format_4 = 0;
+    kal_int32 format_4_abb = 0;
+    
+    g_ge = ((g_adc_ge - 128) * 10000 ) / 4096; // ge * 10000
+    g_oe = (g_adc_oe - 128);
+    
+    format_1 = (y_vbg_plus - g_oe);
+    format_2 = ((g_o_vbg + 1800) - g_oe);
+    format_3 = ((g_o_vts + 2700) - g_oe);
+    //format_3_abb = ((g_o_vts + 2700 + g_o_vts_abb - 20) - g_oe);
+    format_3_abb = ((g_o_vts + 2700) - g_oe);
+    
+    y_vts_plus = ((format_1 * format_3) / format_2) + g_oe;
+    y_vts_abb_plus = ((format_1 * format_3_abb) / format_2) + g_oe;
+    g_gain = (10000 + g_ge) * format_1 / format_2; // gain * 10000
+    
+    format_4 = (y_vts_plus - g_oe);
+    format_4_abb = (y_vts_abb_plus - g_oe);
+    
+    g_x_roomt = (((format_4 * 10000) / 4096) * 10000) / g_gain; // x_roomt * 10000
+    g_x_roomt_abb = (((format_4_abb * 10000) / 4096) * 10000) / g_gain; // x_roomt * 10000
+    
+    xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "g_ge = %d, g_oe = %d, y_vts_prime = %d, g_gain = %d, g_x_roomt = %d, y_vts_abb_prime = %d, g_x_roomt_abb = %d\n", 
+        g_ge, g_oe, y_vts_plus, g_gain, g_x_roomt, y_vts_abb_plus, g_x_roomt_abb);
+}
+
+static kal_int32 thermal_cal_exec(kal_uint32 ret)
+{
+    kal_int32 t_current = 0;
+    kal_int32 y_curr = ret;
+    kal_int32 format_1 = 0;
+    kal_int32 format_2 = 0;
+    kal_int32 format_3 = 0;
+    kal_int32 format_4 = 0;
+
+    if(ret==0)
+    {
+        return 0;
+    }
+    
+    format_1 = (g_degc_cali / 2);
+    format_2 = (y_curr - g_oe);
+    format_3 = (((((format_2) * 10000) / 4096) * 10000) / g_gain) - g_x_roomt;
+
+    //format_4 = ((format_3 * 100) / 139); // uint = 0.1 deg
+    if(g_o_slope_sign==0)
+    {
+        format_4 = ((format_3 * 100) / (139+g_o_slope)); // uint = 0.1 deg
+    }
+    else
+    {
+        format_4 = ((format_3 * 100) / (139-g_o_slope)); // uint = 0.1 deg
+    } 
+    format_4 = format_4 - (2 * format_4);
+    
+    t_current = (format_1 * 10) + format_4; // uint = 0.1 deg
+    
+    return t_current;
+}
+
+static kal_int32 thermal_cal_exec_abb(kal_uint32 ret)
+{
+    kal_int32 t_current = 0;
+    kal_int32 y_curr = ret;
+    kal_int32 format_1 = 0;
+    kal_int32 format_2 = 0;
+    kal_int32 format_3 = 0;
+    kal_int32 format_4 = 0;
+
+    if(ret==0)
+    {
+        return 0;
+    }
+    
+    format_1 = (g_degc_cali / 2);
+    format_2 = (y_curr - g_oe);
+    format_3 = (((((format_2) * 10000) / 4096) * 10000) / g_gain) - g_x_roomt_abb;
+
+    //format_4 = ((format_3 * 100) / 139); // uint = 0.1 deg 
+    if(g_o_slope_sign==0)
+    {
+        format_4 = ((format_3 * 100) / (139+g_o_slope)); // uint = 0.1 deg
+    }
+    else
+    {
+        format_4 = ((format_3 * 100) / (139-g_o_slope)); // uint = 0.1 deg
+    }    
+    format_4 = format_4 - (2 * format_4);
+    
+    t_current = (format_1 * 10) + format_4; // uint = 0.1 deg
+    
+    return t_current;
+}
+
+enum hrtimer_restart thermal_timer_func(struct hrtimer *timer)
+{
+    thermal_timer_flag = 1; wake_up_interruptible(&thermal_timer_waiter);
+    
+    return HRTIMER_NORESTART;
+}
+
+int thermal_one_shot_handler(int times)
+{
+    int ret = 0, data[4], i, ret_value = 0, ret_temp = 0;
+
+    if( IMM_IsAdcInitReady() == 0 )
+    {
+        xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "[thermal_one_shot_handler]: AUXADC is not ready\n");
+        return 0;
+    }
+    
+    i = times;
+    while (i--)
+    {
+        ret_value = IMM_GetOneChannelValue(THERMAL_CHANNEL, data, &ret_temp);
+        ret += ret_temp;
+        msleep(10);
+    }
+    
+    ret = ret / times;
+    
+    return ret;
+}
+EXPORT_SYMBOL(thermal_one_shot_handler);
+
+static void thermal_calibration(void)
+{
+    kal_uint32 ret = 0;
+    
+    //thermal_cal_prepare();
+    
+    //get VBG
+    //DRV_WriteReg32(TS_CON1, 0x0002);
+    //DRV_WriteReg32(TS_CON2, 0x0200);
+    //msleep(1);    
+    //thermal_dprintk("[thermal_calibration]: Before read VBG (0x%x,0x%x,0x%x,0x%x) \n", DRV_Reg16(TS_CON0), DRV_Reg16(TS_CON1), DRV_Reg16(TS_CON2), DRV_Reg16(TS_CON3));     
+    //ret = thermal_one_shot_handler(y_vbg_plus_repeat_times); //y_vbg_plus
+    //xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "[thermal_calibration]: average %d times channel 5 = %d\n", y_vbg_plus_repeat_times, ret);
+    //thermal_dprintk("[thermal_calibration]: After read VBG (0x%x,0x%x,0x%x,0x%x) \n", DRV_Reg16(TS_CON0), DRV_Reg16(TS_CON1), DRV_Reg16(TS_CON2), DRV_Reg16(TS_CON3)); 
+    
+    //get VBG - workaround
+    if(g_adc_cali_en == 1)
+    {
+        ret = g_o_vbg + 1800;
+        thermal_dprintk("[thermal_calibration]: VBG = g_o_vbg(%d) + 1800 = %d \n", g_o_vbg, ret);
+    }
+    else
+    {
+        ret = 1967; // y_vbg_plus default value
+        thermal_dprintk("[thermal_calibration]: VBG = y_vbg_plus = %d \n", ret);            
+    }
+    
+    if (g_adc_cali_en == 1)
+    {
+        thermal_cal_prepare_2(ret); // will save DEGC_cali, OE, Gain and X_roomt in memory for future use
+    }
+    else
+    {
+        thermal_cal_prepare_2(ret); // will save DEGC_cali, OE, Gain and X_roomt in memory for future use
+    }
+    
+    xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "[thermal_calibration]: Done\n");
+}
+
+void do_cpu_normal_mode(kal_int32 t_cpu_value_c)
+{
+    thermal_dprintk("[do_cpu_normal_mode]: CPU_NORMAL_MODE.\n");
+
+    if( t_cpu_value_c <= g_t_cpu_t1 )
+    {
+        g_cpu_tt_mode = CPU_NORMAL_MODE;
+    	cpufreq_thermal_protect(DVFS_F1);
+    }
+    else if( t_cpu_value_c > g_t_cpu_t1 )
+    {
+        g_cpu_tt_mode = CPU_EARLY_HOT_MODE;
+    	cpufreq_thermal_protect(DVFS_F2);
+    }
+    else
+    {
+        thermal_dprintk("[do_cpu_normal_mode]: ERROR. t_cpu_value_c=%d\n", t_cpu_value_c);
+    }		
+}
+
+void do_cpu_early_hot_mode(kal_int32 t_cpu_value_c)
+{
+    thermal_dprintk("[do_cpu_early_hot_mode]: CPU_EARLY_HOT_MODE.\n");
+
+    if( t_cpu_value_c <= (g_t_cpu_t1 - g_t_cpu_y) )
+    {
+        g_cpu_tt_mode = CPU_NORMAL_MODE;
+    	cpufreq_thermal_protect(DVFS_F1);
+    }
+    else if( t_cpu_value_c > g_t_cpu_t2 )
+    {
+        g_cpu_tt_mode = CPU_HOT_MODE;
+    	cpufreq_thermal_protect(DVFS_F3);
+    }
+    else if( (t_cpu_value_c > (g_t_cpu_t1 - g_t_cpu_y))&&(g_t_cpu_t2 >= t_cpu_value_c) )
+    {
+        g_cpu_tt_mode = CPU_EARLY_HOT_MODE;
+    	cpufreq_thermal_protect(DVFS_F2);
+    }
+    else
+    {
+        thermal_dprintk("[do_cpu_early_hot_mode]: ERROR. t_cpu_value_c=%d\n", t_cpu_value_c);
+    }
+}
+
+void do_cpu_hot_mode(kal_int32 t_cpu_value_c)
+{
+    thermal_dprintk("[do_cpu_hot_mode]: CPU_HOT_MODE.\n");
+
+    if( t_cpu_value_c <= (g_t_cpu_t2 - g_t_cpu_y) )
+    {
+        g_cpu_tt_mode = CPU_EARLY_HOT_MODE;
+    	cpufreq_thermal_protect(DVFS_F2);
+    }
+    else if( t_cpu_value_c > g_t_cpu_t3 )
+    {
+        g_cpu_tt_mode = CPU_VERY_HOT_MODE;
+    	cpufreq_thermal_protect(DVFS_F4);
+    }
+    else if( (t_cpu_value_c > (g_t_cpu_t2 - g_t_cpu_y))&&(g_t_cpu_t3 >= t_cpu_value_c) )
+    {
+        g_cpu_tt_mode = CPU_HOT_MODE;
+    	cpufreq_thermal_protect(DVFS_F3);
+    }
+    else
+    {
+        thermal_dprintk("[do_cpu_hot_mode]: ERROR. t_cpu_value_c=%d\n", t_cpu_value_c);
+    }
+}
+
+void do_cpu_very_hot_mode(kal_int32 t_cpu_value_c)
+{
+    thermal_dprintk("[do_cpu_very_hot_mode]: CPU_VERY_HOT_MODE.\n");
+
+    if( t_cpu_value_c <= (g_t_cpu_t3 - g_t_cpu_y) )
+    {
+        g_cpu_tt_mode = CPU_HOT_MODE;
+    	cpufreq_thermal_protect(DVFS_F3);
+    }
+    else if( t_cpu_value_c > g_t_cpu_t4 )
+    {
+        g_cpu_tt_mode = CPU_DANGER_MODE;
+    	cpufreq_thermal_protect(DVFS_F4);
+		//AEE
+    }
+    else if( (t_cpu_value_c > (g_t_cpu_t3 - g_t_cpu_y))&&(g_t_cpu_t4 >= t_cpu_value_c) )
+    {
+        g_cpu_tt_mode = CPU_VERY_HOT_MODE;
+    	cpufreq_thermal_protect(DVFS_F4);
+    }
+    else
+    {
+        thermal_dprintk("[do_cpu_very_hot_mode]: ERROR. t_cpu_value_c=%d\n", t_cpu_value_c);
+    }
+}
+
+void do_cpu_danger_mode(kal_int32 t_cpu_value_c)
+{
+    thermal_dprintk("[do_cpu_danger_mode]: CPU_DANGER_MODE.\n");
+    g_cpu_tt_mode = CPU_DANGER_MODE;
+    cpufreq_thermal_protect(DVFS_F4);
+    //AEE
+}
+
+void cpu_thermal_throttling(kal_int32 t_cpu_value)
+{
+    if( t_cpu_value != 0)
+    {
+        switch( g_cpu_tt_mode ){        
+            case CPU_NORMAL_MODE:			
+     	        do_cpu_normal_mode(t_cpu_value);
+     	        break;
+            case CPU_EARLY_HOT_MODE:
+			    do_cpu_early_hot_mode(t_cpu_value);     	        
+     	        break;
+            case CPU_HOT_MODE:			
+     	        do_cpu_hot_mode(t_cpu_value);
+     	        break;
+            case CPU_VERY_HOT_MODE:			
+     	        do_cpu_very_hot_mode(t_cpu_value);
+     	        break;
+            case CPU_DANGER_MODE:			
+     	        do_cpu_danger_mode(t_cpu_value);
+     	        break;	
+            default:
+     	        thermal_dprintk("[cpu_thermal_throttling]: argument invalid!!. cpu_tt_mode=%d\n", g_cpu_tt_mode);
+     	        break;
+     	}
+    }
+	else
+    {
+    	thermal_dprintk("[cpu_thermal_throttling]: Do nothing. t_cpu_value=%d\n", t_cpu_value);
+    }
+}
+
+int thermal_thread_handler(void *unused)
+{
+    kal_uint32 ret = 0;
+    kal_int32 t_ret = 0;
+    kal_uint32 ret_2 = 0;
+    kal_int32 t_ret_2 = 0;
+    kal_int32 t_ret_3 = 0;    
+    kal_int32 t_cpu = 0;
+    
+    do
+    {
+        //ktime_t ktime = ktime_set(thermal_period, MS_TO_NS(delay_in_ms));
+        ktime_t ktime = ktime_set(thermal_period_temp, MS_TO_NS(delay_in_ms));        
+        
+        wait_event_interruptible(thermal_timer_waiter, thermal_timer_flag != 0);
+        thermal_timer_flag = 0;
+
+        if(!thermal_enable)
+        {            
+            hrtimer_start(&thermal_timer, ktime, HRTIMER_MODE_REL);
+            continue;
+        }
+        
+        if(first_do_thermal)
+        {
+        	thermal_calibration();
+            first_do_thermal = 0;
+            thermal_period_temp = thermal_period;
+        }
+        
+        DRV_WriteReg32(TS_CON1, 0x0002);
+        DRV_WriteReg32(TS_CON2, 0x0000);
+    	msleep(1);
+    	ret = thermal_one_shot_handler(y_curr_repeat_times);
+        thermal_dprintk("[Thermal_Result]: TSMCU average %d times channel 5 (0x%x,0x%x,0x%x,0x%x) = %d\n",
+            y_curr_repeat_times, DRV_Reg16(TS_CON0), DRV_Reg16(TS_CON1), DRV_Reg16(TS_CON2), DRV_Reg16(TS_CON3), ret);
+        
+        //if (g_adc_cali_en == 1)
+        if(thermal_enable)
+        {
+            t_ret = thermal_cal_exec(ret);
+            thermal_dprintk("[Thermal_T_current TSMCU], %d\n", t_ret);
+        }
+        
+        if (thermal_abb_test)
+        {
+        	DRV_WriteReg32(TS_CON1, 0x0002);
+            DRV_WriteReg32(TS_CON2, 0x0100);
+    	    msleep(1);            
+            ret_2 = thermal_one_shot_handler(y_curr_repeat_times);
+            thermal_dprintk("[Thermal_Result]: TSABB average %d times channel 5 (0x%x,0x%x,0x%x,0x%x) = %d\n", 
+                y_curr_repeat_times, DRV_Reg16(TS_CON0), DRV_Reg16(TS_CON1), DRV_Reg16(TS_CON2), DRV_Reg16(TS_CON3), ret_2);
+            
+            //if (g_adc_cali_en == 1)
+            if(thermal_enable)
+            {
+                t_ret_2 = thermal_cal_exec_abb(ret_2);
+                thermal_dprintk("[Thermal_T_current TSABB], %d\n", t_ret_2);
+            }
+        }
+        
+        if (thermal_vbgr_test)
+        {
+            DRV_WriteReg32(TS_CON1, 0x0002);
+    		DRV_WriteReg32(TS_CON2, 0x0200);
+    		msleep(1);
+    		t_ret_3 = thermal_one_shot_handler(y_vbg_plus_repeat_times); //y_vbg_plus
+    		thermal_dprintk("[Thermal_Result]: VBGR average %d times channel 5 (0x%x,0x%x,0x%x,0x%x) = %d\n", 
+                y_curr_repeat_times, DRV_Reg16(TS_CON0), DRV_Reg16(TS_CON1), DRV_Reg16(TS_CON2), DRV_Reg16(TS_CON3), t_ret_3);    			
+        }
+        
+        //if(g_adc_cali_en == 1)
+        if(thermal_enable)
+        {            
+            thermal_dprintk("[Thermal_Result] Check if t_ret(%d) > T_HIGH_LIMIT(%d) (g_thermal_check_times=%d)\n", t_ret, T_HIGH_LIMIT, g_thermal_check_times);
+
+			if(t_ret > T_HIGH_LIMIT)
+            {
+            	g_thermal_check_times++;
+    			if( g_thermal_check_times >= g_thermal_check_times_default )
+        		{
+                	//aee_kernel_reminding("T_CPU Too Hot",
+                    //	"WARNING : T_CPU Too Hot, may impact CPU age. You can use \"aee -c dal\" to clean screen.");
+                    thermal_dprintk("[Thermal_Result] only log : T_CPU Too Hot, may impact CPU age.\n");
+    			}
+            }				
+			else
+			{
+				g_thermal_check_times = 0;
+				thermal_dprintk("[Thermal_Result] g_thermal_check_times = %d\n", g_thermal_check_times);
+			}
+
+			t_cpu = t_ret;
+        }
+
+        if(thermal_test_mode)
+        {
+            thermal_dprintk("[Thermal_Test_Mode] Check if t_ret(%d) > T_HIGH_LIMIT(%d)\n", thermal_test_value, T_HIGH_LIMIT);
+            if(thermal_test_value > T_HIGH_LIMIT)
+            {
+                aee_kernel_reminding("T_CPU Too Hot",
+                    "WARNING : T_CPU Too Hot, may impact CPU age. You can use \"aee -c dal\" to clean screen.");
+            }
+
+			t_cpu = thermal_test_value;
+        }
+
+        if(thermal_throttling_enable == 1)
+        {
+            // Do CPU thermal_throttling
+            cpu_thermal_throttling(t_cpu);
+        }
+        
+        hrtimer_start(&thermal_timer, ktime, HRTIMER_MODE_REL);
+        
+    } while (!kthread_should_stop());
+    
+    return 0;
+}
+
+static int thermal_state_read(char *buf, char **start, off_t off, int count, int *eof, void *data)
+{
+    int len = 0;
+    char *p = buf;
+    
+    p += sprintf(p, "thermal_period = %d, thermal_abb_test = %d, thermal_debug = %d, thermal_keep_on = %d\n", thermal_period, thermal_abb_test, thermal_debug, thermal_keep_on);
+    
+    *start = buf + off;
+    
+    len = p - buf;
+    if (len > off)
+        len -= off;
+    else
+        len = 0;
+    
+    return len < count ? len  : count;
+}
+
+static ssize_t thermal_state_write(struct file *file, const char *buffer, unsigned long count, void *data)
+{
+    int len = 0, time = 0, abb = 0, debug = 0, keep_on = 0, hw_enable = 0, test_enable = 0, test_value = 0, vbgr = 0, t_test = 0;
+	int cpu_tt_enable = 0;
+    char desc[32];
+    
+    len = (count < (sizeof(desc) - 1)) ? count : (sizeof(desc) - 1);
+    if (copy_from_user(desc, buffer, len))
+    {
+        return 0;
+    }
+    desc[len] = '\0';
+    
+    if (sscanf(desc, "%d %d %d %d %d %d %d %d %d %d", &time, &abb, &debug, &keep_on, &hw_enable, &test_enable, &test_value, &vbgr, &t_test, &cpu_tt_enable) == 10)
+    {
+        if (time < 0)
+            thermal_period = 0;
+        else
+            thermal_period = time;
+        
+        if (abb <= 0)
+            thermal_abb_test = false;
+        else
+            thermal_abb_test = true;
+        
+        if (debug <= 0)
+            thermal_debug = false;
+        else
+            thermal_debug = true;
+        
+        if (keep_on <= 0)
+            thermal_keep_on = false;
+        else
+            thermal_keep_on = true;
+
+        if (hw_enable <= 0)
+            thermal_enable = false;
+        else
+            thermal_enable = true;
+
+        if (test_enable <= 0)
+            thermal_test_mode = false;
+        else
+            thermal_test_mode = true;
+
+        if (vbgr <= 0)
+            thermal_vbgr_test = false;
+        else
+            thermal_vbgr_test = true;		
+
+        thermal_test_value = test_value;
+
+		T_HIGH_LIMIT = t_test;
+
+		thermal_throttling_enable = cpu_tt_enable;
+		
+        xlog_printk(ANDROID_LOG_DEBUG, "Power/Thermal", "thermal_period = %d, thermal_abb_test = %d, thermal_debug = %d, thermal_keep_on = %d, thermal_enable = %d, thermal_test_mode = %d, thermal_test_value = %d, thermal_vbgr_test = %d, T_HIGH_LIMIT = %d, thermal_throttling_enable=%d\n", thermal_period, thermal_abb_test, thermal_debug, thermal_keep_on, thermal_enable, thermal_test_mode, thermal_test_value, thermal_vbgr_test, T_HIGH_LIMIT, thermal_throttling_enable);
+        
+        return count;
+    }
+    else
+    {
+        xlog_printk(ANDROID_LOG_DEBUG, "Power/Thermal", "  bad argument, echo [thermal_period] [thermal_abb_test] [thermal_debug] [thermal_keep_on] [thermal_enable] [thermal_test_mode] [thermal_test_value] [thermal_vbgr_test] [T_HIGH_LIMIT] [cpu_tt_enable] > thermal_state\n");
+    }
+    
+    return -EINVAL;
+}
+
+void thermal_early_suspend(struct early_suspend *h)
+{
+    kal_uint16 temp;
+    
+    if (thermal_keep_on)
+        return;
+    
+    xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "[%s]: enter early suspend\n", __FUNCTION__);
+    
+    temp = DRV_Reg16(TS_CON2);
+    temp |= 0x0300;
+    DRV_WriteReg16(TS_CON2, temp); // turn off sensor output buffer
+    
+    hrtimer_cancel(&thermal_timer);
+}
+
+void thermal_late_resume(struct early_suspend *h)
+{
+    kal_uint16 temp;
+    ktime_t ktime = ktime_set(thermal_period, MS_TO_NS(delay_in_ms));
+    
+    if (thermal_keep_on)
+        return;
+    
+    xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "[%s]: enter late resume\n", __FUNCTION__);
+    
+    temp = DRV_Reg16(TS_CON2);
+    temp &= 0xFCFF;
+    DRV_WriteReg16(TS_CON2, temp); // turn on sensor output buffer
+    
+    hrtimer_start(&thermal_timer, ktime, HRTIMER_MODE_REL);
+}
+
+static int mtk_thermal_probe(struct platform_device *pdev)
+{
+    ktime_t ktime;
+    
+    struct proc_dir_entry *entry = NULL;
+    struct proc_dir_entry *thermal_dir = NULL;
+    
+    DRV_WriteReg16(TS_CON3, DRV_Reg16(TS_CON3) | 0x0100); // release turbo mode and enable LPF mode
+    
+    #ifdef CONFIG_HAS_EARLYSUSPEND
+    thermal_early_suspend_handler.suspend = thermal_early_suspend;
+    thermal_early_suspend_handler.resume = thermal_late_resume;
+    register_early_suspend(&thermal_early_suspend_handler);
+    #endif
+    
+    thermal_cal_prepare();
+    //thermal_calibration();
+    
+    //ktime = ktime_set(thermal_period, MS_TO_NS(delay_in_ms));
+    ktime = ktime_set(thermal_period_temp, MS_TO_NS(delay_in_ms));
+    
+    hrtimer_init(&thermal_timer, CLOCK_MONOTONIC, HRTIMER_MODE_REL);
+    thermal_timer.function = thermal_timer_func;
+    
+    hrtimer_start(&thermal_timer, ktime, HRTIMER_MODE_REL);
+    
+    thermal_thread = kthread_run(thermal_thread_handler, 0, "mtk thermal");
+    if (IS_ERR(thermal_thread))
+    {
+        xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "[%s]: failed to create thermal thread\n", __FUNCTION__);
+    }
+    
+    thermal_dir = proc_mkdir("mtk_thermal", NULL);
+    if (!thermal_dir)
+    {
+        pr_err("[%s]: mkdir /proc/thermal failed\n", __FUNCTION__);
+    }
+    else
+    {
+        entry = create_proc_entry("thermal_state", S_IRUGO | S_IWUSR, thermal_dir);
+        if (entry)
+        {
+            entry->read_proc = thermal_state_read;
+            entry->write_proc = thermal_state_write;
+        }
+    }
+    
+    return 0;
+}
+
+static int mtk_thermal_resume(struct platform_device *dev)
+{
+    kal_uint16 temp;
+    
+    ktime_t ktime = ktime_set(thermal_period, MS_TO_NS(delay_in_ms));
+    
+    if (thermal_keep_on)
+    {
+        xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "[%s]: enter resume\n", __FUNCTION__);
+        
+        temp = DRV_Reg16(TS_CON2);
+        temp &= 0xFCFF;
+        DRV_WriteReg16(TS_CON2, temp); // turn on sensor output buffer
+        
+        hrtimer_start(&thermal_timer, ktime, HRTIMER_MODE_REL);
+    }
+    
+    return 0;
+}
+
+static int mtk_thermal_suspend(struct platform_device *dev, pm_message_t state)
+{
+    kal_uint16 temp;
+    
+    if (thermal_keep_on)
+    {
+        xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "[%s]: enter suspend\n", __FUNCTION__);
+        
+        temp = DRV_Reg16(TS_CON2);
+        temp |= 0x0300;
+        DRV_WriteReg16(TS_CON2, temp); // turn off sensor output buffer
+        
+        hrtimer_cancel(&thermal_timer);
+    }
+    
+    return 0;
+}
+
+static struct platform_driver mtk_thermal_driver = {
+    .remove     = NULL,
+    .shutdown   = NULL,
+    .probe      = mtk_thermal_probe,
+    .suspend    = mtk_thermal_suspend,
+    .resume     = mtk_thermal_resume,
+    .driver     = {
+        .name = THERMAL_NAME,
+    },
+};
+
+static int __init mtk_thermal_init(void)
+{
+    int ret = 0;
+    kal_uint16 temp = 0;
+    
+    if (get_chip_eco_ver() != CHIP_E1) // Enable after check at E2 chip
+    {
+        xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "MediaTek thermal controller driver initialized\n");
+        
+        ret = platform_driver_register(&mtk_thermal_driver);
+        
+        if (ret != 0)
+        {
+            xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "unable to register thermal controller driver\n");
+            return -1;
+        }
+    }
+    else
+    {
+        xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "Not register thermal controller driver\n");    
+    }
+    
+    disable_clock(MT65XX_PDN_PERI_THERM, "Thermal");
+    
+    temp = DRV_Reg16(TS_CON2);
+    temp |= 0x0300;
+    DRV_WriteReg16(TS_CON2, temp); // turn off sensor output buffer
+    
+    return 0;
+}
+
+static void __exit mtk_thermal_exit(void)
+{
+    int ret = 0;
+    kal_uint16 temp = 0;
+    
+    ret = hrtimer_cancel(&thermal_timer);
+    if (ret)
+        xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "thermal controller timer still in use\n");
+        
+    disable_clock(MT65XX_PDN_PERI_THERM, "Thermal");
+        
+    temp = DRV_Reg16(TS_CON2);
+    temp |= 0x0300;
+    DRV_WriteReg16(TS_CON2, temp); // turn off sensor output buffer
+    
+    xlog_printk(ANDROID_LOG_INFO, "Power/Thermal", "thermal controller de-initialized\n");
+}
+
+module_init(mtk_thermal_init);
+module_exit(mtk_thermal_exit);
+
+MODULE_LICENSE("GPL");
+MODULE_DESCRIPTION("MediaTek Thermal Controller Driver");
+MODULE_AUTHOR("Chun-Wei Chen <chun-wei.chen@mediatek.com>");

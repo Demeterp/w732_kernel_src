@@ -1,0 +1,59 @@
+/* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ */
+/* MediaTek Inc. (C) 2010. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */
+#include <linux/module.h>
+#include "partition_define.h"
+struct excel_info PartInfo[PART_NUM]={
+			{"preloader",262144,0x0, EMMC, 0,BOOT_1},
+			{"dsp_bl",6029312,0x40000, EMMC, 0,BOOT_1},
+			{"mbr",16384,0x600000, EMMC, 0,USER},
+			{"ebr1",376832,0x604000, EMMC, 1,USER},
+			{"pmt",4194304,0x660000, EMMC, 0,USER},
+			{"nvram",3145728,0xa60000, EMMC, 0,USER},
+			{"seccfg",131072,0xd60000, EMMC, 0,USER},
+			{"uboot",393216,0xd80000, EMMC, 0,USER},
+			{"bootimg",6291456,0xde0000, EMMC, 0,USER},
+			{"recovery",6291456,0x13e0000, EMMC, 0,USER},
+			{"sec_ro",6291456,0x19e0000, EMMC, 5,USER},
+			{"misc",393216,0x1fe0000, EMMC, 0,USER},
+			{"logo",3145728,0x2040000, EMMC, 0,USER},
+			{"expdb",655360,0x2340000, EMMC, 0,USER},
+			{"ebr2",16384,0x23e0000, EMMC, 0,USER},
+			{"android",537919488,0x23e4000, EMMC, 6,USER},
+			{"cache",537919488,0x224e4000, EMMC, 2,USER},
+			{"usrdata",1074790400,0x425e4000, EMMC, 3,USER},
+			{"fat",0,0x826e4000, EMMC, 4,USER},
+			{"bmtpool",10485760,0xFFFF0050, EMMC, 0,USER},
+ };
+EXPORT_SYMBOL(PartInfo);

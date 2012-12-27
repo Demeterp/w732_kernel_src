@@ -1,0 +1,4 @@
+kernel/../mediatek/platform/mt6575/kernel/drivers/mmc-host/dbg.ko
+kernel/../mediatek/platform/mt6575/kernel/drivers/mmc-host/sd.ko
+kernel/../mediatek/platform/mt6575/kernel/drivers/mmc-host/mt6575_sd_misc.ko
+kernel/../mediatek/platform/mt6575/kernel/drivers/mmc-host/sd_dump.ko

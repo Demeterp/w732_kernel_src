@@ -1,0 +1,6 @@
+on post-fs-data
+    insmod /system/lib/modules/aed.ko
+    write /proc/sys/fs/suid_dumpable 2
+    
+ service aee_aed /system/bin/aee_aed
+	  class main

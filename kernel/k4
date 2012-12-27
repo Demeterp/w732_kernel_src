@@ -1,0 +1,1973 @@
+[   29.621558] [376:iptables] sig 17 to [155:netd]
+<7>[   29.621704] [155:netd] fork err at pid
+<7>[   29.621861] [374:zygote] set proc[374] name: ->[GC] 
+<7>[   29.622500] [372:zygote] fork err at pid
+<7>[   29.622522] [372:zygote] fork [379:zygote]
+<7>[   29.622711] [155:netd] fork [378:netd]
+<7>[   29.622781] [377:zygote] set proc[377] name: ->[FinalizerWatchd] 
+<7>[   29.622906] [378:netd] set proc[378] name: ->[ip6tables] 
+<7>[   29.625121] [378:ip6tables] exit
+<7>[   29.625262] [378:ip6tables] sig 17 to [155:netd]
+<7>[   29.625406] [155:netd] fork err at pid
+<7>[   29.644880] [379:zygote] set proc[379] name: ->[Signal Catcher] 
+<7>[   29.645157] [372:zygote] fork err at pid
+<7>[   29.645180] [372:zygote] fork [381:zygote]
+<7>[   29.645377] [155:netd] fork [380:netd]
+<7>[   29.645410] [380:netd] set proc[380] name: ->[iptables] 
+<7>[   29.647419] [380:iptables] exit
+<7>[   29.647559] [380:iptables] sig 17 to [155:netd]
+<7>[   29.647721] [155:netd] fork err at pid
+<7>[   29.651020] [381:zygote] set proc[381] name: ->[Compiler] 
+<7>[   29.652987] [372:zygote] fork err at pid
+<7>[   29.653019] [372:zygote] fork [383:zygote]
+<7>[   29.654199] [155:netd] fork [382:netd]
+<7>[   29.654246] binder: 7636: call  from 254:285 to 94:0 node 29 handle 1 (SurfaceFlinger) size 172:4 code 5 start 29.635483
+<7>[   29.655283] [382:netd] set proc[382] name: ->[ip6tables] 
+<5>[   29.657506] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.658164] binder: 7638: call  from 254:285 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.636732
+<7>[   29.659126] [383:zygote] set proc[383] name: ->[ReferenceQueueD] 
+<7>[   29.659990] [372:zygote] fork err at pid
+<7>[   29.660024] [372:zygote] fork [384:zygote]
+<5>[   29.662695] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   29.666703] [AppLaunch] LCD frame buffer update done !
+<5>[   29.671190] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.672602] [382:ip6tables] exit
+<7>[   29.672745] [382:ip6tables] sig 17 to [155:netd]
+<5>[   29.684104] [AppLaunch] LCD frame buffer update done !
+<7>[   29.684837] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 13651384 > 8ms
+<7>[   29.684864] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   29.694297] [384:zygote] set proc[384] name: ->[FinalizerDaemon] 
+<7>[   29.695500] [372:zygote] fork err at pid
+<7>[   29.695526] [372:zygote] fork [385:zygote]
+<7>[   29.700692] [155:netd] fork err at pid
+<5>[   29.701560] [AppLaunch] LCD frame buffer update done !
+<7>[   29.702626] [385:zygote] set proc[385] name: ->[FinalizerWatchd] 
+<7>[   29.703549] [372:zygote] set proc[372] name: ->[droid.gsf.login] 
+<7>[   29.706821] [372:droid.gsf.login] fork err at pid
+<7>[   29.706849] [372:droid.gsf.login] fork [387:droid.gsf.login]
+<7>[   29.708050] [372:droid.gsf.login] set proc[372] name: ->[re-initialized>] 
+<7>[   29.711710] [155:netd] fork [386:netd]
+<7>[   29.712963] [386:netd] set proc[386] name: ->[iptables] 
+<7>[   29.715139] [386:iptables] exit
+<7>[   29.715278] [386:iptables] sig 17 to [155:netd]
+<7>[   29.715413] [155:netd] fork err at pid
+<7>[   29.716953] [387:droid.gsf.login] set proc[387] name: ->[Binder Thread #] 
+<7>[   29.722415] [387:Binder Thread #] fork err at pid
+<7>[   29.722440] [387:Binder Thread #] fork [389:Binder Thread #]
+<7>[   29.723945] binder: 7646: call  from 372:372 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 29.704703
+<7>[   29.732641] [155:netd] fork [388:netd]
+<7>[   29.732677] [388:netd] set proc[388] name: ->[ip6tables] 
+<7>[   29.734772] [388:ip6tables] exit
+<7>[   29.734914] [388:ip6tables] sig 17 to [155:netd]
+<7>[   29.735066] [155:netd] fork err at pid
+<7>[   29.735115] binder: 7658: call  from 254:285 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.712215
+<7>[   29.736846] [372:re-initialized>] set proc[372] name: ->[droid.gsf.login] 
+<7>[   29.737961] [389:Binder Thread #] set proc[389] name: ->[Binder Thread #] 
+<5>[   29.740317] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.742450] binder: 7663: call  from 372:372 to 94:0 node 29 handle 6 (SurfaceFlinger) size 64:0 code 4 start 29.723450
+<7>[   29.743311] [155:netd] fork [390:netd]
+<7>[   29.744594] [390:netd] set proc[390] name: ->[iptables] 
+<7>[   29.746706] [390:iptables] exit
+<7>[   29.746849] [390:iptables] sig 17 to [155:netd]
+<7>[   29.746985] [155:netd] fork err at pid
+<7>[   29.747651] binder: 7668: call  from 372:372 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 29.725892
+<7>[   29.749920] binder: 7670: call  from 372:372 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 29.730895
+<5>[   29.754486] [AppLaunch] LCD frame buffer update done !
+<7>[   29.766543] [155:netd] fork [391:netd]
+<7>[   29.766578] [391:netd] set proc[391] name: ->[ip6tables] 
+<7>[   29.768713] [391:ip6tables] exit
+<7>[   29.768854] [391:ip6tables] sig 17 to [155:netd]
+<7>[   29.789119] binder: 7682: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 564:8 code c start 29.747578
+<7>[   29.790225] binder: 7690: call  from 254:269 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.771718
+<7>[   29.791684] binder: 7691: call  from 372:372 to 254:0 node 7165 handle 8 (connectivity) size 76:0 code 25 start 29.773180
+<5>[   29.797010] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.798225] [269:er.ServerThread] fork err at pid
+<7>[   29.798251] [269:er.ServerThread] fork [392:er.ServerThread]
+<5>[   29.806877] [AppLaunch] LCD frame buffer update done !
+<5>[   29.807613] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.808712] binder: 7697: call  from 254:285 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.786604
+<7>[   29.810115] binder: 7699: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 0:0 code 5f4e5446 start 29.791601
+<5>[   29.813925] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.818552] [392:er.ServerThread] set proc[392] name: ->[watchdog] 
+<7>[   29.819093] binder: 7703: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.800585
+<5>[   29.823624] [AppLaunch] LCD frame buffer update done !
+<7>[   29.827468] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 13543770 > 8ms
+<7>[   29.827497] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   29.831040] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.836630] binder: 7705: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.818120
+<5>[   29.841042] [AppLaunch] LCD frame buffer update done !
+<7>[   29.841739] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 10704307 > 8ms
+<7>[   29.841768] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   29.846701] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.853692] binder: 7709: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.835184
+<5>[   29.858597] [AppLaunch] LCD frame buffer update done !
+<7>[   29.859299] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 12604769 > 8ms
+<7>[   29.859327] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   29.860344] binder: 7711: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 50 start 29.841653
+<5>[   29.863997] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.866648] binder: 7713: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 29.847180
+<7>[   29.870852] binder: 7718: call  from 332:332 to 254:0 node 6909 handle 11 (accessibility) size 124:4 code 1 start 29.851253
+<7>[   29.871613] binder: 7721: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.853105
+<5>[   29.875848] [AppLaunch] LCD frame buffer update done !
+<7>[   29.876643] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12651385 > 8ms
+<7>[   29.876672] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   29.881456] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.888636] binder: 7728: call  from 372:372 to 254:0 node 6397 handle 3 (package) size 148:0 code 1 start 29.861889
+<7>[   29.890037] binder: 7730: call  from 372:372 to 254:0 node 6397 handle 3 (package) size 0:0 code 5f4e5446 start 29.871509
+<5>[   29.893306] [AppLaunch] LCD frame buffer update done !
+<7>[   29.894015] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 12567000 > 8ms
+<7>[   29.894043] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   29.894713] binder: 7732: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.876160
+<5>[   29.898979] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.905919] binder: 7734: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.887413
+<5>[   29.910683] [AppLaunch] LCD frame buffer update done !
+<7>[   29.911382] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12411076 > 8ms
+<7>[   29.911410] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   29.916126] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.923965] binder: 7743: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.905457
+<5>[   29.928111] [AppLaunch] LCD frame buffer update done !
+<7>[   29.928869] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 12748462 > 8ms
+<7>[   29.928898] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   29.933556] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.934837] [372:droid.gsf.login] fork err at pid
+<7>[   29.934864] [372:droid.gsf.login] fork [393:droid.gsf.login]
+<7>[   29.941254] binder: 7745: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.922744
+<5>[   29.945538] [AppLaunch] LCD frame buffer update done !
+<7>[   29.946248] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12700385 > 8ms
+<7>[   29.946277] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   29.951055] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.951738] [393:droid.gsf.login] set proc[393] name: ->[Thread-20] 
+<7>[   29.952094] binder: 7751: call  from 372:372 to 254:0 node 6401 handle 1 (activity) size 156:4 code 1d start 29.933573
+<7>[   29.953610] [373:ReferenceQueueD] exit
+<7>[   29.953787] [375:FinalizerDaemon] exit
+<7>[   29.953936] [377:FinalizerWatchd] exit
+<7>[   29.958570] binder: 7752: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.940062
+<5>[   29.962972] [AppLaunch] LCD frame buffer update done !
+<7>[   29.963690] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 12642615 > 8ms
+<7>[   29.963720] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   29.965410] binder: 7757: call  from 372:393 to 254:0 node 6481 handle 10 (content) size 192:4 code 1 start 29.946864
+<5>[   29.968541] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.973840] binder: 7761: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 404:8 code c start 29.951686
+<7>[   29.974974] binder: 7764: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.956466
+<7>[   29.977167] [95:zygote] fork err at pid
+<7>[   29.977203] [95:zygote] fork [394:zygote]
+<7>[   29.977916] [95:zygote] fork err at pid
+<7>[   29.977944] [95:zygote] fork [395:zygote]
+<5>[   29.980426] [AppLaunch] LCD frame buffer update done !
+<7>[   29.981255] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12779077 > 8ms
+<7>[   29.981285] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   29.986092] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   29.986784] [394:zygote] fork err at pid
+<7>[   29.986807] [394:zygote] fork [396:zygote]
+<7>[   29.988411] [395:zygote] set proc[395] name: ->[ReferenceQueueD] 
+<7>[   29.989135] [95:zygote] fork err at pid
+<7>[   29.989158] [95:zygote] fork [397:zygote]
+<7>[   29.992320] [396:zygote] set proc[396] name: ->[GC] 
+<7>[   29.993011] [394:zygote] fork err at pid
+<7>[   29.993035] [394:zygote] fork [398:zygote]
+<7>[   29.993092] [397:zygote] set proc[397] name: ->[FinalizerDaemon] 
+<7>[   29.993534] binder: 7770: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.975028
+<7>[   29.997536] [95:zygote] fork err at pid
+<7>[   29.997564] [95:zygote] fork [399:zygote]
+<5>[   29.997912] [AppLaunch] LCD frame buffer update done !
+<7>[   29.998661] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 12576616 > 8ms
+<7>[   29.998689] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   30.001253] [398:zygote] set proc[398] name: ->[Signal Catcher] 
+<7>[   30.001490] [399:zygote] set proc[399] name: ->[FinalizerWatchd] 
+<7>[   30.001816] [394:zygote] fork err at pid
+<7>[   30.001841] [394:zygote] fork [400:zygote]
+<5>[   30.004930] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.006280] binder: 7776: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 264:8 code c start 29.987764
+<7>[   30.008981] [400:zygote] set proc[400] name: ->[Compiler] 
+<7>[   30.009571] [394:zygote] fork err at pid
+<7>[   30.009595] [394:zygote] fork [401:zygote]
+<7>[   30.009977] binder: 7779: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 29.991469
+<7>[   30.013959] [401:zygote] set proc[401] name: ->[ReferenceQueueD] 
+<7>[   30.014297] [394:zygote] fork err at pid
+<7>[   30.014324] [394:zygote] fork [402:zygote]
+<5>[   30.015277] [AppLaunch] LCD frame buffer update done !
+<7>[   30.015997] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 11071769 > 8ms
+<7>[   30.016025] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   30.019824] [402:zygote] set proc[402] name: ->[FinalizerDaemon] 
+<5>[   30.020810] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.021782] [394:zygote] fork err at pid
+<7>[   30.021807] [394:zygote] fork [403:zygote]
+<7>[   30.027675] binder: 7781: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 30.9165
+<7>[   30.028017] [403:zygote] set proc[403] name: ->[FinalizerWatchd] 
+<7>[   30.028944] [394:zygote] set proc[394] name: ->[e.process.gapps] 
+<7>[   30.032528] [394:e.process.gapps] fork err at pid
+<7>[   30.032561] [394:e.process.gapps] fork [404:e.process.gapps]
+<5>[   30.032665] [AppLaunch] LCD frame buffer update done !
+<7>[   30.033363] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 12562000 > 8ms
+<7>[   30.033392] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   30.034884] [394:e.process.gapps] set proc[394] name: ->[re-initialized>] 
+<5>[   30.038113] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.045198] [404:e.process.gapps] set proc[404] name: ->[Binder Thread #] 
+<7>[   30.048364] [404:Binder Thread #] fork err at pid
+<7>[   30.048394] [404:Binder Thread #] fork [405:Binder Thread #]
+<7>[   30.049018] binder: 7791: call  from 394:394 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 30.30478
+<7>[   30.049240] [264:Binder Thread #] fork err at pid
+<7>[   30.049266] [264:Binder Thread #] fork [406:Binder Thread #]
+<5>[   30.050101] [AppLaunch] LCD frame buffer update done !
+<7>[   30.050904] binder: 7794: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 172:4 code 5 start 30.32401
+<7>[   30.051641] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 13534308 > 8ms
+<7>[   30.051671] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   30.056875] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.057527] [405:Binder Thread #] set proc[405] name: ->[Binder Thread #] 
+<7>[   30.060598] binder: 7799: call  from 332:332 to 254:0 node 7165 handle 8 (connectivity) size 80:0 code 7 start 30.42096
+<7>[   30.060795] [406:Binder Thread #] set proc[406] name: ->[Binder Thread #] 
+<7>[   30.064225] [395:ReferenceQueueD] exit
+<7>[   30.064917] [397:FinalizerDaemon] exit
+<7>[   30.065109] [399:FinalizerWatchd] exit
+<5>[   30.067503] [AppLaunch] LCD frame buffer update done !
+<7>[   30.068219] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 11351847 > 8ms
+<7>[   30.068248] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   30.070277] binder: 7804: call  from 332:332 to 254:0 node 2273 handle 9 (telephony.registry) size 180:4 code 1 start 30.51757
+<7>[   30.071181] binder: 7810: call  from 332:332 to 254:0 node 2279 handle 10 (telephony.registry2) size 180:4 code 1 start 30.52668
+<5>[   30.072205] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.078585] binder: 7817: call  from 332:332 to 254:0 node 7058 handle 13 (wifi) size 68:0 code 24 start 30.55791
+<5>[   30.085068] [AppLaunch] LCD frame buffer update done !
+<7>[   30.085772] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 13571231 > 8ms
+<7>[   30.085801] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   30.085900] binder: 7825: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 1364:8 code c start 30.65999
+<7>[   30.086593] [406:Binder Thread #] fork err at pid
+<7>[   30.086619] [406:Binder Thread #] fork [407:Binder Thread #]
+<5>[   30.090263] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.092346] [95:zygote] fork err at pid
+<7>[   30.092376] [95:zygote] fork [408:zygote]
+<7>[   30.092998] [95:zygote] fork err at pid
+<7>[   30.093024] [95:zygote] fork [409:zygote]
+<7>[   30.093110] [407:Binder Thread #] set proc[407] name: ->[Binder Thread #] 
+<7>[   30.097476] [408:zygote] fork err at pid
+<7>[   30.097502] [408:zygote] fork [410:zygote]
+<7>[   30.097597] [409:zygote] set proc[409] name: ->[ReferenceQueueD] 
+<7>[   30.097961] [95:zygote] fork err at pid
+<7>[   30.097984] [95:zygote] fork [411:zygote]
+<5>[   30.102374] [AppLaunch] LCD frame buffer update done !
+<7>[   30.103101] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 12843154 > 8ms
+<7>[   30.103129] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   30.106057] [411:zygote] set proc[411] name: ->[FinalizerDaemon] 
+<7>[   30.106419] [95:zygote] fork err at pid
+<7>[   30.106443] [95:zygote] fork [412:zygote]
+<7>[   30.106559] [410:zygote] set proc[410] name: ->[GC] 
+<7>[   30.107183] [408:zygote] fork err at pid
+<7>[   30.107204] [408:zygote] fork [413:zygote]
+<7>[   30.108545] [412:zygote] set proc[412] name: ->[FinalizerWatchd] 
+<7>[   30.114911] binder: 7833: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 108:4 code 1d start 30.96400
+<5>[   30.119887] [AppLaunch] LCD frame buffer update done !
+<5>[   30.124430] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.125910] [394:re-initialized>] set proc[394] name: ->[e.process.gapps] 
+<7>[   30.126941] binder: 7850: call  from 394:394 to 94:0 node 29 handle 5 (SurfaceFlinger) size 64:0 code 4 start 30.108446
+<7>[   30.127513] binder: 7855: call  from 394:394 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 30.109012
+<7>[   30.129112] binder: 7857: call  from 394:394 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 30.110596
+<7>[   30.130916] binder: 7862: call  from 394:394 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 25 start 30.112192
+<5>[   30.137213] [AppLaunch] LCD frame buffer update done !
+<7>[   30.138996] [413:zygote] set proc[413] name: ->[Signal Catcher] 
+<7>[   30.139295] [408:zygote] fork err at pid
+<7>[   30.139318] [408:zygote] fork [414:zygote]
+<7>[   30.147937] [414:zygote] set proc[414] name: ->[Compiler] 
+<7>[   30.148547] [408:zygote] fork err at pid
+<7>[   30.148569] [408:zygote] fork [415:zygote]
+<5>[   30.157633] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.159986] [415:zygote] set proc[415] name: ->[ReferenceQueueD] 
+<7>[   30.162622] [408:zygote] fork err at pid
+<7>[   30.162649] [408:zygote] fork [416:zygote]
+<7>[   30.168902] [416:zygote] set proc[416] name: ->[FinalizerDaemon] 
+<7>[   30.169348] [408:zygote] fork err at pid
+<7>[   30.169376] [408:zygote] fork [417:zygote]
+<5>[   30.172092] [AppLaunch] LCD frame buffer update done !
+<7>[   30.173056] [417:zygote] set proc[417] name: ->[FinalizerWatchd] 
+<7>[   30.174333] [408:zygote] set proc[408] name: ->[d.process.media] 
+<7>[   30.177609] [408:d.process.media] fork err at pid
+<7>[   30.177638] [408:d.process.media] fork [418:d.process.media]
+<7>[   30.178555] [408:d.process.media] set proc[408] name: ->[re-initialized>] 
+<7>[   30.187496] [418:d.process.media] set proc[418] name: ->[Binder Thread #] 
+<7>[   30.187941] binder: 7872: call  from 394:394 to 254:0 node 6397 handle 3 (package) size 136:0 code 1 start 30.169436
+<5>[   30.196888] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.199145] binder: 7878: call  from 408:408 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 30.178032
+<7>[   30.202454] [418:Binder Thread #] fork err at pid
+<7>[   30.202479] [418:Binder Thread #] fork [419:Binder Thread #]
+<7>[   30.204809] binder: 7887: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 30.186285
+<5>[   30.206922] [AppLaunch] LCD frame buffer update done !
+<7>[   30.208748] [408:re-initialized>] set proc[408] name: ->[d.process.media] 
+<7>[   30.212642] binder: 7895: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 96:8 code 4 start 30.194103
+<7>[   30.214352] [419:Binder Thread #] set proc[419] name: ->[Binder Thread #] 
+<7>[   30.215466] binder: 7906: call  from 254:264 to 94:0 node 29 handle 1 (SurfaceFlinger) size 64:0 code 2 start 30.196957
+<7>[   30.216546] binder: 7911: call  from 408:408 to 94:0 node 29 handle 5 (SurfaceFlinger) size 64:0 code 4 start 30.198034
+<7>[   30.217105] binder: 7912: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 540:8 code c start 30.198566
+<7>[   30.218172] binder: 7920: call  from 408:408 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 30.199650
+<5>[   30.229289] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.237132] binder: 7926: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 452:8 code c start 30.208448
+<7>[   30.240010] binder: 7931: call  from 408:408 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 30.221493
+<7>[   30.241223] binder: 7938: call  from 408:408 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 25 start 30.222701
+<5>[   30.241769] [AppLaunch] LCD frame buffer update done !
+<5>[   30.246375] [Power/Battery] [use_chip_trim_value] 1996 -> 2005
+<7>[   30.249718] binder: 7940: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 128:4 code 9 start 30.230709
+<5>[   30.260407] [Power/Battery] [use_chip_trim_value] 2002 -> 2012
+<5>[   30.263386] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   30.270368] [Power/Battery] [use_chip_trim_value] 0 -> 0
+<7>[   30.272056] [332:ndroid.systemui] fork err at pid
+<7>[   30.272083] [332:ndroid.systemui] fork [420:ndroid.systemui]
+<7>[   30.273316] [420:ndroid.systemui] set proc[420] name: ->[SharedPreferenc] 
+<5>[   30.276573] [AppLaunch] LCD frame buffer update done !
+<7>[   30.285088] [409:ReferenceQueueD] exit
+<7>[   30.285264] [411:FinalizerDaemon] exit
+<7>[   30.285414] [412:FinalizerWatchd] exit
+<5>[   30.297897] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.299844] binder: 7962: call  from 408:408 to 254:0 node 6397 handle 3 (package) size 144:0 code 1 start 30.280725
+<7>[   30.302821] [420:SharedPreferenc] exit
+<7>[   30.303329] binder: 7966: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 176:4 code 3 start 30.284788
+<7>[   30.307021] [394:e.process.gapps] fork err at pid
+<7>[   30.307048] [394:e.process.gapps] fork [421:e.process.gapps]
+<5>[   30.307839] [Power/Battery] [FGADC] 1,2012,0,0,3815,39,40,40,1245,1254,-50,0,0,1000,0,3829,1000,60,60,1963,102,103
+<7>[   30.309239] binder: 7971: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 1024:8 code c start 30.289280
+<7>[   30.310948] [421:e.process.gapps] set proc[421] name: ->[RefQueueWorker@] 
+<5>[   30.311463] [AppLaunch] LCD frame buffer update done !
+<7>[   30.315865] [95:zygote] fork err at pid
+<7>[   30.315983] [95:zygote] fork [422:zygote]
+<7>[   30.318130] [95:zygote] fork err at pid
+<7>[   30.318245] [95:zygote] fork [423:zygote]
+<7>[   30.321306] [422:zygote] fork err at pid
+<7>[   30.321593] [422:zygote] fork [424:zygote]
+<7>[   30.328203] [423:zygote] set proc[423] name: ->[ReferenceQueueD] 
+<7>[   30.329643] [95:zygote] fork err at pid
+<7>[   30.329674] [95:zygote] fork [425:zygote]
+<7>[   30.331240] binder: 7981: call  from 394:394 to 254:0 node 6401 handle 1 (activity) size 356:8 code c start 30.312577
+<5>[   30.331730] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.333414] [424:zygote] set proc[424] name: ->[GC] 
+<7>[   30.335214] [425:zygote] set proc[425] name: ->[FinalizerDaemon] 
+<7>[   30.335677] [95:zygote] fork err at pid
+<7>[   30.335701] [95:zygote] fork [426:zygote]
+<7>[   30.336302] [422:zygote] fork err at pid
+<7>[   30.336324] [422:zygote] fork [427:zygote]
+<7>[   30.339010] [426:zygote] set proc[426] name: ->[FinalizerWatchd] 
+<7>[   30.339140] [427:zygote] set proc[427] name: ->[Signal Catcher] 
+<7>[   30.340485] [269:er.ServerThread] fork err at pid
+<7>[   30.340511] [269:er.ServerThread] fork [428:er.ServerThread]
+<7>[   30.343141] binder: 7990: call  from 332:332 to 254:0 node 7189 handle 21 (mount) size 52:4 code 1 start 30.324620
+<7>[   30.344090] binder: 7994: call  from 332:332 to 254:0 node 7189 handle 21 (mount) size 36:0 code 3 start 30.325579
+<7>[   30.344781] binder: 7998: call  from 332:332 to 254:0 node 7189 handle 21 (mount) size 64:0 code a start 30.326282
+<5>[   30.346326] [AppLaunch] LCD frame buffer update done !
+<7>[   30.347016] [332:ndroid.systemui] fork err at pid
+<7>[   30.347040] [332:ndroid.systemui] fork [429:ndroid.systemui]
+<7>[   30.347094] binder: 8000: call  from 394:394 to 254:0 node 6443 handle 8 (account) size 80:0 code 4 start 30.327537
+<7>[   30.348197] binder: 8002: call  from 394:394 to 254:0 node 6397 handle 3 (package) size 172:0 code a start 30.329660
+<7>[   30.351982] [422:zygote] fork err at pid
+<7>[   30.352006] [422:zygote] fork [430:zygote]
+<7>[   30.355141] [428:er.ServerThread] set proc[428] name: ->[LocationManager] 
+<7>[   30.355453] [269:er.ServerThread] fork err at pid
+<7>[   30.355477] [269:er.ServerThread] fork [431:er.ServerThread]
+<7>[   30.356357] [429:ndroid.systemui] set proc[429] name: ->[SystemUI Storag] 
+<7>[   30.356784] [430:zygote] set proc[430] name: ->[Compiler] 
+<7>[   30.362732] binder: 8008: call  from 332:332 to 254:0 node 7189 handle 21 (mount) size 36:0 code 1e start 30.344205
+<7>[   30.364080] binder: 8010: call  from 332:332 to 254:0 node 7189 handle 21 (mount) size 64:0 code a start 30.345496
+<7>[   30.364806] binder: 8012: call  from 332:332 to 254:0 node 7189 handle 21 (mount) size 68:0 code a start 30.346271
+<5>[   30.365757] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.366656] binder: 8014: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 180:0 code 4 start 30.348119
+<7>[   30.367671] binder: 8017: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 124:0 code 5 start 30.349141
+<7>[   30.368326] binder: 8020: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 192:0 code 4 start 30.349799
+<7>[   30.368990] binder: 8023: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 136:0 code 5 start 30.350465
+<7>[   30.372928] [422:zygote] fork err at pid
+<7>[   30.372954] [422:zygote] fork [432:zygote]
+<7>[   30.373400] binder: 8029: call  from 332:332 to 254:0 node 6758 handle 22 (bluetooth) size 68:0 code 2 start 30.353286
+<7>[   30.375419] binder: 8033: call  from 332:429 to 254:0 node 7189 handle 21 (mount) size 64:0 code a start 30.356882
+<7>[   30.375495] binder: 8034: call  from 394:394 to 254:0 node 6397 handle 3 (package) size 172:0 code 1 start 30.356996
+<7>[   30.376763] binder: 8037: call  from 332:332 to 254:0 node 6758 handle 22 (bluetooth) size 68:0 code 2 start 30.358229
+<7>[   30.377206] binder: 8039: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 192:0 code 4 start 30.358665
+<5>[   30.381152] [AppLaunch] LCD frame buffer update done !
+<7>[   30.382342] [431:er.ServerThread] set proc[431] name: ->[CountryDetector] 
+<7>[   30.383334] [269:er.ServerThread] fork err at pid
+<7>[   30.383359] [269:er.ServerThread] fork [433:er.ServerThread]
+<7>[   30.385773] [432:zygote] set proc[432] name: ->[ReferenceQueueD] 
+<7>[   30.386196] [422:zygote] fork err at pid
+<7>[   30.386219] [422:zygote] fork [434:zygote]
+<7>[   30.386829] [433:er.ServerThread] set proc[433] name: ->[ThrottleService] 
+<7>[   30.389896] [269:er.ServerThread] fork err at pid
+<7>[   30.389925] [269:er.ServerThread] fork [435:er.ServerThread]
+<7>[   30.391947] [434:zygote] set proc[434] name: ->[FinalizerDaemon] 
+<7>[   30.392513] [422:zygote] fork err at pid
+<7>[   30.392536] [422:zygote] fork [436:zygote]
+<7>[   30.393323] [435:er.ServerThread] set proc[435] name: ->[NetworkTimeUpda] 
+<7>[   30.396783] [423:ReferenceQueueD] exit
+<7>[   30.397141] [425:FinalizerDaemon] exit
+<7>[   30.397305] [426:FinalizerWatchd] exit
+<7>[   30.404140] [436:zygote] set proc[436] name: ->[FinalizerWatchd] 
+<7>[   30.407367] binder: 8044: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 136:0 code 5 start 30.388864
+<7>[   30.408210] binder: 8047: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 196:0 code 4 start 30.389707
+<7>[   30.408991] binder: 8050: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 140:0 code 5 start 30.390492
+<7>[   30.409821] binder: 8053: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 196:0 code 4 start 30.391317
+<7>[   30.410433] binder: 8056: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 200:0 code 4 start 30.391934
+<7>[   30.410935] binder: 8059: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 140:0 code 5 start 30.392439
+<7>[   30.411413] binder: 8062: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 144:0 code 5 start 30.392917
+<7>[   30.411912] binder: 8065: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 188:0 code 4 start 30.393414
+<7>[   30.412630] binder: 8068: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 132:0 code 5 start 30.394131
+<7>[   30.414230] binder: 8072: call  from 408:408 to 254:0 node 6401 handle 1 (activity) size 276:8 code c start 30.395695
+<7>[   30.416764] [422:zygote] set proc[422] name: ->[putmethod.latin] 
+<7>[   30.422630] [422:putmethod.latin] fork err at pid
+<7>[   30.422662] [422:putmethod.latin] fork [437:putmethod.latin]
+<7>[   30.423455] [422:putmethod.latin] set proc[422] name: ->[re-initialized>] 
+<5>[   30.423741] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.425054] binder: 8081: call  from 332:332 to 254:0 node 7374 handle 23 (audio) size 64:0 code d start 30.406512
+<7>[   30.425492] binder: 8083: call  from 332:332 to 254:0 node 7374 handle 23 (audio) size 68:0 code 10 start 30.406965
+<7>[   30.425938] binder: 8085: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 188:0 code 4 start 30.407397
+<7>[   30.426548] binder: 8088: call  from 332:332 to 254:0 node 6948 handle 19 (statusbar) size 132:0 code 5 start 30.408021
+<7>[   30.428387] binder: 8094: call  from 332:332 to 98:0 node 135 handle 24 (media.audio_policy) size 96:0 code 7 start 30.409859
+<7>[   30.428901] binder: 8099: call  from 332:332 to 98:0 node 102 handle 25 (media.audio_flinger) size 80:4 code 15 start 30.410374
+<7>[   30.429146] binder: 8102: call  from 98:205 to 254:0 node 2173 handle 4 (power) size 112:4 code 1 start 30.410641
+<7>[   30.431047] binder: 8109: call  from 332:332 to 98:0 node 102 handle 25 (media.audio_flinger) size 68:0 code 3 start 30.412504
+<7>[   30.431736] binder: 8111: call  from 332:332 to 98:0 node 102 handle 25 (media.audio_flinger) size 116:0 code 1 start 30.413223
+<5>[   30.433477] [AppLaunch] LCD frame buffer update done !
+<7>[   30.438208] [95:zygote] fork err at pid
+<7>[   30.438242] [95:zygote] fork [438:zygote]
+<7>[   30.439978] binder: 8129: call  from 332:332 to 98:0 node 102 handle 25 (media.audio_flinger) size 68:0 code 32 start 30.421326
+<7>[   30.445472] [154:netd] fork err at pid
+<7>[   30.445497] [154:netd] fork [439:netd]
+<7>[   30.446410] [437:putmethod.latin] set proc[437] name: ->[Binder Thread #] 
+<7>[   30.446466] binder: 8131: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 692:8 code c start 30.427793
+<7>[   30.447360] [438:zygote] fork err at pid
+<7>[   30.447388] [438:zygote] fork [440:zygote]
+<7>[   30.454025] [437:Binder Thread #] fork err at pid
+<7>[   30.454052] [437:Binder Thread #] fork [441:Binder Thread #]
+<7>[   30.455901] [440:zygote] set proc[440] name: ->[GC] 
+<5>[   30.456803] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.459156] [95:zygote] fork err at pid
+<7>[   30.459181] [95:zygote] fork [442:zygote]
+<7>[   30.459218] binder: 8142: call  from 422:422 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 30.440503
+<7>[   30.459934] [394:e.process.gapps] fork err at pid
+<7>[   30.459962] [394:e.process.gapps] fork [443:e.process.gapps]
+<7>[   30.460237] [438:zygote] fork err at pid
+<7>[   30.460258] [438:zygote] fork [444:zygote]
+<7>[   30.460316] [441:Binder Thread #] set proc[441] name: ->[Binder Thread #] 
+<7>[   30.460669] [442:zygote] set proc[442] name: ->[ReferenceQueueD] 
+<7>[   30.460964] [95:zygote] fork err at pid
+<7>[   30.460987] [95:zygote] fork [445:zygote]
+<7>[   30.461082] [443:e.process.gapps] set proc[443] name: ->[RefQueueWorker@] 
+<7>[   30.463246] [444:zygote] set proc[444] name: ->[Signal Catcher] 
+<7>[   30.463548] [438:zygote] fork err at pid
+<7>[   30.463570] [438:zygote] fork [446:zygote]
+<7>[   30.463618] binder: 8145: call  from 394:394 to 254:0 node 6401 handle 1 (activity) size 148:0 code 35 start 30.444653
+<7>[   30.463740] [265:Binder Thread #] fork err at pid
+<7>[   30.463761] [265:Binder Thread #] fork [447:Binder Thread #]
+<7>[   30.464197] binder: 8147: call  from 394:394 to 254:0 node 6401 handle 1 (activity) size 164:0 code 35 start 30.445682
+<5>[   30.468319] [AppLaunch] LCD frame buffer update done !
+<7>[   30.469050] [445:zygote] set proc[445] name: ->[FinalizerDaemon] 
+<7>[   30.469371] [95:zygote] fork err at pid
+<7>[   30.469396] [95:zygote] fork [448:zygote]
+<7>[   30.469506] [446:zygote] set proc[446] name: ->[Compiler] 
+<7>[   30.469968] [447:Binder Thread #] set proc[447] name: ->[Binder Thread #] 
+<7>[   30.471610] [438:zygote] fork err at pid
+<7>[   30.471634] [438:zygote] fork [449:zygote]
+<7>[   30.471992] [448:zygote] set proc[448] name: ->[FinalizerWatchd] 
+<7>[   30.475063] [442:ReferenceQueueD] exit
+<7>[   30.475285] [445:FinalizerDaemon] exit
+<7>[   30.475688] [448:FinalizerWatchd] exit
+<7>[   30.476473] [449:zygote] set proc[449] name: ->[ReferenceQueueD] 
+<7>[   30.479119] [438:zygote] fork err at pid
+<7>[   30.479145] [438:zygote] fork [450:zygote]
+<7>[   30.480218] binder: 8149: call  from 394:394 to 254:0 node 6401 handle 1 (activity) size 5944:24 code 1e start 30.461650
+<7>[   30.481070] [450:zygote] set proc[450] name: ->[FinalizerDaemon] 
+<7>[   30.481465] [438:zygote] fork err at pid
+<7>[   30.481489] [438:zygote] fork [451:zygote]
+<7>[   30.481582] [451:zygote] set proc[451] name: ->[FinalizerWatchd] 
+<7>[   30.482397] [438:zygote] set proc[438] name: ->[m.android.phone] 
+<7>[   30.494555] [95:zygote] fork err at pid
+<7>[   30.494594] [95:zygote] fork [452:zygote]
+<7>[   30.495221] [95:zygote] fork err at pid
+<7>[   30.495247] [95:zygote] fork [453:zygote]
+<5>[   30.500614] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.502084] [438:m.android.phone] fork err at pid
+<7>[   30.502111] [438:m.android.phone] fork [454:m.android.phone]
+<7>[   30.502789] [438:m.android.phone] set proc[438] name: ->[re-initialized>] 
+<7>[   30.505624] [452:zygote] fork err at pid
+<7>[   30.505649] [452:zygote] fork [455:zygote]
+<7>[   30.505782] [454:m.android.phone] set proc[454] name: ->[Binder Thread #] 
+<7>[   30.507041] binder: 8168: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 30.488502
+<7>[   30.507203] [447:Binder Thread #] fork err at pid
+<7>[   30.507227] [447:Binder Thread #] fork [456:Binder Thread #]
+<7>[   30.507579] [454:Binder Thread #] fork err at pid
+<7>[   30.507603] [454:Binder Thread #] fork [457:Binder Thread #]
+<5>[   30.520573] [AppLaunch] LCD frame buffer update done !
+<7>[   30.524174] [453:zygote] set proc[453] name: ->[ReferenceQueueD] 
+<7>[   30.524675] [95:zygote] fork err at pid
+<7>[   30.524704] [95:zygote] fork [458:zygote]
+<7>[   30.524845] [455:zygote] set proc[455] name: ->[GC] 
+<7>[   30.525540] [452:zygote] fork err at pid
+<7>[   30.525565] [452:zygote] fork [459:zygote]
+<7>[   30.525653] [456:Binder Thread #] set proc[456] name: ->[Binder Thread #] 
+<7>[   30.526090] [456:Binder Thread #] fork err at pid
+<7>[   30.526119] [456:Binder Thread #] fork [460:Binder Thread #]
+<7>[   30.526206] [457:Binder Thread #] set proc[457] name: ->[Binder Thread #] 
+<7>[   30.526639] [458:zygote] set proc[458] name: ->[FinalizerDaemon] 
+<7>[   30.527042] [95:zygote] fork err at pid
+<7>[   30.527068] [95:zygote] fork [461:zygote]
+<7>[   30.527190] [459:zygote] set proc[459] name: ->[Signal Catcher] 
+<7>[   30.527502] [452:zygote] fork err at pid
+<7>[   30.527526] [452:zygote] fork [462:zygote]
+<7>[   30.527623] [460:Binder Thread #] set proc[460] name: ->[Binder Thread #] 
+<5>[   30.528051] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.529033] [461:zygote] set proc[461] name: ->[FinalizerWatchd] 
+<5>[   30.537942] [AppLaunch] LCD frame buffer update done !
+<7>[   30.544395] [453:ReferenceQueueD] exit
+<7>[   30.544569] [458:FinalizerDaemon] exit
+<7>[   30.546090] [461:FinalizerWatchd] exit
+<7>[   30.546230] [462:zygote] set proc[462] name: ->[Compiler] 
+<7>[   30.546760] [452:zygote] fork err at pid
+<7>[   30.546783] [452:zygote] fork [463:zygote]
+<7>[   30.551005] [463:zygote] set proc[463] name: ->[ReferenceQueueD] 
+<7>[   30.551299] [452:zygote] fork err at pid
+<7>[   30.551323] [452:zygote] fork [464:zygote]
+<7>[   30.555038] [464:zygote] set proc[464] name: ->[FinalizerDaemon] 
+<7>[   30.555416] [452:zygote] fork err at pid
+<7>[   30.555440] [452:zygote] fork [465:zygote]
+<7>[   30.563428] [95:zygote] fork err at pid
+<7>[   30.563467] [95:zygote] fork [466:zygote]
+<7>[   30.564090] [95:zygote] fork err at pid
+<7>[   30.564116] [95:zygote] fork [467:zygote]
+<7>[   30.568399] [465:zygote] set proc[465] name: ->[FinalizerWatchd] 
+<7>[   30.569267] [452:zygote] set proc[452] name: ->[iatek.bluetooth] 
+<7>[   30.572464] [452:iatek.bluetooth] fork err at pid
+<7>[   30.572493] [452:iatek.bluetooth] fork [468:iatek.bluetooth]
+<7>[   30.573171] [452:iatek.bluetooth] set proc[452] name: ->[re-initialized>] 
+<7>[   30.575977] [466:zygote] fork err at pid
+<7>[   30.576002] [466:zygote] fork [469:zygote]
+<7>[   30.576131] [468:iatek.bluetooth] set proc[468] name: ->[Binder Thread #] 
+<7>[   30.576906] binder: 8181: call  from 452:452 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 30.558366
+<7>[   30.577302] [468:Binder Thread #] fork err at pid
+<7>[   30.577328] [468:Binder Thread #] fork [470:Binder Thread #]
+<7>[   30.577442] [467:zygote] set proc[467] name: ->[ReferenceQueueD] 
+<7>[   30.577785] [95:zygote] fork err at pid
+<7>[   30.577807] [95:zygote] fork [471:zygote]
+<7>[   30.578927] [469:zygote] set proc[469] name: ->[GC] 
+<7>[   30.579550] [466:zygote] fork err at pid
+<7>[   30.579576] [466:zygote] fork [472:zygote]
+<7>[   30.579616] [471:zygote] set proc[471] name: ->[FinalizerDaemon] 
+<7>[   30.579928] [95:zygote] fork err at pid
+<7>[   30.579951] [95:zygote] fork [473:zygote]
+<7>[   30.582635] [470:Binder Thread #] set proc[470] name: ->[Binder Thread #] 
+<7>[   30.586838] [473:zygote] set proc[473] name: ->[FinalizerWatchd] 
+<7>[   30.587007] [472:zygote] set proc[472] name: ->[Signal Catcher] 
+<5>[   30.590161] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.591088] [466:zygote] fork err at pid
+<7>[   30.591112] [466:zygote] fork [474:zygote]
+<7>[   30.594819] [474:zygote] set proc[474] name: ->[Compiler] 
+<7>[   30.595781] [466:zygote] fork err at pid
+<7>[   30.595805] [466:zygote] fork [475:zygote]
+<5>[   30.607740] [AppLaunch] LCD frame buffer update done !
+<7>[   30.609728] [475:zygote] set proc[475] name: ->[ReferenceQueueD] 
+<7>[   30.610031] [466:zygote] fork err at pid
+<7>[   30.610055] [466:zygote] fork [476:zygote]
+<5>[   30.624097] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.631871] [476:zygote] set proc[476] name: ->[FinalizerDaemon] 
+<7>[   30.632252] [466:zygote] fork err at pid
+<7>[   30.632278] [466:zygote] fork [477:zygote]
+<7>[   30.632385] [477:zygote] set proc[477] name: ->[FinalizerWatchd] 
+<7>[   30.633212] [466:zygote] set proc[466] name: ->[hololauncher.hd] 
+<7>[   30.636454] [466:hololauncher.hd] fork err at pid
+<7>[   30.636483] [466:hololauncher.hd] fork [478:hololauncher.hd]
+<7>[   30.637184] [466:hololauncher.hd] set proc[466] name: ->[re-initialized>] 
+<5>[   30.642634] [AppLaunch] LCD frame buffer update done !
+<7>[   30.648670] [478:hololauncher.hd] set proc[478] name: ->[Binder Thread #] 
+<7>[   30.649464] binder: 8194: call  from 466:466 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 30.630925
+<7>[   30.649628] [460:Binder Thread #] fork err at pid
+<7>[   30.649652] [460:Binder Thread #] fork [479:Binder Thread #]
+<7>[   30.649949] [478:Binder Thread #] fork err at pid
+<7>[   30.649972] [478:Binder Thread #] fork [480:Binder Thread #]
+<7>[   30.651702] [479:Binder Thread #] set proc[479] name: ->[Binder Thread #] 
+<7>[   30.652017] [479:Binder Thread #] fork err at pid
+<7>[   30.652042] [479:Binder Thread #] fork [481:Binder Thread #]
+<7>[   30.652107] [480:Binder Thread #] set proc[480] name: ->[Binder Thread #] 
+<7>[   30.658564] [481:Binder Thread #] set proc[481] name: ->[Binder Thread #] 
+<5>[   30.696075] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.706013] binder: 8203: call  from 408:408 to 254:0 node 6401 handle 1 (activity) size 0:0 code 5f4e5446 start 30.687508
+<7>[   30.706966] binder: 8205: async from 332:332 to 254:0 node 6401 handle 1 (activity) size 96:4 code 3d start 30.688458
+<7>[   30.707136] binder: 8206: async from 332:332 to 254:0 node 6401 handle 1 (activity) size 96:4 code 3d start 30.688646
+<7>[   30.707305] binder: 8207: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 30.688810
+<7>[   30.708826] binder: 8210: call  from 408:408 to 254:0 node 6401 handle 1 (activity) size 364:8 code c start 30.690284
+<7>[   30.711330] binder: 8216: call  from 394:394 to 254:0 node 6401 handle 1 (activity) size 0:0 code 5f4e5446 start 30.692816
+<7>[   30.711524] binder: 8217: call  from 372:372 to 254:0 node 6401 handle 1 (activity) size 0:0 code 5f4e5446 start 30.693026
+<5>[   30.712272] [AppLaunch] LCD frame buffer update done !
+<7>[   30.726740] binder: 8223: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 30.708148
+<7>[   30.746917] [438:re-initialized>] set proc[438] name: ->[m.android.phone] 
+<7>[   30.753159] binder: 8249: call  from 254:269 to 109:0 node 4 handle 54 (DMAgent) size 24:0 code 3 start 30.734650
+<7>[   30.753595] binder: 8250: call  from 394:394 to 254:0 node 6481 handle 10 (content) size 188:0 code 7 start 30.735062
+<7>[   30.757436] [452:re-initialized>] set proc[452] name: ->[iatek.bluetooth] 
+<5>[   30.762816] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.763954] binder: 8263: call  from 438:438 to 94:0 node 29 handle 5 (SurfaceFlinger) size 64:0 code 4 start 30.745456
+<7>[   30.765489] binder: 8268: call  from 438:438 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 30.746980
+<7>[   30.765885] binder: 8270: call  from 452:452 to 94:0 node 29 handle 5 (SurfaceFlinger) size 64:0 code 4 start 30.747387
+<7>[   30.769261] binder: 8275: call  from 452:452 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 30.749171
+<7>[   30.770876] binder: 8277: call  from 438:438 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 30.752334
+<7>[   30.775264] binder: 8282: call  from 438:438 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 30.755187
+<7>[   30.779251] binder: 8293: call  from 422:422 to 254:0 node 6401 handle 1 (activity) size 0:0 code 5f4e5446 start 30.760738
+<7>[   30.780233] binder: 8296: call  from 408:408 to 254:0 node 6401 handle 1 (activity) size 276:8 code c start 30.761702
+<7>[   30.781420] [422:re-initialized>] set proc[422] name: ->[putmethod.latin] 
+<5>[   30.781981] [AppLaunch] LCD frame buffer update done !
+<7>[   30.791899] binder: 8304: call  from 452:452 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 30.773387
+<7>[   30.792803] binder: 8308: call  from 408:408 to 254:0 node 6401 handle 1 (activity) size 280:8 code c start 30.774280
+<7>[   30.794968] binder: 8314: call  from 466:466 to 254:0 node 6401 handle 1 (activity) size 0:0 code 5f4e5446 start 30.776449
+<7>[   30.795749] [466:re-initialized>] set proc[466] name: ->[hololauncher.hd] 
+<5>[   30.798771] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   30.799480] binder: 8322: call  from 408:408 to 254:0 node 7189 handle 8 (mount) size 52:4 code 1 start 30.780966
+<7>[   30.800192] binder: 8326: call  from 466:466 to 94:0 node 29 handle 6 (SurfaceFlinger) size 64:0 code 4 start 30.781691
+<7>[   30.801130] binder: 8331: call  from 466:466 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 30.782623
+<7>[   30.802152] binder: 8333: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 30.783563
+<7>[   30.808791] binder: 8335: call  from 422:422 to 94:0 node 29 handle 6 (SurfaceFlinger) size 64:0 code 4 start 30.790276
+<7>[   30.809403] binder: 8340: call  from 422:422 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 30.790902
+<7>[   30.809942] binder: 8342: call  from 408:408 to 254:0 node 7189 handle 8 (mount) size 36:0 code 1e start 30.791428
+<7>[   30.811659] [408:d.process.media] fork err at pid
+<7>[   30.811686] [408:d.process.media] fork [482:d.process.media]
+<7>[   30.812883] binder: 8344: call  from 422:422 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 30.794357
+<5>[   30.816857] [AppLaunch] LCD frame buffer update done !
+<7>[   30.829394] binder: 8349: call  from 452:452 to 254:0 node 6744 handle 2 (window) size 0:0 code 5f4e5446 start 30.810870
+<7>[   30.833666] binder: 8351: call  from 438:438 to 254:0 node 6397 handle 3 (package) size 0:0 code 5f4e5446 start 30.815142
+<7>[   30.837901] [404:Binder Thread #] fork err at pid
+<7>[   30.837927] [404:Binder Thread #] fork [483:Binder Thread #]
+<7>[   30.842471] binder: 8372: async from 372:372 to 254:0 node 6401 handle 1 (activity) size 96:4 code 3d start 30.823948
+<7>[   30.843120] binder: 8375: call  from 372:372 to 254:0 node 6443 handle 9 (account) size 104:0 code 4 start 30.824622
+<7>[   30.843777] binder: 8377: call  from 372:372 to 254:0 node 6401 handle 1 (activity) size 392:8 code 26 start 30.825258
+<7>[   30.844822] binder: 8380: call  from 452:452 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 30.826227
+<7>[   30.845705] binder: 8384: call  from 438:438 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 25 start 30.827189
+<7>[   30.856006] [482:d.process.media] set proc[482] name: ->[SharedPreferenc] 
+<7>[   30.868928] [483:Binder Thread #] set proc[483] name: ->[Binder Thread #] 
+<7>[   30.879143] binder: 8393: call  from 372:372 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 30.860645
+<7>[   30.884918] binder: 8394: call  from 452:452 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 25 start 30.861222
+<7>[   30.887115] [269:er.ServerThread] fork err at pid
+<7>[   30.887144] [269:er.ServerThread] fork [484:er.ServerThread]
+<7>[   30.890791] binder: 8397: call  from 408:408 to 254:0 node 7189 handle 8 (mount) size 64:0 code a start 30.872251
+<7>[   30.890961] [482:SharedPreferenc] exit
+<7>[   30.892062] binder: 8401: call  from 372:372 to 254:0 node 6401 handle 1 (activity) size 156:4 code 45 start 30.873559
+<7>[   30.893657] [408:d.process.media] fork err at pid
+<7>[   30.893685] [408:d.process.media] fork [485:d.process.media]
+<7>[   30.893920] binder: 8404: call  from 452:452 to 254:0 node 7165 handle 7 (connectivity) size 0:0 code 5f4e5446 start 30.875402
+<7>[   30.899409] binder: 8409: call  from 422:422 to 254:0 node 7165 handle 8 (connectivity) size 76:0 code 25 start 30.880888
+<7>[   30.908876] binder: 8411: call  from 466:466 to 254:0 node 7165 handle 8 (connectivity) size 76:0 code 25 start 30.890353
+<7>[   30.913963] [484:er.ServerThread] set proc[484] name: ->[RefQueueWorker@] 
+<7>[   30.915887] [269:er.ServerThread] fork err at pid
+<7>[   30.915916] [269:er.ServerThread] fork [486:er.ServerThread]
+<7>[   30.916342] [485:d.process.media] set proc[485] name: ->[thumbs thread] 
+<7>[   30.916936] [408:d.process.media] fork err at pid
+<7>[   30.916961] [408:d.process.media] fork [487:d.process.media]
+<7>[   30.917706] [487:d.process.media] set proc[487] name: ->[thumbs-cache-th] 
+<7>[   30.918114] [486:er.ServerThread] set proc[486] name: ->[SharedPreferenc] 
+<7>[   30.918528] [269:er.ServerThread] fork err at pid
+<7>[   30.918557] [269:er.ServerThread] fork [488:er.ServerThread]
+<7>[   30.919668] binder: 8413: call  from 408:408 to 254:0 node 6397 handle 3 (package) size 152:0 code a start 30.901169
+<7>[   30.926572] [486:SharedPreferenc] exit
+<7>[   30.929583] [488:er.ServerThread] set proc[488] name: ->[SharedPreferenc] 
+<7>[   30.930279] [269:er.ServerThread] fork err at pid
+<7>[   30.930308] [269:er.ServerThread] fork [489:er.ServerThread]
+<7>[   30.935629] [489:er.ServerThread] set proc[489] name: ->[SharedPreferenc] 
+<7>[   30.936973] [269:er.ServerThread] fork err at pid
+<7>[   30.937002] [269:er.ServerThread] fork [490:er.ServerThread]
+<7>[   30.944943] [439:netd] exit
+<7>[   30.960291] [489:SharedPreferenc] exit
+<7>[   30.962340] [488:SharedPreferenc] exit
+<7>[   30.964518] [490:er.ServerThread] set proc[490] name: ->[SharedPreferenc] 
+<5>[   30.968816] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   30.973646] [AppLaunch] LCD frame buffer update done !
+<7>[   30.974864] binder: 8417: call  from 408:408 to 254:0 node 6397 handle 3 (package) size 152:0 code 1 start 30.956365
+<7>[   30.983346] [269:er.ServerThread] fork err at pid
+<7>[   30.983373] [269:er.ServerThread] fork [491:er.ServerThread]
+<7>[   30.994199] binder: 8419: call  from 408:408 to 254:0 node 6397 handle 3 (package) size 140:0 code a start 30.963798
+<7>[   30.995187] [491:er.ServerThread] set proc[491] name: ->[Thread-84] 
+<7>[   31.000844] [220:vold] fork err at pid
+<7>[   31.000870] [220:vold] fork [492:vold]
+<7>[   31.002319] binder: 8421: call  from 408:408 to 254:0 node 6401 handle 1 (activity) size 292:4 code 22 start 30.976645
+<7>[   31.006807] binder: 8434: call  from 372:389 to 254:0 node 6401 handle 1 (activity) size 152:0 code 35 start 30.988300
+<7>[   31.014576] [269:er.ServerThread] fork err at pid
+<7>[   31.014605] [269:er.ServerThread] fork [493:er.ServerThread]
+<7>[   31.020978] [490:SharedPreferenc] exit
+<7>[   31.024856] binder: 8440: call  from 452:452 to 254:0 node 6397 handle 3 (package) size 136:0 code 1 start 31.6335
+<5>[   31.036332] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.037853] [408:d.process.media] fork err at pid
+<7>[   31.037881] [408:d.process.media] fork [494:d.process.media]
+<7>[   31.042189] [493:er.ServerThread] set proc[493] name: ->[pool-1-thread-1] 
+<5>[   31.043361] [AppLaunch] LCD frame buffer update done !
+<7>[   31.047503] [494:d.process.media] set proc[494] name: ->[Thread-29] 
+<7>[   31.047860] binder: 8450: call  from 408:408 to 254:0 node 6397 handle 3 (package) size 140:0 code a start 31.29344
+<7>[   31.052454] binder: 8452: call  from 98:205 to 254:0 node 2173 handle 4 (power) size 80:4 code 5 start 31.33950
+<7>[   31.056460] [389:Binder Thread #] fork err at pid
+<7>[   31.056487] [389:Binder Thread #] fork [495:Binder Thread #]
+<7>[   31.068018] [495:Binder Thread #] set proc[495] name: ->[RefQueueWorker@] 
+<5>[   31.072060] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.078169] [AppLaunch] LCD frame buffer update done !
+<7>[   31.086237] binder: 8458: call  from 372:389 to 254:0 node 6443 handle 9 (account) size 104:0 code 4 start 31.56984
+<7>[   31.087994] binder: 8460: call  from 372:389 to 254:0 node 6443 handle 9 (account) size 152:0 code 1 start 31.68547
+<5>[   31.106221] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.107165] binder: 8466: call  from 372:389 to 254:0 node 6443 handle 9 (account) size 192:0 code 2 start 31.84134
+<5>[   31.113041] [AppLaunch] LCD frame buffer update done !
+<7>[   31.118558] binder: 8468: call  from 408:408 to 254:0 node 6397 handle 3 (package) size 140:0 code 1 start 31.95684
+<7>[   31.127821] binder: 8470: call  from 438:438 to 254:0 node 6397 handle 3 (package) size 124:0 code 1 start 31.109299
+<5>[   31.141440] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.147960] [AppLaunch] LCD frame buffer update done !
+<7>[   31.160727] binder: 8476: call  from 408:408 to 254:0 node 6401 handle 1 (activity) size 3324:16 code 1e start 31.142168
+<7>[   31.163292] binder: 8484: call  from 408:408 to 254:0 node 6401 handle 1 (activity) size 268:4 code 23 start 31.144736
+<7>[   31.164597] binder: 8486: async from 408:408 to 254:0 node 6401 handle 1 (activity) size 100:4 code 10 start 31.146072
+<5>[   31.176409] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.182721] [AppLaunch] LCD frame buffer update done !
+<7>[   31.192430] binder: 8495: call  from 408:408 to 254:0 node 6481 handle 10 (content) size 172:4 code 1 start 31.164090
+<7>[   31.194348] binder: 8498: call  from 408:494 to 254:0 node 6481 handle 10 (content) size 172:4 code 1 start 31.174971
+<7>[   31.203923] binder: 8501: call  from 452:452 to 254:0 node 6401 handle 1 (activity) size 3592:20 code 1e start 31.181396
+<7>[   31.211550] binder: 8510: call  from 422:422 to 254:0 node 6397 handle 3 (package) size 148:0 code 1 start 31.193027
+<7>[   31.224204] binder: 8511: call  from 394:394 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 31.201054
+<7>[   31.234371] binder: 8525: call  from 408:494 to 254:0 node 6481 handle 10 (content) size 88:4 code 2 start 31.214898
+<5>[   31.235963] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.236865] binder: 8527: call  from 408:408 to 254:0 node 7195 handle 11 (notification) size 144:0 code 3 start 31.218337
+<7>[   31.238672] binder: 8531: async from 372:372 to 254:0 node 6401 handle 1 (activity) size 96:4 code 3d start 31.220166
+<7>[   31.238983] binder: 8532: async from 372:372 to 254:0 node 6401 handle 1 (activity) size 96:4 code 3d start 31.220490
+<7>[   31.240886] [408:d.process.media] fork err at pid
+<7>[   31.240914] [408:d.process.media] fork [496:d.process.media]
+<7>[   31.245420] binder: 8534: call  from 452:452 to 254:0 node 6401 handle 1 (activity) size 0:0 code 5f4e5446 start 31.226904
+<7>[   31.246996] binder: 8536: call  from 408:494 to 254:0 node 6481 handle 10 (content) size 172:4 code 1 start 31.228445
+<5>[   31.252459] [AppLaunch] LCD frame buffer update done !
+<7>[   31.253880] [422:putmethod.latin] fork err at pid
+<7>[   31.253908] [422:putmethod.latin] fork [497:putmethod.latin]
+<7>[   31.253946] binder: 8540: call  from 408:494 to 254:0 node 6481 handle 10 (content) size 88:4 code 2 start 31.229937
+<7>[   31.256195] [494:Thread-29] exit
+<7>[   31.258577] [496:d.process.media] set proc[496] name: ->[Download Servic] 
+<7>[   31.258799] binder: 8542: async from 408:408 to 254:0 node 6401 handle 1 (activity) size 96:4 code 3d start 31.240297
+<7>[   31.258957] binder: 8543: async from 408:408 to 254:0 node 6401 handle 1 (activity) size 96:4 code 3d start 31.240468
+<5>[   31.268416] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.269730] binder: 8548: call  from 438:438 to 254:0 node 6397 handle 3 (package) size 152:0 code a start 31.251208
+<7>[   31.272828] [497:putmethod.latin] set proc[497] name: ->[SharedPreferenc] 
+<7>[   31.278597] [497:SharedPreferenc] exit
+<5>[   31.287251] [AppLaunch] LCD frame buffer update done !
+<7>[   31.299524] binder: 8557: call  from 438:438 to 254:0 node 6397 handle 3 (package) size 152:0 code 1 start 31.281012
+<5>[   31.303518] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.308337] [438:m.android.phone] fork err at pid
+<7>[   31.308365] [438:m.android.phone] fork [498:m.android.phone]
+<7>[   31.308403] binder: 8561: call  from 422:422 to 254:0 node 7165 handle 8 (connectivity) size 76:0 code 3 start 31.288376
+<7>[   31.309264] binder: 8563: call  from 422:422 to 254:0 node 6903 handle 9 (input_method) size 100:0 code 17 start 31.290743
+<7>[   31.310273] binder: 8565: call  from 422:422 to 254:0 node 6903 handle 9 (input_method) size 108:0 code 3 start 31.291746
+<7>[   31.314319] binder: 8567: call  from 422:422 to 254:0 node 6903 handle 9 (input_method) size 100:0 code 5 start 31.294440
+<7>[   31.322059] [498:m.android.phone] set proc[498] name: ->[SharedPreferenc] 
+<5>[   31.322138] [AppLaunch] LCD frame buffer update done !
+<5>[   31.338003] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.340736] [438:m.android.phone] fork err at pid
+<7>[   31.340763] [438:m.android.phone] fork [499:m.android.phone]
+<7>[   31.340923] [498:SharedPreferenc] exit
+<7>[   31.345244] [499:m.android.phone] set proc[499] name: ->[SharedPreferenc] 
+<7>[   31.356852] [499:SharedPreferenc] exit
+<5>[   31.356996] [AppLaunch] LCD frame buffer update done !
+<5>[   31.372960] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.376362] binder: 8581: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 144:0 code 1 start 31.357840
+<5>[   31.391883] [AppLaunch] LCD frame buffer update done !
+<5>[   31.407188] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.415937] binder: 8587: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 7724:36 code 1e start 31.395669
+<5>[   31.426659] [AppLaunch] LCD frame buffer update done !
+<7>[   31.430771] binder: 8604: call  from 372:372 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 31.412255
+<7>[   31.432879] binder: 8608: call  from 422:422 to 254:0 node 6909 handle 10 (accessibility) size 124:4 code 1 start 31.414355
+<7>[   31.435090] binder: 8614: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 0:0 code 5f4e5446 start 31.416594
+<5>[   31.442490] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.446661] binder: 8624: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 108:4 code 1d start 31.428163
+<7>[   31.459173] binder: 8629: call  from 422:422 to 254:0 node 6744 handle 2 (window) size 64:0 code b start 31.440655
+<7>[   31.459917] binder: 8631: call  from 422:422 to 254:0 node 6744 handle 2 (window) size 64:0 code 50 start 31.441407
+<5>[   31.461575] [AppLaunch] LCD frame buffer update done !
+<5>[   31.462830] [Power/Battery] [BATTERY:AVG] BatTemp:29 Vbat:3705 VBatSen:3735 SOC:40 ChrDet:1 Vchrin:4778 Icharging:178 ChrType:1 USBstate:2 gADC_I_SENSE_offset:9
+<7>[   31.467241] [192:HeadSetDetect 0] exit
+<5>[   31.476370] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.496422] [AppLaunch] LCD frame buffer update done !
+<5>[   31.510368] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.515112] [AppLaunch] LCD frame buffer update done !
+<7>[   31.537140] binder: 8643: call  from 422:422 to 254:0 node 6401 handle 1 (activity) size 108:4 code 1d start 31.499039
+<5>[   31.545769] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.566089] [AppLaunch] LCD frame buffer update done !
+<5>[   31.580581] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.601000] [AppLaunch] LCD frame buffer update done !
+<5>[   31.614008] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.618105] binder: 8661: call  from 466:466 to 254:0 node 6401 handle 1 (activity) size 1372:8 code 1e start 31.599570
+<5>[   31.618421] [AppLaunch] LCD frame buffer update done !
+<7>[   31.620252] [466:hololauncher.hd] fork err at pid
+<7>[   31.620279] [466:hololauncher.hd] fork [500:hololauncher.hd]
+<7>[   31.625118] [500:hololauncher.hd] set proc[500] name: ->[SharedPreferenc] 
+<7>[   31.626199] binder: 8665: call  from 394:394 to 254:0 node 6744 handle 2 (window) size 0:0 code 5f4e5446 start 31.602097
+<7>[   31.634413] [492:vold] set proc[492] name: ->[fsck_msdos] 
+<7>[   31.639132] binder: 8666: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 144:0 code 1 start 31.620626
+<7>[   31.640304] [466:hololauncher.hd] fork err at pid
+<7>[   31.640331] [466:hololauncher.hd] fork [501:hololauncher.hd]
+<7>[   31.644160] [500:SharedPreferenc] exit
+<7>[   31.644256] [501:hololauncher.hd] set proc[501] name: ->[Thread-39] 
+<7>[   31.644487] binder: 8673: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 144:0 code 1 start 31.625979
+<5>[   31.648006] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.653310] [AppLaunch] LCD frame buffer update done !
+<7>[   31.657287] [501:Thread-39] exit
+<5>[   31.683499] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.688194] [AppLaunch] LCD frame buffer update done !
+<7>[   31.699340] [466:hololauncher.hd] fork err at pid
+<7>[   31.699367] [466:hololauncher.hd] fork [502:hololauncher.hd]
+<7>[   31.703043] [502:hololauncher.hd] set proc[502] name: ->[DispatcherThrea] 
+<5>[   31.716994] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.722970] [AppLaunch] LCD frame buffer update done !
+<5>[   31.750962] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.757871] [AppLaunch] LCD frame buffer update done !
+<7>[   31.761034] binder: 8688: call  from 408:496 to 254:0 node 6481 handle 10 (content) size 172:4 code 1 start 31.741679
+<7>[   31.762724] [466:hololauncher.hd] fork err at pid
+<7>[   31.762752] [466:hololauncher.hd] fork [503:hololauncher.hd]
+<7>[   31.764569] binder: 8702: call  from 422:422 to 254:0 node 6903 handle 9 (input_method) size 100:0 code 2 start 31.746062
+<7>[   31.789702] [503:hololauncher.hd] set proc[503] name: ->[AsyncTask #1] 
+<7>[   31.795615] [466:hololauncher.hd] fork err at pid
+<7>[   31.795643] [466:hololauncher.hd] fork [504:hololauncher.hd]
+<7>[   31.797297] [504:hololauncher.hd] set proc[504] name: ->[launcher-loader] 
+<7>[   31.804208] binder: 8708: call  from 466:466 to 254:0 node 7189 handle 10 (mount) size 36:0 code 1e start 31.785690
+<7>[   31.807965] binder: 8710: call  from 466:466 to 254:0 node 6401 handle 1 (activity) size 456:8 code c start 31.788138
+<7>[   31.834208] binder: 8716: call  from 466:466 to 254:0 node 6401 handle 1 (activity) size 596:8 code c start 31.815701
+<5>[   31.841962] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.843149] binder: 8720: call  from 466:466 to 254:0 node 6401 handle 1 (activity) size 308:8 code c start 31.824639
+<7>[   31.843767] binder: 8722: call  from 466:466 to 254:0 node 6401 handle 1 (activity) size 284:8 code c start 31.825263
+<7>[   31.844923] binder: 8727: call  from 466:466 to 254:0 node 6481 handle 11 (content) size 240:4 code 1 start 31.826402
+<7>[   31.846045] binder: 8732: call  from 422:422 to 254:0 node 6903 handle 9 (input_method) size 0:0 code 5f4e5446 start 31.827544
+<7>[   31.847058] [438:m.android.phone] fork err at pid
+<7>[   31.847084] [438:m.android.phone] fork [505:m.android.phone]
+<7>[   31.861173] binder: 8737: call  from 422:422 to 254:0 node 6655 handle 11 (vibrator) size 64:0 code 1 start 31.831950
+<5>[   31.862362] [AppLaunch] LCD frame buffer update done !
+<5>[   31.875761] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   31.881182] [AppLaunch] LCD frame buffer update done !
+<7>[   31.899496] [505:m.android.phone] set proc[505] name: ->[SharedPreferenc] 
+<7>[   31.902791] [422:putmethod.latin] fork err at pid
+<7>[   31.902817] [422:putmethod.latin] fork [506:putmethod.latin]
+<7>[   31.902849] binder: 8743: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 144:0 code 1 start 31.880913
+<5>[   31.911309] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.912138] [176:adbd] fork err at pid
+<7>[   31.912166] [176:adbd] fork [507:adbd]
+<5>[   31.915931] [AppLaunch] LCD frame buffer update done !
+<7>[   31.922126] [505:SharedPreferenc] exit
+<7>[   31.929110] [506:putmethod.latin] set proc[506] name: ->[InitializeBinar] 
+<7>[   31.947315] binder: 8749: call  from 422:506 to 254:0 node 6401 handle 1 (activity) size 180:4 code 1d start 31.914340
+<7>[   31.949120] [467:ReferenceQueueD] exit
+<7>[   31.952643] [471:FinalizerDaemon] exit
+<7>[   31.952878] [473:FinalizerWatchd] exit
+<5>[   31.956182] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.964043] binder: 8757: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 31.945530
+<5>[   31.966952] [AppLaunch] LCD frame buffer update done !
+<7>[   31.974874] [95:zygote] fork err at pid
+<7>[   31.974902] [95:zygote] fork [508:zygote]
+<7>[   31.975475] [95:zygote] fork err at pid
+<7>[   31.975500] [95:zygote] fork [509:zygote]
+<7>[   31.975726] binder: 8760: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 100:0 code a start 31.957207
+<7>[   31.976429] [508:zygote] fork err at pid
+<7>[   31.976454] [508:zygote] fork [510:zygote]
+<7>[   31.976553] [509:zygote] set proc[509] name: ->[ReferenceQueueD] 
+<7>[   31.976908] [95:zygote] fork err at pid
+<7>[   31.976930] [95:zygote] fork [511:zygote]
+<7>[   31.977723] binder: 8762: call  from 254:406 to 94:0 node 29 handle 1 (SurfaceFlinger) size 172:4 code 5 start 31.959217
+<7>[   31.980971] binder: 8768: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 31.962461
+<7>[   31.982312] binder: 8770: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 31.963812
+<7>[   31.988781] [466:hololauncher.hd] fork err at pid
+<7>[   31.988814] [466:hololauncher.hd] fork [512:hololauncher.hd]
+<5>[   31.991263] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   31.996683] binder: 8780: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 496:8 code c start 31.977625
+<7>[   31.997523] [511:zygote] set proc[511] name: ->[FinalizerDaemon] 
+<7>[   31.997869] [95:zygote] fork err at pid
+<7>[   31.997893] [95:zygote] fork [513:zygote]
+<7>[   31.998257] [510:zygote] set proc[510] name: ->[GC] 
+<7>[   31.998952] binder: 8783: call  from 422:422 to 254:0 node 6481 handle 13 (content) size 168:4 code 1 start 31.979693
+<5>[   32.001759] [AppLaunch] LCD frame buffer update done !
+<7>[   32.009204] [422:putmethod.latin] fork err at pid
+<7>[   32.009231] [422:putmethod.latin] fork [514:putmethod.latin]
+<7>[   32.010313] [508:zygote] fork err at pid
+<7>[   32.010338] [508:zygote] fork [515:zygote]
+<7>[   32.010391] [512:hololauncher.hd] set proc[512] name: ->[SharedPreferenc] 
+<7>[   32.011604] [513:zygote] set proc[513] name: ->[FinalizerWatchd] 
+<5>[   32.025042] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   32.036602] [AppLaunch] LCD frame buffer update done !
+<7>[   32.038737] [515:zygote] set proc[515] name: ->[Signal Catcher] 
+<7>[   32.038992] [514:putmethod.latin] set proc[514] name: ->[Thread-31] 
+<7>[   32.039231] binder: 8794: call  from 422:422 to 254:0 node 6401 handle 1 (activity) size 120:4 code 1d start 32.20709
+<7>[   32.042072] [508:zygote] fork err at pid
+<7>[   32.042096] [508:zygote] fork [516:zygote]
+<7>[   32.042146] binder: 8795: call  from 422:514 to 254:0 node 6401 handle 1 (activity) size 120:4 code 1d start 32.23422
+<7>[   32.042646] [516:zygote] set proc[516] name: ->[Compiler] 
+<7>[   32.048916] [508:zygote] fork err at pid
+<7>[   32.048941] [508:zygote] fork [517:zygote]
+<7>[   32.055915] [517:zygote] set proc[517] name: ->[ReferenceQueueD] 
+<7>[   32.056307] [508:zygote] fork err at pid
+<7>[   32.056341] [508:zygote] fork [518:zygote]
+<5>[   32.058690] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.068621] [518:zygote] set proc[518] name: ->[FinalizerDaemon] 
+<5>[   32.071573] [AppLaunch] LCD frame buffer update done !
+<7>[   32.072291] binder: 8805: call  from 254:406 to 94:0 node 29 handle 1 (SurfaceFlinger) size 172:4 code 5 start 32.53788
+<7>[   32.075288] binder: 8807: call  from 254:406 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.56754
+<7>[   32.075882] [508:zygote] fork err at pid
+<7>[   32.075905] [508:zygote] fork [519:zygote]
+<5>[   32.077052] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   32.082117] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.084820] binder: 8810: call  from 254:285 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.66309
+<5>[   32.088975] [AppLaunch] LCD frame buffer update done !
+<7>[   32.091119] binder: 8812: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.72598
+<5>[   32.095172] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   32.106651] [AppLaunch] LCD frame buffer update done !
+<7>[   32.107379] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 12211000 > 8ms
+<7>[   32.107408] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.110438] binder: 8824: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.91927
+<5>[   32.112091] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.118118] [519:zygote] set proc[519] name: ->[FinalizerWatchd] 
+<7>[   32.119070] [508:zygote] set proc[508] name: ->[.dictionarypack] 
+<7>[   32.122607] [508:.dictionarypack] fork err at pid
+<7>[   32.122640] [508:.dictionarypack] fork [520:.dictionarypack]
+<7>[   32.123396] [508:.dictionarypack] set proc[508] name: ->[re-initialized>] 
+<5>[   32.123765] [AppLaunch] LCD frame buffer update done !
+<7>[   32.124473] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 12389308 > 8ms
+<7>[   32.124502] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.125718] binder: 8826: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.107202
+<5>[   32.129843] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.133529] [520:.dictionarypack] set proc[520] name: ->[Binder Thread #] 
+<7>[   32.134961] binder: 8828: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 324:8 code c start 32.114870
+<7>[   32.135523] [520:Binder Thread #] fork err at pid
+<7>[   32.135549] [520:Binder Thread #] fork [521:Binder Thread #]
+<5>[   32.141152] [AppLaunch] LCD frame buffer update done !
+<7>[   32.141855] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12020231 > 8ms
+<7>[   32.141885] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.143163] binder: 8831: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.124643
+<5>[   32.146980] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.151113] [521:Binder Thread #] set proc[521] name: ->[Binder Thread #] 
+<5>[   32.158570] [AppLaunch] LCD frame buffer update done !
+<7>[   32.159593] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 12619692 > 8ms
+<7>[   32.159622] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.160722] binder: 8837: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.142202
+<5>[   32.164448] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.168164] binder: 8839: call  from 508:508 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 32.147502
+<5>[   32.175984] [AppLaunch] LCD frame buffer update done !
+<7>[   32.176711] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12269616 > 8ms
+<7>[   32.176740] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.177523] binder: 8842: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.159003
+<5>[   32.181835] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   32.193572] [AppLaunch] LCD frame buffer update done !
+<7>[   32.194291] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 12463847 > 8ms
+<7>[   32.194321] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.195068] binder: 8846: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.176551
+<5>[   32.199497] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   32.210866] [AppLaunch] LCD frame buffer update done !
+<7>[   32.211994] binder: 8848: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.193482
+<7>[   32.212086] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12596154 > 8ms
+<7>[   32.212114] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.213815] [466:hololauncher.hd] fork err at pid
+<7>[   32.213844] [466:hololauncher.hd] fork [522:hololauncher.hd]
+<7>[   32.214351] [512:SharedPreferenc] exit
+<5>[   32.216905] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.218717] [522:hololauncher.hd] set proc[522] name: ->[SharedPreferenc] 
+<7>[   32.218923] binder: 8850: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 144:0 code 1 start 32.200422
+<7>[   32.223496] [466:hololauncher.hd] fork err at pid
+<7>[   32.223523] [466:hololauncher.hd] fork [523:hololauncher.hd]
+<7>[   32.223667] [522:SharedPreferenc] exit
+<7>[   32.227203] [523:hololauncher.hd] set proc[523] name: ->[Thread-45] 
+<7>[   32.227671] binder: 8852: call  from 466:466 to 254:0 node 6401 handle 1 (activity) size 252:8 code c start 32.209126
+<5>[   32.228310] [AppLaunch] LCD frame buffer update done !
+<7>[   32.229099] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 12200616 > 8ms
+<7>[   32.229128] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.230016] binder: 8855: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.211496
+<5>[   32.233974] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.235222] binder: 8857: call  from 466:523 to 254:0 node 6401 handle 1 (activity) size 252:12 code 24 start 32.216679
+<5>[   32.245712] [AppLaunch] LCD frame buffer update done !
+<7>[   32.246454] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12486615 > 8ms
+<7>[   32.246483] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.247300] binder: 8860: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.228782
+<5>[   32.251650] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.255572] [438:m.android.phone] fork err at pid
+<7>[   32.255598] [438:m.android.phone] fork [524:m.android.phone]
+<5>[   32.263217] [AppLaunch] LCD frame buffer update done !
+<7>[   32.263973] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 12331538 > 8ms
+<7>[   32.264002] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.264762] binder: 8865: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.246240
+<7>[   32.266557] [524:m.android.phone] set proc[524] name: ->[RILSender1] 
+<7>[   32.267369] binder: 8869: call  from 438:438 to 254:0 node 7165 handle 7 (connectivity) size 80:0 code 7 start 32.248843
+<5>[   32.269376] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.270186] [438:m.android.phone] fork err at pid
+<7>[   32.270210] [438:m.android.phone] fork [525:m.android.phone]
+<7>[   32.270378] [525:m.android.phone] set proc[525] name: ->[RILReceiver1] 
+<7>[   32.270788] binder: 8871: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 316:8 code c start 32.252257
+<7>[   32.274350] binder: 8874: call  from 438:525 to 254:0 node 2173 handle 10 (power) size 100:4 code 1 start 32.255810
+<5>[   32.280587] [AppLaunch] LCD frame buffer update done !
+<7>[   32.281291] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 11922000 > 8ms
+<7>[   32.281320] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.282201] binder: 8878: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.263680
+<5>[   32.286143] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.287705] binder: 8880: call  from 438:525 to 254:0 node 2173 handle 10 (power) size 80:4 code 5 start 32.269175
+<5>[   32.297973] [AppLaunch] LCD frame buffer update done !
+<7>[   32.298730] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 12593769 > 8ms
+<7>[   32.298759] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.299501] binder: 8882: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.280980
+<5>[   32.303620] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   32.315379] [AppLaunch] LCD frame buffer update done !
+<7>[   32.316090] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12478846 > 8ms
+<7>[   32.316140] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.316806] binder: 8884: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.298288
+<5>[   32.321107] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   32.332827] [AppLaunch] LCD frame buffer update done !
+<7>[   32.333551] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 12451770 > 8ms
+<7>[   32.333580] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.334229] binder: 8886: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.315709
+<5>[   32.338719] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.348905] [509:ReferenceQueueD] exit
+<7>[   32.349152] [511:FinalizerDaemon] exit
+<7>[   32.349330] [513:FinalizerWatchd] exit
+<5>[   32.350315] [AppLaunch] LCD frame buffer update done !
+<7>[   32.351073] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12361231 > 8ms
+<7>[   32.351103] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.351767] binder: 8888: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.333250
+<5>[   32.356027] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.362854] [95:zygote] fork err at pid
+<7>[   32.363069] [95:zygote] fork [526:zygote]
+<7>[   32.363676] [95:zygote] fork err at pid
+<7>[   32.363700] [95:zygote] fork [527:zygote]
+<7>[   32.363835] [527:zygote] set proc[527] name: ->[ReferenceQueueD] 
+<7>[   32.364240] [95:zygote] fork err at pid
+<7>[   32.364263] [95:zygote] fork [528:zygote]
+<7>[   32.365083] [526:zygote] fork err at pid
+<7>[   32.365109] [526:zygote] fork [529:zygote]
+<7>[   32.365192] [528:zygote] set proc[528] name: ->[FinalizerDaemon] 
+<7>[   32.365628] [95:zygote] fork err at pid
+<7>[   32.365653] [95:zygote] fork [530:zygote]
+<7>[   32.365797] [529:zygote] set proc[529] name: ->[GC] 
+<7>[   32.366384] [530:zygote] set proc[530] name: ->[FinalizerWatchd] 
+<5>[   32.367753] [AppLaunch] LCD frame buffer update done !
+<7>[   32.369006] binder: 8890: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.350495
+<7>[   32.371230] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 15206308 > 8ms
+<7>[   32.371260] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.380113] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   32.385165] [AppLaunch] LCD frame buffer update done !
+<7>[   32.386806] [523:Thread-45] exit
+<7>[   32.387128] binder: 8903: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 0:0 code 5f4e5446 start 32.368629
+<7>[   32.387743] [438:m.android.phone] fork err at pid
+<7>[   32.387770] [438:m.android.phone] fork [531:m.android.phone]
+<7>[   32.388269] binder: 8905: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.369756
+<7>[   32.389490] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 9380538 > 8ms
+<7>[   32.389521] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.392956] binder: 8911: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 32.374454
+<5>[   32.394305] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.395423] binder: 8914: call  from 508:508 to 254:0 node 6401 handle 1 (activity) size 0:0 code 5f4e5446 start 32.376920
+<7>[   32.395987] [508:re-initialized>] set proc[508] name: ->[.dictionarypack] 
+<7>[   32.397154] binder: 8919: call  from 508:508 to 94:0 node 29 handle 5 (SurfaceFlinger) size 64:0 code 4 start 32.378656
+<7>[   32.397443] binder: 8922: async from 332:332 to 254:0 node 6401 handle 1 (activity) size 96:4 code 3d start 32.378943
+<7>[   32.397811] binder: 8923: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 348:8 code 26 start 32.379282
+<7>[   32.402514] binder: 8934: call  from 508:508 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 32.384001
+<5>[   32.402610] [AppLaunch] LCD frame buffer update done !
+<7>[   32.403474] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 9176153 > 8ms
+<7>[   32.403503] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.404233] binder: 8936: call  from 332:332 to 254:0 node 7374 handle 23 (audio) size 64:0 code d start 32.385649
+<7>[   32.405422] binder: 8938: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.386900
+<5>[   32.408234] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.409408] binder: 8940: call  from 332:332 to 254:0 node 7374 handle 23 (audio) size 68:0 code 10 start 32.390906
+<7>[   32.411733] binder: 8942: call  from 332:332 to 254:0 node 6397 handle 3 (package) size 132:0 code a start 32.391981
+<7>[   32.412216] binder: 8944: call  from 508:508 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 32.393708
+<7>[   32.419203] [526:zygote] fork err at pid
+<7>[   32.419229] [526:zygote] fork [532:zygote]
+<5>[   32.420000] [AppLaunch] LCD frame buffer update done !
+<7>[   32.420703] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12477384 > 8ms
+<7>[   32.420732] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.420870] [531:m.android.phone] set proc[531] name: ->[RILSender2] 
+<7>[   32.423273] binder: 8951: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.404755
+<5>[   32.426355] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.427400] binder: 8954: call  from 332:332 to 254:0 node 6397 handle 3 (package) size 132:0 code a start 32.408886
+<7>[   32.429560] binder: 8957: call  from 332:332 to 254:0 node 6397 handle 3 (package) size 132:0 code a start 32.411026
+<7>[   32.430372] binder: 8959: call  from 508:508 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 25 start 32.411645
+<7>[   32.430631] binder: 8961: call  from 438:438 to 254:0 node 7165 handle 7 (connectivity) size 80:0 code 7 start 32.412138
+<7>[   32.431293] [438:m.android.phone] fork err at pid
+<7>[   32.431319] [438:m.android.phone] fork [533:m.android.phone]
+<7>[   32.432954] [532:zygote] set proc[532] name: ->[Signal Catcher] 
+<7>[   32.433253] [526:zygote] fork err at pid
+<7>[   32.433276] [526:zygote] fork [534:zygote]
+<7>[   32.433768] binder: 8963: call  from 332:332 to 254:0 node 6397 handle 3 (package) size 132:0 code a start 32.414363
+<5>[   32.437449] [AppLaunch] LCD frame buffer update done !
+<7>[   32.438154] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 11807615 > 8ms
+<7>[   32.438182] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.438306] [533:m.android.phone] set proc[533] name: ->[RILReceiver2] 
+<7>[   32.438799] binder: 8965: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 316:8 code c start 32.420259
+<7>[   32.441384] binder: 8969: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.422866
+<5>[   32.442909] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.444749] [438:m.android.phone] fork err at pid
+<7>[   32.444777] [438:m.android.phone] fork [535:m.android.phone]
+<7>[   32.451076] binder: 8971: call  from 438:533 to 254:0 node 2173 handle 10 (power) size 100:4 code 1 start 32.431645
+<7>[   32.451275] [534:zygote] set proc[534] name: ->[Compiler] 
+<7>[   32.451596] [535:m.android.phone] set proc[535] name: ->[SharedPreferenc] 
+<7>[   32.452661] [526:zygote] fork err at pid
+<7>[   32.452689] [526:zygote] fork [536:zygote]
+<7>[   32.452815] binder: 8974: call  from 332:332 to 254:0 node 6397 handle 3 (package) size 132:0 code a start 32.434300
+<5>[   32.454917] [AppLaunch] LCD frame buffer update done !
+<7>[   32.455627] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12726307 > 8ms
+<7>[   32.455656] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.460296] binder: 8980: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.441786
+<5>[   32.462252] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.466848] binder: 8983: call  from 438:533 to 254:0 node 2173 handle 10 (power) size 80:4 code 5 start 32.448308
+<7>[   32.470392] binder: 8985: call  from 332:332 to 254:0 node 6397 handle 3 (package) size 132:0 code a start 32.451858
+<5>[   32.472295] [AppLaunch] LCD frame buffer update done !
+<7>[   32.473016] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 10772923 > 8ms
+<7>[   32.473045] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.473427] [536:zygote] set proc[536] name: ->[ReferenceQueueD] 
+<7>[   32.473785] [526:zygote] fork err at pid
+<7>[   32.473812] [526:zygote] fork [537:zygote]
+<7>[   32.474789] binder: 8987: call  from 332:332 to 254:0 node 6397 handle 3 (package) size 132:0 code a start 32.456253
+<5>[   32.477776] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.482035] [537:zygote] set proc[537] name: ->[FinalizerDaemon] 
+<7>[   32.482144] binder: 8989: call  from 332:332 to 254:0 node 6397 handle 3 (package) size 132:0 code a start 32.457989
+<7>[   32.482474] binder: 8991: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 32.463974
+<7>[   32.485032] [526:zygote] fork err at pid
+<7>[   32.485057] [526:zygote] fork [538:zygote]
+<5>[   32.489707] [AppLaunch] LCD frame buffer update done !
+<7>[   32.490441] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 12670307 > 8ms
+<7>[   32.490470] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.495120] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.496336] binder: 8997: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.477826
+<7>[   32.497690] [538:zygote] set proc[538] name: ->[FinalizerWatchd] 
+<7>[   32.498687] [526:zygote] set proc[526] name: ->[d.process.acore] 
+<7>[   32.501991] [526:d.process.acore] fork err at pid
+<7>[   32.502019] [526:d.process.acore] fork [539:d.process.acore]
+<7>[   32.503330] [526:d.process.acore] set proc[526] name: ->[re-initialized>] 
+<5>[   32.507144] [AppLaunch] LCD frame buffer update done !
+<7>[   32.507968] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12854692 > 8ms
+<7>[   32.507998] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.511172] [539:d.process.acore] set proc[539] name: ->[Binder Thread #] 
+<5>[   32.512663] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.513803] [539:Binder Thread #] fork err at pid
+<7>[   32.513828] [539:Binder Thread #] fork [540:Binder Thread #]
+<7>[   32.515025] binder: 9004: call  from 526:526 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 32.495734
+<7>[   32.520927] [526:re-initialized>] set proc[526] name: ->[d.process.acore] 
+<7>[   32.524383] binder: 9015: call  from 526:526 to 94:0 node 29 handle 5 (SurfaceFlinger) size 64:0 code 4 start 32.505862
+<5>[   32.524572] [AppLaunch] LCD frame buffer update done !
+<7>[   32.525283] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 12627385 > 8ms
+<7>[   32.525312] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.530038] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.530994] [540:Binder Thread #] set proc[540] name: ->[Binder Thread #] 
+<7>[   32.531607] binder: 9024: call  from 526:526 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 32.513089
+<7>[   32.532674] binder: 9026: call  from 526:526 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 32.514149
+<7>[   32.534826] binder: 9031: call  from 254:460 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.516319
+<7>[   32.537175] binder: 9034: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 32.518673
+<7>[   32.540144] binder: 9037: call  from 254:254 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.521628
+<5>[   32.542003] [AppLaunch] LCD frame buffer update done !
+<7>[   32.542727] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12696846 > 8ms
+<7>[   32.542755] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.544673] binder: 9042: call  from 332:429 to 254:0 node 7189 handle 21 (mount) size 64:0 code a start 32.526164
+<5>[   32.547370] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.549348] binder: 9046: call  from 332:429 to 254:0 node 7189 handle 21 (mount) size 36:0 code 24 start 32.530843
+<7>[   32.549899] binder: 9047: async from 332:332 to 254:0 node 6401 handle 1 (activity) size 100:4 code 10 start 32.531384
+<7>[   32.551209] [527:ReferenceQueueD] exit
+<7>[   32.551413] [528:FinalizerDaemon] exit
+<7>[   32.551566] [530:FinalizerWatchd] exit
+<5>[   32.559447] [AppLaunch] LCD frame buffer update done !
+<7>[   32.562676] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 15309231 > 8ms
+<7>[   32.562706] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.565626] binder: 9052: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 32.546443
+<7>[   32.566555] binder: 9054: call  from 526:526 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 25 start 32.548026
+<5>[   32.567468] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.572486] [95:zygote] fork err at pid
+<7>[   32.572521] [95:zygote] fork [541:zygote]
+<7>[   32.573127] [95:zygote] fork err at pid
+<7>[   32.573155] [95:zygote] fork [542:zygote]
+<5>[   32.576865] [AppLaunch] LCD frame buffer update done !
+<7>[   32.577577] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 10116693 > 8ms
+<7>[   32.577605] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.581311] [541:zygote] fork err at pid
+<7>[   32.581337] [541:zygote] fork [543:zygote]
+<5>[   32.581522] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.582622] [542:zygote] set proc[542] name: ->[ReferenceQueueD] 
+<7>[   32.583003] [95:zygote] fork err at pid
+<7>[   32.583027] [95:zygote] fork [544:zygote]
+<7>[   32.583688] binder: 9056: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 384:8 code c start 32.565037
+<7>[   32.584210] binder: 9059: call  from 526:526 to 254:0 node 6397 handle 3 (package) size 164:0 code 1 start 32.565699
+<7>[   32.586258] [543:zygote] set proc[543] name: ->[GC] 
+<7>[   32.586858] [544:zygote] set proc[544] name: ->[FinalizerDaemon] 
+<7>[   32.587172] [95:zygote] fork err at pid
+<7>[   32.587197] [95:zygote] fork [545:zygote]
+<7>[   32.587423] [541:zygote] fork err at pid
+<7>[   32.587443] [541:zygote] fork [546:zygote]
+<7>[   32.587691] binder: 9061: call  from 526:526 to 254:0 node 6397 handle 3 (package) size 152:0 code a start 32.569172
+<7>[   32.591721] [545:zygote] set proc[545] name: ->[FinalizerWatchd] 
+<7>[   32.591886] [546:zygote] set proc[546] name: ->[Signal Catcher] 
+<5>[   32.594285] [AppLaunch] LCD frame buffer update done !
+<7>[   32.595001] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 13482000 > 8ms
+<7>[   32.595029] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.599460] binder: 9068: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 384:8 code c start 32.580911
+<5>[   32.602436] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.604791] binder: 9073: call  from 254:460 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.586283
+<7>[   32.611018] [541:zygote] fork err at pid
+<7>[   32.611047] [541:zygote] fork [547:zygote]
+<5>[   32.611686] [AppLaunch] LCD frame buffer update done !
+<7>[   32.612379] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 9949385 > 8ms
+<7>[   32.612409] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.616402] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.617174] [547:zygote] set proc[547] name: ->[Compiler] 
+<7>[   32.618395] [541:zygote] fork err at pid
+<7>[   32.618420] [541:zygote] fork [548:zygote]
+<7>[   32.622266] [548:zygote] set proc[548] name: ->[ReferenceQueueD] 
+<7>[   32.624621] [541:zygote] fork err at pid
+<7>[   32.624646] [541:zygote] fork [549:zygote]
+<7>[   32.627010] [549:zygote] set proc[549] name: ->[FinalizerDaemon] 
+<7>[   32.628355] [541:zygote] fork err at pid
+<7>[   32.628384] [541:zygote] fork [550:zygote]
+<7>[   32.628954] [550:zygote] set proc[550] name: ->[FinalizerWatchd] 
+<5>[   32.629266] [AppLaunch] LCD frame buffer update done !
+<7>[   32.630547] [541:zygote] set proc[541] name: ->[mpz.audioplayer] 
+<7>[   32.631675] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 15274385 > 8ms
+<7>[   32.631705] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.635739] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.636577] [541:mpz.audioplayer] fork err at pid
+<7>[   32.636602] [541:mpz.audioplayer] fork [551:mpz.audioplayer]
+<7>[   32.637549] [541:mpz.audioplayer] set proc[541] name: ->[re-initialized>] 
+<7>[   32.643895] [551:mpz.audioplayer] set proc[551] name: ->[Binder Thread #] 
+<7>[   32.644262] binder: 9091: call  from 541:541 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 32.625209
+<5>[   32.646588] [AppLaunch] LCD frame buffer update done !
+<7>[   32.647336] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 11602077 > 8ms
+<7>[   32.647363] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.647537] [551:Binder Thread #] fork err at pid
+<7>[   32.647561] [551:Binder Thread #] fork [552:Binder Thread #]
+<7>[   32.649302] [552:Binder Thread #] set proc[552] name: ->[Binder Thread #] 
+<7>[   32.659168] binder: 9098: call  from 254:254 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.636697
+<7>[   32.662034] [541:re-initialized>] set proc[541] name: ->[mpz.audioplayer] 
+<7>[   32.664132] binder: 9107: call  from 541:541 to 94:0 node 29 handle 5 (SurfaceFlinger) size 64:0 code 4 start 32.645619
+<5>[   32.664539] [AppLaunch] LCD frame buffer update done !
+<5>[   32.666054] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.667546] binder: 9112: call  from 541:541 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 32.649010
+<7>[   32.669344] binder: 9114: call  from 541:541 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 32.650813
+<5>[   32.670702] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.672001] binder: 9116: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 344:8 code c start 32.653469
+<7>[   32.672736] binder: 9120: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 368:8 code c start 32.654208
+<7>[   32.673899] binder: 9127: call  from 332:332 to 254:0 node 6481 handle 34 (content) size 256:4 code 1 start 32.655375
+<7>[   32.674594] binder: 9131: call  from 332:332 to 254:0 node 6481 handle 34 (content) size 268:4 code 1 start 32.656067
+<7>[   32.679989] binder: 9135: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.661468
+<5>[   32.681504] [AppLaunch] LCD frame buffer update done !
+<7>[   32.682183] binder: 9140: call  from 332:332 to 254:0 node 6481 handle 34 (content) size 260:4 code 1 start 32.662997
+<7>[   32.682271] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 11574769 > 8ms
+<7>[   32.682299] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.685039] binder: 9145: call  from 541:541 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 25 start 32.666528
+<7>[   32.688425] binder: 9147: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.669906
+<5>[   32.689994] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.694353] binder: 9153: call  from 332:332 to 254:0 node 6481 handle 34 (content) size 268:4 code 1 start 32.675817
+<5>[   32.698802] [AppLaunch] LCD frame buffer update done !
+<7>[   32.699690] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 9701231 > 8ms
+<7>[   32.699720] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.704365] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.705798] binder: 9157: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.687291
+<5>[   32.716222] [AppLaunch] LCD frame buffer update done !
+<7>[   32.716964] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12606077 > 8ms
+<7>[   32.716993] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.722433] binder: 9159: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.703915
+<5>[   32.722735] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   32.733629] [AppLaunch] LCD frame buffer update done !
+<7>[   32.734330] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 11599846 > 8ms
+<7>[   32.734360] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.740224] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.741167] binder: 9165: call  from 332:332 to 254:0 node 6401 handle 1 (activity) size 736:8 code c start 32.722616
+<7>[   32.744167] binder: 9169: call  from 332:332 to 254:0 node 6481 handle 34 (content) size 276:4 code 1 start 32.723436
+<5>[   32.751050] [AppLaunch] LCD frame buffer update done !
+<7>[   32.751742] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 11526615 > 8ms
+<7>[   32.751771] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.755710] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.765750] binder: 9172: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.747233
+<5>[   32.768614] [AppLaunch] LCD frame buffer update done !
+<7>[   32.769402] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 13696616 > 8ms
+<7>[   32.769439] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.770669] binder: 9179: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.752152
+<7>[   32.771515] binder: 9181: call  from 332:332 to 254:0 node 2273 handle 9 (telephony.registry) size 180:4 code 1 start 32.752974
+<5>[   32.775968] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.777902] binder: 9189: call  from 332:332 to 254:0 node 2279 handle 10 (telephony.registry2) size 180:4 code 1 start 32.759371
+<5>[   32.785960] [AppLaunch] LCD frame buffer update done !
+<7>[   32.786670] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 10710154 > 8ms
+<7>[   32.786699] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.790715] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.798815] binder: 9196: call  from 332:332 to 254:0 node 7388 handle 35 (audioprofile) size 104:0 code 7 start 32.778941
+<7>[   32.799722] binder: 9197: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.781204
+<7>[   32.801110] binder: 9199: async from 332:332 to 254:0 node 7388 handle 35 (audioprofile) size 124:4 code 21 start 32.782566
+<5>[   32.803369] [AppLaunch] LCD frame buffer update done !
+<7>[   32.804584] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 13872769 > 8ms
+<7>[   32.804613] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.810783] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.818254] binder: 9203: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.799735
+<5>[   32.820884] [AppLaunch] LCD frame buffer update done !
+<7>[   32.824404] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 13624769 > 8ms
+<7>[   32.824441] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.829433] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.835899] binder: 9209: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.817380
+<5>[   32.838232] [AppLaunch] LCD frame buffer update done !
+<7>[   32.839107] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 9680539 > 8ms
+<7>[   32.839137] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.843802] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.852953] binder: 9218: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.834389
+<5>[   32.855665] [AppLaunch] LCD frame buffer update done !
+<7>[   32.856401] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 12606000 > 8ms
+<7>[   32.856429] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.861420] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.870842] binder: 9232: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.852334
+<5>[   32.873080] [AppLaunch] LCD frame buffer update done !
+<7>[   32.873781] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12369384 > 8ms
+<7>[   32.873810] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.879220] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.879977] binder: 9234: call  from 332:332 to 254:0 node 7058 handle 13 (wifi) size 68:0 code e start 32.857711
+<7>[   32.880616] binder: 9236: call  from 332:332 to 254:0 node 7058 handle 13 (wifi) size 68:0 code e start 32.862102
+<7>[   32.884086] binder: 9238: call  from 332:332 to 254:0 node 6758 handle 22 (bluetooth) size 68:0 code 2 start 32.864046
+<7>[   32.884714] binder: 9240: call  from 332:332 to 254:0 node 6758 handle 22 (bluetooth) size 68:0 code 2 start 32.866201
+<7>[   32.887245] binder: 9242: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.868725
+<5>[   32.890529] [AppLaunch] LCD frame buffer update done !
+<7>[   32.891266] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 12053462 > 8ms
+<7>[   32.891320] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.896267] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.904453] binder: 9250: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.885934
+<5>[   32.907949] [AppLaunch] LCD frame buffer update done !
+<7>[   32.908697] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 12438231 > 8ms
+<7>[   32.908726] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.913714] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.921545] binder: 9254: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.903041
+<7>[   32.923318] binder: 9256: call  from 332:332 to 254:0 node 7388 handle 35 (audioprofile) size 104:0 code a start 32.904790
+<7>[   32.924002] binder: 9258: call  from 332:332 to 254:0 node 7388 handle 35 (audioprofile) size 104:0 code a start 32.905481
+<5>[   32.925384] [AppLaunch] LCD frame buffer update done !
+<7>[   32.927686] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 13976769 > 8ms
+<7>[   32.927716] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.932786] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.939066] binder: 9264: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 32.920551
+<5>[   32.942799] [AppLaunch] LCD frame buffer update done !
+<7>[   32.943527] WQ_WARN: cpu:1, proc:kworker/u:2, dur: 10749153 > 8ms
+<7>[   32.943556] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.948425] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   32.960239] [AppLaunch] LCD frame buffer update done !
+<7>[   32.960942] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 12525230 > 8ms
+<7>[   32.960971] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.966475] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   32.968067] binder: 9273: call  from 508:508 to 254:0 node 6397 handle 3 (package) size 192:0 code 1 start 32.949564
+<7>[   32.973759] [535:SharedPreferenc] exit
+<7>[   32.975302] binder: 9275: call  from 508:508 to 254:0 node 6401 handle 1 (activity) size 1504:8 code 1e start 32.953072
+<7>[   32.975611] binder: 9278: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 360:8 code c start 32.957069
+<5>[   32.977631] [AppLaunch] LCD frame buffer update done !
+<7>[   32.978330] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 11860769 > 8ms
+<7>[   32.978360] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<5>[   32.982248] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   32.995026] [AppLaunch] LCD frame buffer update done !
+<7>[   32.995737] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 13493846 > 8ms
+<7>[   32.995766] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   32.996481] [466:hololauncher.hd] fork err at pid
+<7>[   32.996508] [466:hololauncher.hd] fork [553:hololauncher.hd]
+<7>[   33.001397] binder: 9281: call  from 526:526 to 254:0 node 6397 handle 3 (package) size 152:0 code 1 start 32.982887
+<7>[   33.004086] [553:hololauncher.hd] set proc[553] name: ->[SharedPreferenc] 
+<7>[   33.009023] [466:hololauncher.hd] fork err at pid
+<7>[   33.009052] [466:hololauncher.hd] fork [554:hololauncher.hd]
+<5>[   33.012497] [AppLaunch] LCD frame buffer update done !
+<7>[   33.013353] [554:hololauncher.hd] set proc[554] name: ->[AsyncTask #2] 
+<7>[   33.013749] binder: 9288: call  from 466:466 to 254:0 node 6744 handle 2 (window) size 64:0 code b start 32.995228
+<7>[   33.014131] binder: 9290: call  from 466:466 to 254:0 node 6744 handle 2 (window) size 64:0 code 50 start 32.995621
+<7>[   33.025567] binder: 9292: call  from 541:541 to 254:0 node 6397 handle 3 (package) size 136:0 code 1 start 33.7058
+<7>[   33.037303] binder: 9294: call  from 526:526 to 254:0 node 6397 handle 3 (package) size 160:0 code a start 33.18781
+<7>[   33.058368] binder: 9296: call  from 526:526 to 254:0 node 6397 handle 3 (package) size 160:0 code 1 start 33.34938
+<7>[   33.062790] binder: 9298: call  from 541:541 to 254:0 node 6744 handle 2 (window) size 64:0 code b start 33.44274
+<7>[   33.063275] [553:SharedPreferenc] exit
+<7>[   33.064050] binder: 9300: call  from 541:541 to 254:0 node 6744 handle 2 (window) size 64:0 code 50 start 33.44678
+<7>[   33.068805] binder: 9302: call  from 541:541 to 254:0 node 6401 handle 1 (activity) size 436:8 code c start 33.46701
+<7>[   33.112749] binder: 9308: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 33.94240
+<7>[   33.119198] binder: 9314: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 33.100681
+<5>[   33.120715] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   33.128784] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   33.134460] [AppLaunch] LCD frame buffer update done !
+<7>[   33.136972] binder: 9317: call  from 254:284 to 94:0 node 29 handle 1 (SurfaceFlinger) size 172:4 code 5 start 33.118469
+<5>[   33.151852] [AppLaunch] LCD frame buffer update done !
+<7>[   33.165801] binder: 9331: call  from 541:541 to 254:0 node 6401 handle 1 (activity) size 1080:8 code 1e start 33.147267
+<7>[   33.173373] binder: 9341: call  from 541:541 to 254:0 node 6401 handle 1 (activity) size 0:0 code 5f4e5446 start 33.154869
+<7>[   33.173727] binder: 9343: call  from 541:541 to 254:0 node 6397 handle 3 (package) size 136:0 code 1 start 33.155228
+<7>[   33.178198] binder: 9345: call  from 541:541 to 254:0 node 6397 handle 3 (package) size 136:0 code 1 start 33.157923
+<7>[   33.178442] binder: 9346: call  from 332:332 to 254:0 node 2173 handle 36 (power) size 60:0 code e start 33.159940
+<7>[   33.179721] binder: 9349: call  from 332:332 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 33.161217
+<7>[   33.182788] binder: 9355: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 300:8 code c start 33.164249
+<7>[   33.186285] binder: 9365: call  from 254:254 to 94:0 node 29 handle 1 (SurfaceFlinger) size 172:4 code 5 start 33.167774
+<7>[   33.187737] binder: 9368: call  from 254:254 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 33.169227
+<7>[   33.189858] binder: 9369: call  from 438:438 to 109:0 node 4 handle 11 (DMAgent) size 24:0 code 3 start 33.171330
+<5>[   33.191624] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   33.196781] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.197711] binder: 9379: call  from 438:438 to 109:0 node 4 handle 11 (DMAgent) size 24:0 code 66 start 33.179194
+<7>[   33.198303] binder: 9381: call  from 541:541 to 254:0 node 6397 handle 3 (package) size 0:0 code 5f4e5446 start 33.179779
+<7>[   33.199178] binder: 9383: call  from 438:438 to 109:0 node 4 handle 11 (DMAgent) size 24:0 code 69 start 33.180651
+<7>[   33.200371] binder: 9385: call  from 466:466 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 33.181863
+<5>[   33.204131] [AppLaunch] LCD frame buffer update done !
+<7>[   33.204849] WQ_WARN: cpu:1, proc:kworker/u:0, dur: 8073231 > 8ms
+<7>[   33.204877] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   33.208863] binder: 9387: call  from 438:438 to 109:0 node 4 handle 11 (DMAgent) size 24:0 code 6a start 33.187640
+<7>[   33.211302] [541:mpz.audioplayer] fork err at pid
+<7>[   33.211327] [541:mpz.audioplayer] fork [555:mpz.audioplayer]
+<5>[   33.221583] [AppLaunch] LCD frame buffer update done !
+<7>[   33.225649] [555:mpz.audioplayer] set proc[555] name: ->[SharedPreferenc] 
+<7>[   33.230577] binder: 9393: call  from 526:526 to 254:0 node 6401 handle 1 (activity) size 724:8 code c start 33.212032
+<7>[   33.230684] binder: 9396: call  from 332:332 to 254:0 node 7221 handle 31 (wallpaper) size 84:4 code 3 start 33.212166
+<7>[   33.234197] binder: 9403: call  from 438:438 to 254:0 node 6481 handle 12 (content) size 240:4 code 1 start 33.214809
+<7>[   33.235104] binder: 9407: call  from 438:438 to 254:0 node 6481 handle 12 (content) size 252:4 code 1 start 33.216558
+<7>[   33.237159] binder: 9411: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 364:8 code c start 33.217559
+<7>[   33.237868] binder: 9415: call  from 526:526 to 254:0 node 6401 handle 1 (activity) size 0:0 code 5f4e5446 start 33.219342
+<7>[   33.238168] binder: 9417: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 112:0 code b start 33.219655
+<7>[   33.239184] binder: 9419: call  from 526:526 to 254:0 node 6401 handle 1 (activity) size 288:8 code c start 33.220653
+<6>[   33.241438] [xlog/jpeg] JPEG Decoder Initial and Lock
+<7>[   33.243236] binder: 9421: call  from 526:526 to 254:0 node 6401 handle 1 (activity) size 444:8 code c start 33.224712
+<7>[   33.245975] binder: 9423: call  from 526:526 to 254:0 node 6401 handle 1 (activity) size 296:8 code c start 33.225411
+<7>[   33.249375] [526:d.process.acore] fork err at pid
+<7>[   33.249401] [526:d.process.acore] fork [556:d.process.acore]
+<7>[   33.257529] binder: 9427: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 260:8 code 24 start 33.238699
+<7>[   33.261958] [556:d.process.acore] set proc[556] name: ->[ApplicationsPro] 
+<7>[   33.262037] binder: 9431: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 532:8 code c start 33.240993
+<7>[   33.280507] binder: 9435: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 300:8 code c start 33.261584
+<7>[   33.281936] binder: 9441: call  from 438:438 to 109:0 node 4 handle 11 (DMAgent) size 24:0 code 3 start 33.263343
+<7>[   33.292548] [521:Binder Thread #] fork err at pid
+<7>[   33.292576] [521:Binder Thread #] fork [557:Binder Thread #]
+<7>[   33.296131] binder: 9443: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 292:4 code e start 33.266045
+<7>[   33.306415] [557:Binder Thread #] set proc[557] name: ->[SharedPreferenc] 
+<7>[   33.306790] binder: 9445: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 512:8 code c start 33.287857
+<5>[   33.311313] [Power/Alarm] alarm_open (438:438)
+<7>[   33.334617] [520:Binder Thread #] fork err at pid
+<7>[   33.334644] [520:Binder Thread #] fork [558:Binder Thread #]
+<5>[   33.337880] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.340692] binder: 9458: call  from 422:506 to 254:0 node 6397 handle 3 (package) size 192:0 code a start 33.322145
+<7>[   33.342840] [506:InitializeBinar] fork err at pid
+<7>[   33.342885] [506:InitializeBinar] fork [559:InitializeBinar]
+<7>[   33.343083] [557:SharedPreferenc] exit
+<5>[   33.343611] [AppLaunch] LCD frame buffer update done !
+<7>[   33.345552] binder: 9462: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 732:8 code c start 33.327011
+<7>[   33.348259] [558:Binder Thread #] set proc[558] name: ->[Binder Thread #] 
+<7>[   33.348809] [559:InitializeBinar] set proc[559] name: ->[SharedPreferenc] 
+<7>[   33.349444] binder: 9466: call  from 438:438 to 254:0 node 6481 handle 12 (content) size 248:4 code 1 start 33.328030
+<7>[   33.350840] [559:SharedPreferenc] exit
+<7>[   33.356134] binder: 9473: call  from 541:541 to 254:0 node 7195 handle 8 (notification) size 136:0 code 8 start 33.337613
+<7>[   33.356756] binder: 9475: call  from 541:541 to 254:0 node 6401 handle 1 (activity) size 496:8 code c start 33.338217
+<7>[   33.358035] binder: 9479: call  from 541:541 to 254:0 node 6401 handle 1 (activity) size 264:8 code c start 33.339493
+<7>[   33.359577] binder: 9483: call  from 541:541 to 254:0 node 6401 handle 1 (activity) size 340:8 code c start 33.340843
+<7>[   33.362491] [555:SharedPreferenc] exit
+<7>[   33.365677] binder: 9490: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 556:8 code c start 33.347162
+<5>[   33.373176] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.374693] binder: 9496: call  from 438:438 to 254:0 node 6481 handle 12 (content) size 164:4 code 1 start 33.351603
+<7>[   33.375749] binder: 9500: call  from 541:541 to 98:0 node 102 handle 9 (media.audio_flinger) size 80:4 code 15 start 33.357220
+<7>[   33.376273] binder: 9503: call  from 98:205 to 254:0 node 2173 handle 4 (power) size 112:4 code 1 start 33.357742
+<7>[   33.377909] [506:InitializeBinar] exit
+<7>[   33.378115] binder: 9511: call  from 541:541 to 98:0 node 102 handle 9 (media.audio_flinger) size 104:0 code 14 start 33.359605
+<5>[   33.378444] [AppLaunch] LCD frame buffer update done !
+<7>[   33.384639] binder: 9516: call  from 541:541 to 254:0 node 6481 handle 10 (content) size 180:4 code 1 start 33.366009
+<7>[   33.386873] binder: 9522: call  from 541:541 to 254:0 node 6401 handle 1 (activity) size 304:8 code c start 33.367893
+<7>[   33.397938] binder: 9526: async from 541:541 to 254:0 node 6401 handle 1 (activity) size 100:4 code 10 start 33.374940
+<5>[   33.406991] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   33.413266] [AppLaunch] LCD frame buffer update done !
+<7>[   33.419434] binder: 9532: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 348:8 code e start 33.398966
+<7>[   33.435847] binder: 9538: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 428:8 code c start 33.412793
+<7>[   33.440021] binder: 9546: call  from 438:438 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 1a start 33.421498
+<7>[   33.440735] binder: 9548: call  from 438:438 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 1a start 33.422220
+<5>[   33.443942] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.444582] binder: 9550: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 256:8 code c start 33.423897
+<5>[   33.449378] [AppLaunch] LCD frame buffer update done !
+<7>[   33.458887] binder: 9554: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 236:8 code c start 33.432672
+<7>[   33.475390] [438:m.android.phone] fork err at pid
+<7>[   33.475421] [438:m.android.phone] fork [560:m.android.phone]
+<7>[   33.477766] [526:d.process.acore] fork err at pid
+<7>[   33.477800] [526:d.process.acore] fork [561:d.process.acore]
+<7>[   33.477869] [560:m.android.phone] set proc[560] name: ->[Cat Telephony s] 
+<5>[   33.478534] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.480168] [438:m.android.phone] fork err at pid
+<7>[   33.480198] [438:m.android.phone] fork [562:m.android.phone]
+<5>[   33.482985] [AppLaunch] LCD frame buffer update done !
+<7>[   33.484130] [562:m.android.phone] set proc[562] name: ->[RilMessageDecod] 
+<7>[   33.487416] [438:m.android.phone] fork err at pid
+<7>[   33.487443] [438:m.android.phone] fork [563:m.android.phone]
+<7>[   33.487572] [561:d.process.acore] set proc[561] name: ->[ContactsProvide] 
+<7>[   33.492380] [563:m.android.phone] set proc[563] name: ->[Cat Icon Loader] 
+<7>[   33.552681] binder: 9562: call  from 541:541 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 33.457920
+<7>[   33.552969] binder: 9564: call  from 526:526 to 254:0 node 6401 handle 1 (activity) size 108:4 code 1d start 33.534470
+<7>[   33.553596] binder: 9567: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 256:8 code c start 33.535068
+<7>[   33.557600] binder: 9575: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 264:8 code c start 33.539056
+<5>[   33.561767] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.562678] binder: 9582: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 360:8 code c start 33.542837
+<5>[   33.570122] [AppLaunch] LCD frame buffer update done !
+<7>[   33.571028] binder: 9593: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 300:8 code c start 33.551244
+<7>[   33.571848] binder: 9597: call  from 438:438 to 109:0 node 4 handle 11 (DMAgent) size 24:0 code 3 start 33.553332
+<7>[   33.572012] binder: 9598: call  from 526:526 to 254:0 node 6401 handle 1 (activity) size 7488:28 code 1e start 33.553411
+<7>[   33.577934] binder: 9616: call  from 422:422 to 254:0 node 6481 handle 13 (content) size 224:4 code 1 start 33.558505
+<7>[   33.578830] binder: 9620: call  from 422:514 to 254:0 node 6401 handle 1 (activity) size 120:4 code 45 start 33.560323
+<7>[   33.580181] binder: 9625: call  from 526:539 to 254:0 node 6401 handle 1 (activity) size 160:0 code 35 start 33.561675
+<7>[   33.581561] [422:putmethod.latin] fork err at pid
+<7>[   33.581588] [422:putmethod.latin] fork [564:putmethod.latin]
+<7>[   33.585497] binder: 9627: call  from 438:438 to 109:0 node 4 handle 11 (DMAgent) size 24:0 code 66 start 33.566978
+<7>[   33.586201] binder: 9629: call  from 438:438 to 109:0 node 4 handle 11 (DMAgent) size 24:0 code 69 start 33.567685
+<7>[   33.586662] binder: 9631: call  from 438:438 to 109:0 node 4 handle 11 (DMAgent) size 24:0 code 6a start 33.568154
+<7>[   33.587844] binder: 9633: call  from 438:438 to 254:0 node 6481 handle 12 (content) size 240:4 code 1 start 33.569277
+<7>[   33.594284] binder: 9641: call  from 438:438 to 254:0 node 6481 handle 12 (content) size 252:4 code 1 start 33.574877
+<7>[   33.596539] binder: 9645: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 364:8 code c start 33.576843
+<5>[   33.597358] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.599183] binder: 9649: call  from 466:466 to 254:0 node 6909 handle 14 (accessibility) size 124:4 code 1 start 33.580620
+<7>[   33.599621] binder: 9653: call  from 438:438 to 254:0 node 2279 handle 13 (telephony.registry2) size 112:0 code b start 33.581106
+<7>[   33.600548] binder: 9655: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 260:8 code 24 start 33.581668
+<7>[   33.603916] binder: 9660: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 532:8 code c start 33.585331
+<5>[   33.604940] [AppLaunch] LCD frame buffer update done !
+<7>[   33.607310] [564:putmethod.latin] set proc[564] name: ->[Thread-33] 
+<7>[   33.608183] [422:putmethod.latin] fork err at pid
+<7>[   33.608210] [422:putmethod.latin] fork [565:putmethod.latin]
+<7>[   33.609459] binder: 9663: call  from 422:564 to 254:0 node 6401 handle 1 (activity) size 132:4 code 1d start 33.589916
+<7>[   33.617861] binder: 9669: call  from 526:539 to 254:0 node 6481 handle 10 (content) size 168:4 code 1 start 33.599306
+<7>[   33.622182] [540:Binder Thread #] fork err at pid
+<7>[   33.622207] [540:Binder Thread #] fork [566:Binder Thread #]
+<7>[   33.622494] binder: 9677: call  from 526:540 to 254:0 node 6481 handle 10 (content) size 88:4 code 2 start 33.603984
+<7>[   33.628634] [514:Thread-31] exit
+<5>[   33.630749] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.631998] binder: 9684: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 300:8 code c start 33.613402
+<7>[   33.633029] binder: 9691: call  from 526:540 to 254:0 node 6401 handle 1 (activity) size 148:0 code 35 start 33.614524
+<7>[   33.633822] binder: 9695: call  from 438:438 to 109:0 node 4 handle 11 (DMAgent) size 24:0 code 3 start 33.615311
+<7>[   33.634923] binder: 9697: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 292:4 code e start 33.616397
+<7>[   33.636387] [565:putmethod.latin] set proc[565] name: ->[Thread-34] 
+<7>[   33.637079] binder: 9699: call  from 422:422 to 254:0 node 6401 handle 1 (activity) size 352:8 code c start 33.618523
+<7>[   33.639523] binder: 9704: call  from 422:422 to 254:0 node 6401 handle 1 (activity) size 380:8 code c start 33.620963
+<5>[   33.639828] [AppLaunch] LCD frame buffer update done !
+<7>[   33.641383] binder: 9708: call  from 422:422 to 254:0 node 6401 handle 1 (activity) size 312:8 code c start 33.622703
+<7>[   33.642323] binder: 9710: async from 422:422 to 254:0 node 6401 handle 1 (activity) size 96:4 code 3d start 33.623801
+<7>[   33.643644] binder: 9711: call  from 422:422 to 254:0 node 6401 handle 1 (activity) size 336:8 code 26 start 33.625082
+<7>[   33.645488] binder: 9718: call  from 422:422 to 254:0 node 6401 handle 1 (activity) size 180:4 code 45 start 33.626966
+<7>[   33.647431] binder: 9721: call  from 422:422 to 254:0 node 6401 handle 1 (activity) size 120:4 code 45 start 33.628911
+<7>[   33.649499] binder: 9726: call  from 422:422 to 254:0 node 7374 handle 20 (audio) size 64:0 code d start 33.630979
+<7>[   33.662708] [566:Binder Thread #] set proc[566] name: ->[Binder Thread #] 
+<5>[   33.665500] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   33.674652] [AppLaunch] LCD frame buffer update done !
+<7>[   33.718570] binder: 9732: call  from 508:508 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 33.644121
+<7>[   33.718933] binder: 9734: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 512:8 code c start 33.700392
+<7>[   33.720319] [565:Thread-34] exit
+<7>[   33.720407] binder: 9740: call  from 466:466 to 254:0 node 6744 handle 2 (window) size 64:0 code 7 start 33.701913
+<7>[   33.723822] [466:hololauncher.hd] fork err at pid
+<7>[   33.723855] [466:hololauncher.hd] fork [567:hololauncher.hd]
+<7>[   33.724543] binder: 9744: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 732:8 code c start 33.705981
+<7>[   33.726312] binder: 9748: call  from 438:438 to 254:0 node 6481 handle 12 (content) size 248:4 code 1 start 33.707753
+<7>[   33.727833] binder: 9752: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 556:8 code c start 33.709322
+<5>[   33.729428] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.730533] binder: 9754: call  from 438:438 to 254:0 node 6481 handle 12 (content) size 176:4 code 1 start 33.711964
+<7>[   33.738989] [567:hololauncher.hd] set proc[567] name: ->[setWallpaperDim] 
+<5>[   33.744362] [AppLaunch] LCD frame buffer update done !
+<7>[   33.745377] binder: 9758: call  from 508:508 to 254:0 node 6744 handle 2 (window) size 0:0 code 5f4e5446 start 33.718447
+<7>[   33.745582] binder: 9760: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 264:0 code 19 start 33.727087
+<7>[   33.750952] binder: 9761: call  from 466:567 to 254:0 node 7221 handle 13 (wallpaper) size 76:0 code 6 start 33.732439
+<7>[   33.752767] [567:setWallpaperDim] exit
+<7>[   33.758420] binder: 9768: call  from 466:466 to 254:0 node 6481 handle 11 (content) size 228:4 code 1 start 33.739849
+<7>[   33.761994] binder: 9772: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 80:0 code 41 start 33.743472
+<5>[   33.762452] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.764634] binder: 9774: call  from 466:504 to 254:0 node 6481 handle 11 (content) size 240:4 code 1 start 33.746088
+<7>[   33.770085] binder: 9778: call  from 466:466 to 254:0 node 6401 handle 1 (activity) size 288:8 code c start 33.751529
+<5>[   33.779268] [AppLaunch] LCD frame buffer update done !
+<7>[   33.781834] binder: 9785: call  from 466:466 to 254:0 node 7211 handle 15 (search) size 64:0 code 4 start 33.758015
+<7>[   33.783300] binder: 9786: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 348:8 code e start 33.764745
+<5>[   33.798658] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.799767] binder: 9794: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 428:8 code c start 33.781202
+<7>[   33.800587] binder: 9798: call  from 438:438 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 1a start 33.782069
+<7>[   33.800930] binder: 9800: call  from 438:438 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 1a start 33.782420
+<7>[   33.809204] binder: 9802: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 256:8 code c start 33.783020
+<7>[   33.813236] binder: 9806: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 236:8 code c start 33.792745
+<5>[   33.814145] [AppLaunch] LCD frame buffer update done !
+<7>[   33.814805] [438:m.android.phone] fork err at pid
+<7>[   33.814830] [438:m.android.phone] fork [568:m.android.phone]
+<7>[   33.821123] [568:m.android.phone] set proc[568] name: ->[Cat Telephony s] 
+<7>[   33.821431] [438:m.android.phone] fork err at pid
+<7>[   33.821457] [438:m.android.phone] fork [569:m.android.phone]
+<5>[   33.831992] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.832653] [569:m.android.phone] set proc[569] name: ->[RilMessageDecod] 
+<7>[   33.836310] [438:m.android.phone] fork err at pid
+<7>[   33.836335] [438:m.android.phone] fork [570:m.android.phone]
+<7>[   33.843187] [570:m.android.phone] set proc[570] name: ->[Cat Icon Loader] 
+<7>[   33.844509] binder: 9814: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 256:8 code c start 33.825603
+<7>[   33.845990] binder: 9818: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 264:8 code c start 33.827417
+<5>[   33.848932] [AppLaunch] LCD frame buffer update done !
+<5>[   33.866804] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.878615] binder: 9826: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 132:0 code 1 start 33.860100
+<7>[   33.881326] binder: 9828: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 304:0 code 1a start 33.860804
+<5>[   33.883818] [AppLaunch] LCD frame buffer update done !
+<5>[   33.900286] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.916224] binder: 9839: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 144:0 code 1 start 33.897694
+<5>[   33.918672] [AppLaunch] LCD frame buffer update done !
+<7>[   33.921817] binder: 9872: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 316:0 code 1a start 33.903292
+<7>[   33.926666] [438:m.android.phone] fork err at pid
+<7>[   33.926692] [438:m.android.phone] fork [571:m.android.phone]
+<5>[   33.935147] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.942233] [571:m.android.phone] set proc[571] name: ->[SharedPreferenc] 
+<7>[   33.948910] binder: 9878: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 136:0 code 1 start 33.929820
+<7>[   33.951061] [571:SharedPreferenc] exit
+<7>[   33.951145] binder: 9880: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 308:0 code 1a start 33.931043
+<7>[   33.952285] binder: 9882: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 520:8 code c start 33.933727
+<5>[   33.953499] [AppLaunch] LCD frame buffer update done !
+<7>[   33.957850] binder: 9886: call  from 438:438 to 254:0 node 2173 handle 10 (power) size 100:4 code 1 start 33.939285
+<7>[   33.960212] binder: 9890: call  from 438:525 to 254:0 node 2173 handle 10 (power) size 80:4 code 5 start 33.941697
+<5>[   33.968062] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   33.969159] binder: 9896: call  from 438:438 to 254:0 node 2173 handle 10 (power) size 100:4 code 1 start 33.947271
+<7>[   33.973074] binder: 9900: call  from 438:533 to 254:0 node 2173 handle 10 (power) size 80:4 code 5 start 33.954566
+<7>[   33.977852] binder: 9902: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 280:8 code c start 33.958098
+<7>[   33.979363] [438:m.android.phone] fork err at pid
+<7>[   33.979390] [438:m.android.phone] fork [572:m.android.phone]
+<5>[   33.988274] [AppLaunch] LCD frame buffer update done !
+<7>[   33.992190] [572:m.android.phone] set proc[572] name: ->[AsyncQueryWorke] 
+<7>[   33.994303] binder: 9909: call  from 438:438 to 254:0 node 7195 handle 14 (notification) size 124:0 code 8 start 33.975783
+<7>[   33.998438] binder: 9913: call  from 438:572 to 254:0 node 6401 handle 1 (activity) size 108:4 code 1d start 33.979910
+<7>[   33.999783] binder: 9916: call  from 98:205 to 254:0 node 2173 handle 4 (power) size 80:4 code 5 start 33.981281
+<7>[   34.001656] binder: 9921: call  from 526:539 to 254:0 node 6401 handle 1 (activity) size 148:0 code 35 start 33.983150
+<7>[   34.004007] binder: 9923: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 144:0 code 1 start 33.985458
+<7>[   34.013386] binder: 9925: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 316:0 code 1a start 33.989924
+<5>[   34.019495] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.024491] [AppLaunch] LCD frame buffer update done !
+<7>[   34.054676] binder: 9941: call  from 438:438 to 254:0 node 6397 handle 3 (package) size 204:0 code 19 start 34.24515
+<7>[   34.055232] [438:m.android.phone] fork err at pid
+<7>[   34.055259] [438:m.android.phone] fork [573:m.android.phone]
+<7>[   34.058892] binder: 9943: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 148:0 code 1 start 34.40376
+<7>[   34.063217] [573:m.android.phone] set proc[573] name: ->[BluetoothHandsf] 
+<5>[   34.064385] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   34.066894] binder: 9947: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 320:0 code 1a start 34.42234
+<7>[   34.067944] binder: 9948: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 692:8 code c start 34.49379
+<5>[   34.075432] [AppLaunch] LCD frame buffer update done !
+<5>[   34.090592] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   34.092738] binder: 9960: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 252:4 code 22 start 34.73703
+<7>[   34.102336] binder: 9971: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 204:8 code c start 34.83656
+<7>[   34.103092] binder: 9975: call  from 438:438 to 254:0 node 2173 handle 10 (power) size 60:0 code a start 34.84579
+<7>[   34.107939] binder: 9977: call  from 438:438 to 254:0 node 6744 handle 2 (window) size 80:4 code 48 start 34.86459
+<5>[   34.110342] [AppLaunch] LCD frame buffer update done !
+<5>[   34.124806] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   34.125695] binder: 9987: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 132:0 code 1 start 34.107187
+<7>[   34.125971] binder: 9990: call  from 466:466 to 254:0 node 7211 handle 15 (search) size 0:0 code 5f4e5446 start 34.107470
+<7>[   34.126701] binder: 9993: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 288:0 code b start 34.108200
+<7>[   34.128056] binder: 9995: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 288:0 code b start 34.109548
+<7>[   34.129204] binder: 9997: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 288:0 code b start 34.110698
+<7>[   34.133586] binder: 9999: call  from 438:438 to 254:0 node 2141 handle 20 (sensorservice) size 60:0 code 1 start 34.115069
+<7>[   34.136313] binder: 10003: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 200:0 code 19 start 34.117806
+<7>[   34.138234] binder: 10005: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 304:0 code 1a start 34.118519
+<7>[   34.143003] binder: 10007: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 264:0 code b start 34.124457
+<5>[   34.145186] [AppLaunch] LCD frame buffer update done !
+<7>[   34.151173] binder: 10009: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 264:0 code b start 34.130471
+<7>[   34.155729] binder: 10015: call  from 466:466 to 254:0 node 6397 handle 3 (package) size 264:0 code b start 34.137185
+<5>[   34.159061] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.163812] [AppLaunch] LCD frame buffer update done !
+<5>[   34.192453] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.197414] [AppLaunch] LCD frame buffer update done !
+<5>[   34.225965] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.232265] [AppLaunch] LCD frame buffer update done !
+<7>[   34.240691] binder: 10025: call  from 466:466 to 254:0 node 6401 handle 1 (activity) size 88:4 code 46 start 34.221919
+<7>[   34.242858] binder: 10030: call  from 466:466 to 254:0 node 6744 handle 2 (window) size 96:8 code 4 start 34.224289
+<7>[   34.246193] binder: 10041: call  from 254:265 to 94:0 node 29 handle 1 (SurfaceFlinger) size 64:0 code 2 start 34.227683
+<5>[   34.260766] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.267173] [AppLaunch] LCD frame buffer update done !
+<7>[   34.270452] binder: 10050: call  from 526:539 to 254:0 node 6481 handle 10 (content) size 144:4 code 1 start 34.251862
+<7>[   34.294067] [466:hololauncher.hd] fork err at pid
+<7>[   34.294098] [466:hololauncher.hd] fork [574:hololauncher.hd]
+<5>[   34.295096] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   34.296789] binder: 10058: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 128:0 code 1 start 34.278043
+<7>[   34.299102] binder: 10060: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 300:0 code 1a start 34.278930
+<5>[   34.302008] [AppLaunch] LCD frame buffer update done !
+<7>[   34.309159] [574:hololauncher.hd] set proc[574] name: ->[WriteLocaleConf] 
+<7>[   34.310477] binder: 10065: call  from 466:466 to 254:0 node 6401 handle 1 (activity) size 412:8 code c start 34.291927
+<7>[   34.320567] [574:WriteLocaleConf] exit
+<5>[   34.329569] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.336798] [AppLaunch] LCD frame buffer update done !
+<7>[   34.349656] binder: 10073: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 132:0 code 1 start 34.331133
+<7>[   34.353037] binder: 10081: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 172:4 code 1 start 34.334484
+<7>[   34.354691] binder: 10090: call  from 438:438 to 254:0 node 2279 handle 13 (telephony.registry2) size 172:4 code 1 start 34.335939
+<5>[   34.363197] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   34.368161] binder: 10101: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 304:0 code 1a start 34.349655
+<5>[   34.371696] [AppLaunch] LCD frame buffer update done !
+<7>[   34.379192] binder: 10108: call  from 254:265 to 94:0 node 29 handle 1 (SurfaceFlinger) size 172:4 code 5 start 34.360668
+<7>[   34.380358] binder: 10110: call  from 254:265 to 94:0 node 29 handle 1 (SurfaceFlinger) size 364:12 code 5 start 34.361837
+<5>[   34.384264] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.389652] [AppLaunch] LCD frame buffer update done !
+<5>[   34.392563] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.400207] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.406534] [AppLaunch] LCD frame buffer update done !
+<5>[   34.423992] [AppLaunch] LCD frame buffer update done !
+<7>[   34.425337] binder: 10123: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 132:0 code 1 start 34.406817
+<5>[   34.435168] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   34.435801] binder: 10129: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 304:0 code 1a start 34.415983
+<5>[   34.441410] [AppLaunch] LCD frame buffer update done !
+<7>[   34.461496] binder: 10131: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 144:0 code a start 34.428464
+<5>[   34.468700] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.476229] [AppLaunch] LCD frame buffer update done !
+<7>[   34.480538] binder: 10137: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 120:0 code 1 start 34.462016
+<7>[   34.481182] binder: 10139: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 292:0 code 1a start 34.462661
+<7>[   34.482353] binder: 10141: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 368:0 code 19 start 34.463833
+<5>[   34.505471] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.511073] [AppLaunch] LCD frame buffer update done !
+<7>[   34.528621] binder: 10147: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 128:0 code 1 start 34.507312
+<5>[   34.538165] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.545969] [AppLaunch] LCD frame buffer update done !
+<7>[   34.547273] binder: 10153: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 300:0 code 1a start 34.528750
+<7>[   34.598549] binder: 10157: call  from 466:504 to 254:0 node 7538 handle 9 (appwidget) size 112:0 code d start 34.555459
+<7>[   34.599618] binder: 10159: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 128:0 code a start 34.581100
+<7>[   34.601422] binder: 10161: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 124:0 code 1 start 34.582902
+<7>[   34.602048] binder: 10163: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 296:0 code 1a start 34.583529
+<5>[   34.614355] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.619018] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   34.631178] binder: 10171: call  from 438:438 to 254:0 node 6397 handle 3 (package) size 136:0 code 3f start 34.603351
+<7>[   34.631745] binder: 10173: call  from 438:438 to 254:0 node 6397 handle 3 (package) size 128:0 code 3f start 34.613220
+<7>[   34.632511] binder: 10175: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 248:8 code 24 start 34.613927
+<5>[   34.633077] [AppLaunch] LCD frame buffer update done !
+<7>[   34.633842] WQ_WARN: cpu:1, proc:kworker/u:3, dur: 14828384 > 8ms
+<7>[   34.633870] work: WorkQueueHandler+0x0/0x18 [mtklfb]
+<7>[   34.639260] binder: 10179: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 2364:8 code c start 34.620694
+<7>[   34.645306] binder: 10184: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 252:8 code c start 34.623477
+<7>[   34.648173] [438:m.android.phone] fork err at pid
+<7>[   34.648206] [438:m.android.phone] fork [575:m.android.phone]
+<5>[   34.650499] [AppLaunch] LCD frame buffer update done !
+<5>[   34.662994] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   34.664520] [575:m.android.phone] set proc[575] name: ->[SharedPreferenc] 
+<5>[   34.667969] [AppLaunch] LCD frame buffer update done !
+<7>[   34.671289] binder: 10195: call  from 438:438 to 254:0 node 7374 handle 22 (audio) size 64:0 code 12 start 34.652786
+<7>[   34.672262] binder: 10197: call  from 438:438 to 254:0 node 7374 handle 22 (audio) size 64:0 code 12 start 34.653741
+<7>[   34.672536] binder: 10199: call  from 438:438 to 254:0 node 7374 handle 22 (audio) size 64:0 code 12 start 34.654027
+<7>[   34.674891] binder: 10203: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 260:8 code c start 34.656321
+<7>[   34.675548] [438:m.android.phone] fork err at pid
+<7>[   34.675575] [438:m.android.phone] fork [576:m.android.phone]
+<7>[   34.675790] [575:SharedPreferenc] exit
+<7>[   34.684234] [576:m.android.phone] set proc[576] name: ->[SimAssociateHan] 
+<5>[   34.686720] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   34.688364] binder: 10211: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 204:4 code 22 start 34.669841
+<7>[   34.694467] binder: 10217: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 240:8 code 24 start 34.675904
+<5>[   34.702784] [AppLaunch] LCD frame buffer update done !
+<7>[   34.708797] binder: 10223: call  from 438:576 to 254:0 node 6401 handle 1 (activity) size 132:4 code 1d start 34.682471
+<7>[   34.711797] binder: 10229: call  from 526:566 to 254:0 node 6401 handle 1 (activity) size 148:0 code 35 start 34.693256
+<5>[   34.720321] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   34.731834] binder: 10235: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 140:0 code 1 start 34.713085
+<7>[   34.732549] binder: 10237: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 312:0 code 1a start 34.714033
+<5>[   34.737668] [AppLaunch] LCD frame buffer update done !
+<7>[   34.755400] binder: 10239: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 132:0 code 1 start 34.728424
+<7>[   34.760227] binder: 10245: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 304:0 code 1a start 34.741700
+<5>[   34.763035] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.772477] [AppLaunch] LCD frame buffer update done !
+<7>[   34.823619] binder: 10257: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 120:0 code 1 start 34.805111
+<7>[   34.864726] binder: 10276: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 292:0 code 1a start 34.846221
+<3>[   34.880865] init: sys_prop: permission denied uid:1000  name:persist.mdp_msg
+<7>[   34.885676] [ISP][mt_isp_open]
+<7>[   34.885820] [ISP][mt_isp_ioctl]RESET
+<7>[   34.885962] [ISP][mt_isp_reset_buf]hold_reg(0), BufAmount(0)
+<7>[   34.885971] [ISP][mt_isp_reset_buf]End
+<7>[   34.889283] binder: 10278: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 132:0 code 1 start 34.870463
+<7>[   34.892507] [SYSRAM][LockOwner][PCA][720 bytes] succeed [Lock Time:   34.000870][FFFF986F]
+<7>[   34.892519] [SYSRAM][CheckClock]u4AllocatedTbl = 0x00004000, EnableClk = 1
+<7>[   34.892545] [SYSRAM][ALLOC_TIMEOUT][User: PCA]alloc 720 bytes successfully
+<7>[   34.899725] [ISP][mt_isp_ioctl]IspVdProcEn(1)
+<7>[   34.906701] [ISP][mt_isp_ioctl]IspVdProcEn(0)
+<7>[   34.907214] [SYSRAM][UnlockOwner][PCA][720 bytes]...[Lock Time:   34.000870][Lock Period:10000 usec]
+<7>[   34.907226] [SYSRAM][CheckClock]u4AllocatedTbl = 0x00000000, EnableClk = 0
+<7>[   34.907248] [SYSRAM][Free][User: PCA]try to free
+<7>[   34.907367] [ISP][mt_isp_release]
+<7>[   34.919988] [94:surfaceflinger] fork err at pid
+<7>[   34.920014] [94:surfaceflinger] fork [577:surfaceflinger]
+<7>[   34.939864] [577:surfaceflinger] set proc[577] name: ->[Binder Thread #] 
+<7>[   34.950065] binder: 10292: call  from 332:332 to 254:0 node 7221 handle 31 (wallpaper) size 84:4 code 3 start 34.931536
+<5>[   34.954631] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   34.964330] [AppLaunch] LCD frame buffer update done !
+<5>[   35.006925] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   35.015073] binder: 10305: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 304:0 code 1a start 34.996561
+<5>[   35.016550] [AppLaunch] LCD frame buffer update done !
+<7>[   35.017490] binder: 10307: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 376:0 code 19 start 34.998986
+<7>[   35.023205] binder: 10309: call  from 254:407 to 94:0 node 29 handle 1 (SurfaceFlinger) size 268:8 code 5 start 35.3599
+<6>[   35.025729] [xlog/jpeg] JPEG Decoder Initial and Lock
+<5>[   35.030112] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   35.035234] [AppLaunch] LCD frame buffer update done !
+<7>[   35.047576] binder: 10314: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 120:0 code 1 start 35.29047
+<7>[   35.051306] binder: 10316: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 292:0 code 1a start 35.32659
+<7>[   35.069562] binder: 10334: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 412:4 code e start 35.50939
+<7>[   35.074998] [542:ReferenceQueueD] exit
+<5>[   35.075183] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   35.075985] [544:FinalizerDaemon] exit
+<7>[   35.076150] [545:FinalizerWatchd] exit
+<7>[   35.085800] binder: 10340: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 180:0 code 3 start 35.67289
+<5>[   35.086206] [AppLaunch] LCD frame buffer update done !
+<7>[   35.090223] binder: 10347: call  from 254:479 to 438:438 node 9930 handle 191 (phone) size 96:0 code 4b start 35.71718
+<7>[   35.101123] [95:zygote] fork err at pid
+<7>[   35.101153] [95:zygote] fork [578:zygote]
+<7>[   35.101911] [95:zygote] fork err at pid
+<7>[   35.101937] [95:zygote] fork [579:zygote]
+<7>[   35.102387] [345:Binder Thread #] fork err at pid
+<7>[   35.102410] [345:Binder Thread #] fork [580:Binder Thread #]
+<7>[   35.105330] [578:zygote] fork err at pid
+<7>[   35.105356] [578:zygote] fork [581:zygote]
+<7>[   35.106369] binder: 10349: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 136:0 code 1 start 35.76411
+<7>[   35.109364] binder: 10363: call  from 254:479 to 438:438 node 9930 handle 191 (phone) size 96:0 code 4b start 35.90861
+<7>[   35.111651] binder: 10369: async from 466:466 to 254:0 node 6401 handle 1 (activity) size 216:4 code 12 start 35.93111
+<7>[   35.112818] [580:Binder Thread #] set proc[580] name: ->[Binder Thread #] 
+<7>[   35.113070] binder: 10370: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 308:0 code 1a start 35.94264
+<7>[   35.118882] [581:zygote] set proc[581] name: ->[GC] 
+<7>[   35.119732] [578:zygote] fork err at pid
+<7>[   35.119756] [578:zygote] fork [582:zygote]
+<7>[   35.119856] [579:zygote] set proc[579] name: ->[ReferenceQueueD] 
+<7>[   35.120682] [95:zygote] fork err at pid
+<7>[   35.120706] [95:zygote] fork [583:zygote]
+<7>[   35.128241] [582:zygote] set proc[582] name: ->[Signal Catcher] 
+<7>[   35.128662] [578:zygote] fork err at pid
+<7>[   35.128686] [578:zygote] fork [584:zygote]
+<7>[   35.129075] [583:zygote] set proc[583] name: ->[FinalizerDaemon] 
+<7>[   35.129384] [95:zygote] fork err at pid
+<7>[   35.129407] [95:zygote] fork [585:zygote]
+<7>[   35.129755] binder: 10372: call  from 466:504 to 254:0 node 7538 handle 9 (appwidget) size 112:0 code d start 35.105108
+<7>[   35.130325] binder: 10374: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 132:0 code a start 35.111806
+<7>[   35.131088] [584:zygote] set proc[584] name: ->[Compiler] 
+<7>[   35.131820] [578:zygote] fork err at pid
+<7>[   35.131848] [578:zygote] fork [586:zygote]
+<7>[   35.131919] binder: 10376: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 148:0 code 1 start 35.112538
+<7>[   35.132543] [585:zygote] set proc[585] name: ->[FinalizerWatchd] 
+<7>[   35.146431] binder: 10378: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 320:0 code 1a start 35.113996
+<7>[   35.151668] binder: 10384: call  from 438:438 to 254:0 node 2173 handle 10 (power) size 100:4 code 1 start 35.133160
+<7>[   35.153544] [457:Binder Thread #] fork err at pid
+<7>[   35.153570] [457:Binder Thread #] fork [587:Binder Thread #]
+<0>[   35.157305] [LED]button-backlight:255
+<4>[   35.157755] mt65xx_leds_set_cust: set brightness, name:button-backlight, mode:3, level:255
+<0>[   35.165534] [LED]PMIC#0:255
+<6>[   35.165888] [Power/PMIC] [hwBacklightKPLEDTuning]...........
+<7>[   35.168122] binder: 10388: call  from 438:525 to 254:0 node 2173 handle 10 (power) size 80:4 code 5 start 35.149613
+<6>[   35.169815] [Power/PMIC] [hwBacklightKPLEDTurnOn]...........
+<7>[   35.173656] WQ_WARN: cpu:0, proc:kworker/0:2, dur: 16350923 > 8ms
+<7>[   35.173677] work: mt65xx_led_work+0x0/0x4c
+<7>[   35.175582] [282:PowerManagerSer] fork err at pid
+<7>[   35.175606] [282:PowerManagerSer] fork [588:PowerManagerSer]
+<7>[   35.190004] binder: 10392: call  from 438:454 to 254:285 node 6481 handle 12 (content) size 160:4 code 1 start 35.171451
+<7>[   35.191339] [588:PowerManagerSer] set proc[588] name: ->[executeAppTrans] 
+<7>[   35.194859] [579:ReferenceQueueD] exit
+<7>[   35.195038] [583:FinalizerDaemon] exit
+<7>[   35.195548] [585:FinalizerWatchd] exit
+<7>[   35.197274] [587:Binder Thread #] set proc[587] name: ->[Binder Thread #] 
+<7>[   35.200836] [588:executeAppTrans] exit
+<7>[   35.200950] [586:zygote] set proc[586] name: ->[ReferenceQueueD] 
+<7>[   35.201256] [578:zygote] fork err at pid
+<7>[   35.201280] [578:zygote] fork [589:zygote]
+<7>[   35.216810] binder: 10399: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 184:0 code 8 start 35.182029
+<7>[   35.220150] binder: 10405: call  from 438:587 to 254:285 node 6481 handle 12 (content) size 88:4 code 2 start 35.201623
+<7>[   35.226742] [589:zygote] set proc[589] name: ->[FinalizerDaemon] 
+<7>[   35.227729] [578:zygote] fork err at pid
+<7>[   35.227753] [578:zygote] fork [590:zygote]
+<7>[   35.228213] [95:zygote] fork err at pid
+<7>[   35.228238] [95:zygote] fork [591:zygote]
+<7>[   35.229360] [590:zygote] set proc[590] name: ->[FinalizerWatchd] 
+<7>[   35.230156] [591:zygote] fork err at pid
+<7>[   35.230181] [591:zygote] fork [592:zygote]
+<7>[   35.230963] binder: 10408: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 152:0 code 1 start 35.210820
+<7>[   35.231681] [578:zygote] set proc[578] name: ->[ndroid.contacts] 
+<7>[   35.234946] [578:ndroid.contacts] fork err at pid
+<7>[   35.234975] [578:ndroid.contacts] fork [593:ndroid.contacts]
+<7>[   35.236105] [578:ndroid.contacts] set proc[578] name: ->[re-initialized>] 
+<7>[   35.244352] [95:zygote] fork err at pid
+<7>[   35.244378] [95:zygote] fork [594:zygote]
+<7>[   35.244528] [593:ndroid.contacts] set proc[593] name: ->[Binder Thread #] 
+<7>[   35.244868] [592:zygote] set proc[592] name: ->[GC] 
+<7>[   35.245637] [591:zygote] fork err at pid
+<7>[   35.245660] [591:zygote] fork [595:zygote]
+<7>[   35.246075] binder: 10414: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 324:0 code 1a start 35.227554
+<7>[   35.247478] [593:Binder Thread #] fork err at pid
+<7>[   35.247503] [593:Binder Thread #] fork [596:Binder Thread #]
+<7>[   35.247873] [594:zygote] set proc[594] name: ->[ReferenceQueueD] 
+<7>[   35.248137] [95:zygote] fork err at pid
+<7>[   35.248161] [95:zygote] fork [597:zygote]
+<7>[   35.248191] binder: 10415: call  from 578:578 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 35.229252
+<7>[   35.255233] binder: 10421: call  from 438:457 to 254:285 node 6481 handle 12 (content) size 160:4 code 1 start 35.236689
+<7>[   35.262302] binder: 10434: call  from 438:457 to 254:285 node 6481 handle 12 (content) size 88:4 code 2 start 35.243802
+<7>[   35.274175] [596:Binder Thread #] set proc[596] name: ->[Binder Thread #] 
+<7>[   35.274489] [597:zygote] set proc[597] name: ->[FinalizerDaemon] 
+<7>[   35.274892] [95:zygote] fork err at pid
+<7>[   35.274916] [95:zygote] fork [598:zygote]
+<7>[   35.275029] [595:zygote] set proc[595] name: ->[Signal Catcher] 
+<7>[   35.276779] [591:zygote] fork err at pid
+<7>[   35.276809] [591:zygote] fork [599:zygote]
+<5>[   35.280608] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   35.284317] [598:zygote] set proc[598] name: ->[FinalizerWatchd] 
+<7>[   35.284481] binder: 10441: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 160:0 code a start 35.264096
+<7>[   35.290318] [269:er.ServerThread] fork err at pid
+<7>[   35.290347] [269:er.ServerThread] fork [600:er.ServerThread]
+<5>[   35.295271] [AppLaunch] LCD frame buffer update done !
+<7>[   35.297454] binder: 10455: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 184:0 code 8 start 35.278948
+<7>[   35.299921] binder: 10459: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 188:0 code 8 start 35.281417
+<7>[   35.303152] [578:re-initialized>] set proc[578] name: ->[ndroid.contacts] 
+<7>[   35.304183] binder: 10463: call  from 578:578 to 94:0 node 29 handle 5 (SurfaceFlinger) size 64:0 code 4 start 35.285676
+<7>[   35.304768] binder: 10468: call  from 578:578 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 35.286253
+<7>[   35.306593] binder: 10470: call  from 578:578 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 35.288078
+<7>[   35.307355] [599:zygote] set proc[599] name: ->[Compiler] 
+<7>[   35.310419] binder: 10478: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 192:0 code 8 start 35.291679
+<7>[   35.313699] binder: 10482: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 188:0 code 8 start 35.295177
+<7>[   35.316281] binder: 10486: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 188:0 code 8 start 35.297760
+<7>[   35.319464] [591:zygote] fork err at pid
+<7>[   35.319491] [591:zygote] fork [601:zygote]
+<7>[   35.322687] binder: 10487: call  from 578:578 to 254:0 node 7165 handle 7 (connectivity) size 76:0 code 25 start 35.299054
+<7>[   35.330109] [600:er.ServerThread] set proc[600] name: ->[Thread-87] 
+<7>[   35.330961] [269:er.ServerThread] fork err at pid
+<7>[   35.330989] [269:er.ServerThread] fork [602:er.ServerThread]
+<7>[   35.331026] binder: 10492: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 184:0 code 8 start 35.310709
+<7>[   35.336003] [601:zygote] set proc[601] name: ->[ReferenceQueueD] 
+<7>[   35.339165] [591:zygote] fork err at pid
+<7>[   35.339191] [591:zygote] fork [603:zygote]
+<7>[   35.339791] [602:er.ServerThread] set proc[602] name: ->[Thread-88] 
+<7>[   35.340363] [321:AudioService] fork err at pid
+<7>[   35.340389] [321:AudioService] fork [604:AudioService]
+<7>[   35.340445] [321:AudioService] fork err at pid
+<7>[   35.340463] [321:AudioService] fork [605:AudioService]
+<7>[   35.340735] [321:AudioService] fork err at pid
+<7>[   35.340759] [321:AudioService] fork [606:AudioService]
+<7>[   35.341211] [605:AudioService] set proc[605] name: ->[SoundPoolThread] 
+<7>[   35.341400] [606:AudioService] set proc[606] name: ->[SoundPoolListen] 
+<7>[   35.341465] [604:AudioService] set proc[604] name: ->[SoundPool] 
+<7>[   35.341945] binder: 10498: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 184:0 code 8 start 35.321252
+<7>[   35.359853] binder: 10505: call  from 466:466 to 254:0 node 6909 handle 14 (accessibility) size 140:8 code 6 start 35.341302
+<7>[   35.363864] [603:zygote] set proc[603] name: ->[FinalizerDaemon] 
+<7>[   35.364908] [591:zygote] fork err at pid
+<7>[   35.364934] [591:zygote] fork [607:zygote]
+<7>[   35.364999] [607:zygote] set proc[607] name: ->[FinalizerWatchd] 
+<7>[   35.367306] binder: 10511: call  from 254:605 to 98:0 node 106 handle 4 (media.player) size 108:4 code 3 start 35.348785
+<7>[   35.379474] binder: 10512: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 184:0 code 8 start 35.360964
+<7>[   35.386331] binder: 10513: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 148:0 code 1 start 35.367814
+<7>[   35.386616] [591:zygote] set proc[591] name: ->[dmessageflasher] 
+<7>[   35.390264] binder: 10518: call  from 98:208 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 1 start 35.371762
+<7>[   35.390474] binder: 10520: call  from 98:208 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 3 start 35.371981
+<7>[   35.390712] binder: 10522: call  from 98:208 to 97:0 node 24 handle 3 (drm.drmManager) size 92:4 code 19 start 35.372219
+<7>[   35.391211] binder: 10524: call  from 98:208 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 2 start 35.372714
+<7>[   35.391342] binder: 10526: call  from 98:208 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 4 start 35.372853
+<7>[   35.391500] binder: 10528: call  from 98:208 to 97:0 node 24 handle 3 (drm.drmManager) size 76:0 code 5 start 35.373012
+<7>[   35.395741] [591:dmessageflasher] fork err at pid
+<7>[   35.395769] [591:dmessageflasher] fork [608:dmessageflasher]
+<7>[   35.399469] [591:dmessageflasher] set proc[591] name: ->[re-initialized>] 
+<7>[   35.405300] binder: 10532: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 184:0 code 8 start 35.385327
+<7>[   35.406957] binder: 10534: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 320:0 code 1a start 35.388428
+<7>[   35.416739] [608:dmessageflasher] set proc[608] name: ->[Binder Thread #] 
+<7>[   35.420806] [608:Binder Thread #] fork err at pid
+<7>[   35.420832] [608:Binder Thread #] fork [609:Binder Thread #]
+<7>[   35.420938] binder: 10542: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 188:0 code 8 start 35.402425
+<5>[   35.425222] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   35.428809] binder: 10546: call  from 591:591 to 254:0 node 6401 handle 1 (activity) size 84:4 code 11 start 35.404437
+<5>[   35.434680] [AppLaunch] LCD frame buffer update done !
+<7>[   35.436441] [591:re-initialized>] set proc[591] name: ->[dmessageflasher] 
+<7>[   35.447299] [609:Binder Thread #] set proc[609] name: ->[Binder Thread #] 
+<7>[   35.448446] binder: 10560: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 180:0 code 8 start 35.429928
+<7>[   35.457369] binder: 10567: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 180:0 code 8 start 35.433775
+<7>[   35.458144] binder: 10568: call  from 591:591 to 94:0 node 29 handle 6 (SurfaceFlinger) size 64:0 code 4 start 35.439631
+<7>[   35.461787] [208:Binder Thread #] fork err at pid
+<7>[   35.461812] [208:Binder Thread #] fork [610:Binder Thread #]
+<7>[   35.463660] binder: 10572: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 140:0 code 1 start 35.445154
+<7>[   35.464970] binder: 10580: call  from 591:591 to 254:0 node 6744 handle 2 (window) size 64:0 code 6 start 35.446452
+<7>[   35.466009] binder: 10582: call  from 591:591 to 254:0 node 6397 handle 3 (package) size 84:0 code 16 start 35.447478
+<7>[   35.467620] binder: 10584: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 184:0 code 8 start 35.449088
+<7>[   35.475129] binder: 10588: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 312:0 code 1a start 35.455236
+<7>[   35.485014] [610:Binder Thread #] set proc[610] name: ->[TimedEventQueue] 
+<7>[   35.485222] binder: 10590: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 188:0 code 8 start 35.465313
+<7>[   35.493425] [610:TimedEventQueue] fork err at pid
+<7>[   35.493451] [610:TimedEventQueue] fork [611:TimedEventQueue]
+<7>[   35.493519] [610:TimedEventQueue] fork err at pid
+<7>[   35.493536] [610:TimedEventQueue] fork [612:TimedEventQueue]
+<7>[   35.500319] [610:TimedEventQueue] fork err at pid
+<7>[   35.500346] [610:TimedEventQueue] fork [613:TimedEventQueue]
+<7>[   35.501886] [610:TimedEventQueue] fork err at pid
+<7>[   35.501912] [610:TimedEventQueue] fork [614:TimedEventQueue]
+<7>[   35.502363] binder: 10597: call  from 591:591 to 254:0 node 7165 handle 8 (connectivity) size 76:0 code 25 start 35.483087
+<7>[   35.502448] binder: 10598: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 184:0 code 8 start 35.483942
+<7>[   35.510290] [612:TimedEventQueue] set proc[612] name: ->[MtkOmxAudioDec] 
+<7>[   35.511481] [613:TimedEventQueue] set proc[613] name: ->[OMXCallbackDisp] 
+<7>[   35.511729] [611:TimedEventQueue] set proc[611] name: ->[MtkOmxAudioCmd] 
+<7>[   35.513667] [614:TimedEventQueue] set proc[614] name: ->[VorbisTocThread] 
+<7>[   35.513945] [614:VorbisTocThread] exit
+<7>[   35.516324] binder: 10603: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 184:0 code 8 start 35.491522
+<7>[   35.524783] [208:Binder Thread #] fork err at pid
+<7>[   35.524809] [208:Binder Thread #] fork [615:Binder Thread #]
+<7>[   35.533664] binder: 10609: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 180:0 code 8 start 35.510934
+<7>[   35.535755] [615:Binder Thread #] set proc[615] name: ->[AudioCache call] 
+<7>[   35.548285] binder: 10613: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 140:0 code 1 start 35.521344
+<7>[   35.551881] binder: 10616: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 180:0 code 8 start 35.533333
+<7>[   35.558473] binder: 10621: call  from 466:504 to 254:0 node 6397 handle 3 (package) size 312:0 code 1a start 35.538537
+<5>[   35.559623] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   35.562950] binder: 10623: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 180:0 code 8 start 35.543386
+<7>[   35.568072] [615:AudioCache call] exit
+<7>[   35.571041] binder: 10627: call  from 438:438 to 254:0 node 2273 handle 9 (telephony.registry) size 180:0 code 8 start 35.548959
+<7>[   35.573983] [611:MtkOmxAudioCmd] exit
+<5>[   35.574092] [AppLaunch] LCD frame buffer update done !
+<7>[   35.574817] [612:MtkOmxAudioDec] exit
+<7>[   35.575139] [613:OMXCallbackDisp] exit
+<7>[   35.575492] [610:TimedEventQueue] exit
+<7>[   35.576247] binder: 10640: call  from 254:605 to 98:0 node 106 handle 4 (media.player) size 108:4 code 3 start 35.557746
+<7>[   35.577849] binder: 10643: call  from 98:207 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 1 start 35.559349
+<7>[   35.578021] binder: 10645: call  from 98:207 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 3 start 35.559530
+<7>[   35.578209] binder: 10647: call  from 98:207 to 97:0 node 24 handle 3 (drm.drmManager) size 92:4 code 19 start 35.559717
+<7>[   35.579548] binder: 10649: call  from 98:207 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 2 start 35.561051
+<7>[   35.579684] binder: 10651: call  from 98:207 to 97:0 node 24 handle 3 (drm.drmManager) size 60:0 code 4 start 35.561196
+<7>[   35.579846] binder: 10653: call  from 98:207 to 97:0 node 24 handle 3 (drm.drmManager) size 76:0 code 5 start 35.561357
+<7>[   35.587913] binder: 10655: call  from 591:591 to 254:0 node 6397 handle 3 (package) size 156:0 code 1 start 35.569403
+<7>[   35.594515] [591:dmessageflasher] fork err at pid
+<7>[   35.594542] [591:dmessageflasher] fork [616:dmessageflasher]
+<7>[   35.596939] binder: 10657: call  from 438:438 to 254:0 node 6401 handle 1 (activity) size 336:0 code e start 35.571374
+<7>[   35.606373] [616:dmessageflasher] set proc[616] name: ->[SharedPreferenc] 
+<7>[   35.610557] binder: 10662: call  from 438:438 to 254:0 node 6481 handle 12 (content) size 160:4 code 1 start 35.587022
+<7>[   35.616961] binder: 10666: call  from 438:438 to 254:0 node 6481 handle 12 (content) size 88:4 code 2 start 35.595006

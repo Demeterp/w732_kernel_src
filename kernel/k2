@@ -1,0 +1,471 @@
+<7>[   15.648592] [221:adbd] sig 13 to [221:adbd]
+<7>[   15.648699] [221:adbd] exit
+<5>[   15.649170] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.656240] [AppLaunch] LCD frame buffer update done !
+<5>[   15.668204] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.673664] [AppLaunch] LCD frame buffer update done !
+<5>[   15.692596] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.708876] [AppLaunch] LCD frame buffer update done !
+<5>[   15.712216] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.725933] [AppLaunch] LCD frame buffer update done !
+<5>[   15.736001] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.743367] [AppLaunch] LCD frame buffer update done !
+<5>[   15.755014] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.760793] [AppLaunch] LCD frame buffer update done !
+<5>[   15.779495] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.796007] [AppLaunch] LCD frame buffer update done !
+<5>[   15.798868] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.813071] [AppLaunch] LCD frame buffer update done !
+<5>[   15.822925] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.830495] [AppLaunch] LCD frame buffer update done !
+<5>[   15.841854] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.847934] [AppLaunch] LCD frame buffer update done !
+<5>[   15.866263] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.883370] [AppLaunch] LCD frame buffer update done !
+<5>[   15.886210] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.900231] [AppLaunch] LCD frame buffer update done !
+<5>[   15.909979] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.917618] [AppLaunch] LCD frame buffer update done !
+<5>[   15.928727] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.935043] [AppLaunch] LCD frame buffer update done !
+<5>[   15.953316] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.970312] [AppLaunch] LCD frame buffer update done !
+<5>[   15.972645] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   15.987323] [AppLaunch] LCD frame buffer update done !
+<5>[   15.996976] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.004748] [AppLaunch] LCD frame buffer update done !
+<5>[   16.015535] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.022187] [AppLaunch] LCD frame buffer update done !
+<5>[   16.040477] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.057457] [AppLaunch] LCD frame buffer update done !
+<5>[   16.059500] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.074449] [AppLaunch] LCD frame buffer update done !
+<5>[   16.084102] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.091880] [AppLaunch] LCD frame buffer update done !
+<5>[   16.102377] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.109300] [AppLaunch] LCD frame buffer update done !
+<5>[   16.127857] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.144704] [AppLaunch] LCD frame buffer update done !
+<5>[   16.146805] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.161625] [AppLaunch] LCD frame buffer update done !
+<5>[   16.171629] [AppLaunch] mtkfb_pan_display_proxy.
+<7>[   16.176229] [269:er.ServerThread] fork err at pid
+<7>[   16.176262] [269:er.ServerThread] fork [274:er.ServerThread]
+<7>[   16.176309] [274:er.ServerThread] set proc[274] name: ->[FileObserver] 
+<5>[   16.179068] [AppLaunch] LCD frame buffer update done !
+<5>[   16.189992] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.196440] [AppLaunch] LCD frame buffer update done !
+<5>[   16.215068] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.231751] [AppLaunch] LCD frame buffer update done !
+<5>[   16.234345] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.248777] [AppLaunch] LCD frame buffer update done !
+<5>[   16.258825] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.266145] [AppLaunch] LCD frame buffer update done !
+<5>[   16.277656] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.283604] [AppLaunch] LCD frame buffer update done !
+<5>[   16.302073] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.319060] [AppLaunch] LCD frame buffer update done !
+<5>[   16.322159] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.335895] [AppLaunch] LCD frame buffer update done !
+<5>[   16.346030] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.353271] [AppLaunch] LCD frame buffer update done !
+<5>[   16.364392] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.370697] [AppLaunch] LCD frame buffer update done !
+<5>[   16.389692] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.406063] [AppLaunch] LCD frame buffer update done !
+<5>[   16.409111] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.423025] [AppLaunch] LCD frame buffer update done !
+<5>[   16.433031] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.440409] [AppLaunch] LCD frame buffer update done !
+<5>[   16.452067] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.457818] [AppLaunch] LCD frame buffer update done !
+<5>[   16.476499] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.493328] [AppLaunch] LCD frame buffer update done !
+<5>[   16.497023] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.510152] [AppLaunch] LCD frame buffer update done !
+<5>[   16.520167] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.527555] [AppLaunch] LCD frame buffer update done !
+<5>[   16.540106] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.544990] [AppLaunch] LCD frame buffer update done !
+<5>[   16.563689] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.580227] [AppLaunch] LCD frame buffer update done !
+<5>[   16.583800] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.597246] [AppLaunch] LCD frame buffer update done !
+<5>[   16.607885] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.614685] [AppLaunch] LCD frame buffer update done !
+<5>[   16.626896] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.632090] [AppLaunch] LCD frame buffer update done !
+<5>[   16.651205] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.667559] [AppLaunch] LCD frame buffer update done !
+<5>[   16.671065] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.684357] [AppLaunch] LCD frame buffer update done !
+<5>[   16.695032] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.701830] [AppLaunch] LCD frame buffer update done !
+<5>[   16.714093] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.719262] [AppLaunch] LCD frame buffer update done !
+<5>[   16.738552] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.754603] [AppLaunch] LCD frame buffer update done !
+<5>[   16.758567] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.771523] [AppLaunch] LCD frame buffer update done !
+<5>[   16.782200] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.788928] [AppLaunch] LCD frame buffer update done !
+<5>[   16.801483] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.806392] [AppLaunch] LCD frame buffer update done !
+<5>[   16.826539] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.841813] [AppLaunch] LCD frame buffer update done !
+<5>[   16.845793] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.858611] [AppLaunch] LCD frame buffer update done !
+<5>[   16.870104] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.876103] [AppLaunch] LCD frame buffer update done !
+<5>[   16.888110] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.893525] [AppLaunch] LCD frame buffer update done !
+<5>[   16.913451] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.928726] [AppLaunch] LCD frame buffer update done !
+<5>[   16.931845] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.945785] [AppLaunch] LCD frame buffer update done !
+<5>[   16.957475] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.963177] [AppLaunch] LCD frame buffer update done !
+<5>[   16.974512] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   16.980595] [AppLaunch] LCD frame buffer update done !
+<5>[   17.003468] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.015881] [AppLaunch] LCD frame buffer update done !
+<5>[   17.018665] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.032915] [AppLaunch] LCD frame buffer update done !
+<5>[   17.046915] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.051598] [AppLaunch] LCD frame buffer update done !
+<5>[   17.061353] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.067722] [AppLaunch] LCD frame buffer update done !
+<5>[   17.090536] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.103194] [AppLaunch] LCD frame buffer update done !
+<5>[   17.106324] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.120039] [AppLaunch] LCD frame buffer update done !
+<5>[   17.134010] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.138676] [AppLaunch] LCD frame buffer update done !
+<5>[   17.148966] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.154855] [AppLaunch] LCD frame buffer update done !
+<5>[   17.177572] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.190153] [AppLaunch] LCD frame buffer update done !
+<5>[   17.192952] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.207127] [AppLaunch] LCD frame buffer update done !
+<5>[   17.221106] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.225796] [AppLaunch] LCD frame buffer update done !
+<5>[   17.235939] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.242031] [AppLaunch] LCD frame buffer update done !
+<5>[   17.264852] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.277279] [AppLaunch] LCD frame buffer update done !
+<5>[   17.280035] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.294313] [AppLaunch] LCD frame buffer update done !
+<5>[   17.308066] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.312924] [AppLaunch] LCD frame buffer update done !
+<5>[   17.323586] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.329118] [AppLaunch] LCD frame buffer update done !
+<5>[   17.351680] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.364348] [AppLaunch] LCD frame buffer update done !
+<5>[   17.367621] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.381404] [AppLaunch] LCD frame buffer update done !
+<5>[   17.395183] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.400089] [AppLaunch] LCD frame buffer update done !
+<5>[   17.411119] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.416243] [AppLaunch] LCD frame buffer update done !
+<5>[   17.438237] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.451476] [AppLaunch] LCD frame buffer update done !
+<5>[   17.454731] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.468569] [AppLaunch] LCD frame buffer update done !
+<5>[   17.482186] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.487233] [AppLaunch] LCD frame buffer update done !
+<5>[   17.497524] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.503380] [AppLaunch] LCD frame buffer update done !
+<7>[   17.519363] [176:adbd] fork err at pid
+<7>[   17.519394] [176:adbd] fork [275:adbd]
+<5>[   17.525685] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.538986] [AppLaunch] LCD frame buffer update done !
+<5>[   17.542137] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.555730] [AppLaunch] LCD frame buffer update done !
+<5>[   17.569255] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.574335] [AppLaunch] LCD frame buffer update done !
+<5>[   17.584723] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.590527] [AppLaunch] LCD frame buffer update done !
+<5>[   17.613385] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.625878] [AppLaunch] LCD frame buffer update done !
+<5>[   17.628899] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.642836] [AppLaunch] LCD frame buffer update done !
+<5>[   17.657374] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.671802] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.677638] [AppLaunch] LCD frame buffer update done !
+<5>[   17.695663] [AppLaunch] LCD frame buffer update done !
+<5>[   17.701879] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.712939] [AppLaunch] LCD frame buffer update done !
+<5>[   17.715621] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.729919] [AppLaunch] LCD frame buffer update done !
+<5>[   17.745005] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.758689] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.764782] [AppLaunch] LCD frame buffer update done !
+<5>[   17.782699] [AppLaunch] LCD frame buffer update done !
+<5>[   17.789578] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.800232] [AppLaunch] LCD frame buffer update done !
+<5>[   17.803046] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.817107] [AppLaunch] LCD frame buffer update done !
+<5>[   17.832799] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.845949] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.851961] [AppLaunch] LCD frame buffer update done !
+<5>[   17.869758] [AppLaunch] LCD frame buffer update done !
+<5>[   17.877044] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.887379] [AppLaunch] LCD frame buffer update done !
+<5>[   17.890031] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.904184] [AppLaunch] LCD frame buffer update done !
+<5>[   17.920456] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.932744] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.939048] [AppLaunch] LCD frame buffer update done !
+<5>[   17.956671] [AppLaunch] LCD frame buffer update done !
+<5>[   17.964347] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.974394] [AppLaunch] LCD frame buffer update done !
+<5>[   17.977004] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   17.991296] [AppLaunch] LCD frame buffer update done !
+<5>[   18.008582] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.020321] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.026199] [AppLaunch] LCD frame buffer update done !
+<5>[   18.043616] [AppLaunch] LCD frame buffer update done !
+<5>[   18.052104] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.061448] [AppLaunch] LCD frame buffer update done !
+<5>[   18.064036] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.078423] [AppLaunch] LCD frame buffer update done !
+<5>[   18.096553] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.107492] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.113319] [AppLaunch] LCD frame buffer update done !
+<5>[   18.130779] [AppLaunch] LCD frame buffer update done !
+<5>[   18.140865] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.148760] [AppLaunch] LCD frame buffer update done !
+<5>[   18.151831] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.165674] [AppLaunch] LCD frame buffer update done !
+<5>[   18.183974] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.194551] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.200434] [AppLaunch] LCD frame buffer update done !
+<5>[   18.217885] [AppLaunch] LCD frame buffer update done !
+<5>[   18.228157] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.235744] [AppLaunch] LCD frame buffer update done !
+<5>[   18.239000] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.252750] [AppLaunch] LCD frame buffer update done !
+<5>[   18.272150] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.282402] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.287591] [AppLaunch] LCD frame buffer update done !
+<5>[   18.305040] [AppLaunch] LCD frame buffer update done !
+<5>[   18.316503] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.322955] [AppLaunch] LCD frame buffer update done !
+<5>[   18.327253] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.339862] [AppLaunch] LCD frame buffer update done !
+<5>[   18.360217] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.370139] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.374735] [AppLaunch] LCD frame buffer update done !
+<5>[   18.392170] [AppLaunch] LCD frame buffer update done !
+<5>[   18.404469] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.410337] [AppLaunch] LCD frame buffer update done !
+<5>[   18.415708] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.426973] [AppLaunch] LCD frame buffer update done !
+<5>[   18.447692] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.457992] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.461798] [AppLaunch] LCD frame buffer update done !
+<5>[   18.479221] [AppLaunch] LCD frame buffer update done !
+<5>[   18.491306] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.497458] [AppLaunch] LCD frame buffer update done !
+<5>[   18.503041] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.514139] [AppLaunch] LCD frame buffer update done !
+<5>[   18.534504] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.545157] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.548924] [AppLaunch] LCD frame buffer update done !
+<5>[   18.566398] [AppLaunch] LCD frame buffer update done !
+<5>[   18.578336] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.584473] [AppLaunch] LCD frame buffer update done !
+<5>[   18.590430] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.601215] [AppLaunch] LCD frame buffer update done !
+<5>[   18.621398] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.632670] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.636070] [AppLaunch] LCD frame buffer update done !
+<5>[   18.653487] [AppLaunch] LCD frame buffer update done !
+<5>[   18.665673] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.671550] [AppLaunch] LCD frame buffer update done !
+<5>[   18.677131] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.688330] [AppLaunch] LCD frame buffer update done !
+<5>[   18.708687] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.722681] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.723717] [AppLaunch] LCD frame buffer update done !
+<5>[   18.740614] [AppLaunch] LCD frame buffer update done !
+<5>[   18.752400] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.758334] [AppLaunch] LCD frame buffer update done !
+<5>[   18.765802] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.775520] [AppLaunch] LCD frame buffer update done !
+<5>[   18.795760] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.810445] [AppLaunch] 
+<5>[   18.810768] [AppLaunch] LCD frame buffer update done !
+<4>[   18.811422] mtkfb_pan_display_proxy.
+<5>[   18.827783] [AppLaunch] LCD frame buffer update done !
+<5>[   18.839690] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.845208] [AppLaunch] LCD frame buffer update done !
+<5>[   18.854063] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.862599] [AppLaunch] LCD frame buffer update done !
+<5>[   18.882798] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.897881] [AppLaunch] LCD frame buffer update done !
+<5>[   18.898809] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.914870] [AppLaunch] LCD frame buffer update done !
+<5>[   18.926372] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.932296] [AppLaunch] LCD frame buffer update done !
+<5>[   18.941950] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.949722] [AppLaunch] LCD frame buffer update done !
+<5>[   18.969784] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   18.985013] [AppLaunch] LCD frame buffer update done !
+<5>[   18.985887] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.002027] [AppLaunch] LCD frame buffer update done !
+<5>[   19.013359] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.019425] [AppLaunch] LCD frame buffer update done !
+<5>[   19.029013] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.036906] [AppLaunch] LCD frame buffer update done !
+<5>[   19.056824] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.072355] [AppLaunch] LCD frame buffer update done !
+<5>[   19.073241] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.089132] [AppLaunch] LCD frame buffer update done !
+<5>[   19.100872] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.106586] [AppLaunch] LCD frame buffer update done !
+<5>[   19.116602] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.123977] [AppLaunch] LCD frame buffer update done !
+<5>[   19.144057] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.159241] [AppLaunch] LCD frame buffer update done !
+<5>[   19.160859] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.176293] [AppLaunch] LCD frame buffer update done !
+<5>[   19.187753] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.193731] [AppLaunch] LCD frame buffer update done !
+<5>[   19.204409] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.211161] [AppLaunch] LCD frame buffer update done !
+<5>[   19.231114] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.246485] [AppLaunch] LCD frame buffer update done !
+<5>[   19.248209] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.263440] [AppLaunch] LCD frame buffer update done !
+<5>[   19.275079] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.280891] [AppLaunch] LCD frame buffer update done !
+<5>[   19.291557] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.298242] [AppLaunch] LCD frame buffer update done !
+<5>[   19.318733] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.333699] [AppLaunch] LCD frame buffer update done !
+<5>[   19.336221] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.350518] [AppLaunch] LCD frame buffer update done !
+<5>[   19.362140] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.368095] [AppLaunch] LCD frame buffer update done !
+<5>[   19.378629] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.385389] [AppLaunch] LCD frame buffer update done !
+<5>[   19.405325] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.420645] [AppLaunch] LCD frame buffer update done !
+<5>[   19.422161] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.437643] [AppLaunch] LCD frame buffer update done !
+<5>[   19.448918] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.455069] [AppLaunch] LCD frame buffer update done !
+<5>[   19.465627] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.472571] [AppLaunch] LCD frame buffer update done !
+<5>[   19.492339] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.507998] [AppLaunch] LCD frame buffer update done !
+<5>[   19.509859] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.524825] [AppLaunch] LCD frame buffer update done !
+<5>[   19.536062] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.542373] [AppLaunch] LCD frame buffer update done !
+<5>[   19.552537] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.559684] [AppLaunch] LCD frame buffer update done !
+<5>[   19.579871] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.595127] [AppLaunch] LCD frame buffer update done !
+<5>[   19.596593] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.611980] [AppLaunch] LCD frame buffer update done !
+<5>[   19.623916] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.629379] [AppLaunch] LCD frame buffer update done !
+<5>[   19.639356] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.646751] [AppLaunch] LCD frame buffer update done !
+<5>[   19.667296] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.682196] [AppLaunch] LCD frame buffer update done !
+<5>[   19.683768] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.699037] [AppLaunch] LCD frame buffer update done !
+<5>[   19.710682] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.716508] [AppLaunch] LCD frame buffer update done !
+<5>[   19.726412] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.733887] [AppLaunch] LCD frame buffer update done !
+<5>[   19.754259] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.769164] [AppLaunch] LCD frame buffer update done !
+<5>[   19.770986] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.786172] [AppLaunch] LCD frame buffer update done !
+<5>[   19.798260] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.803585] [AppLaunch] LCD frame buffer update done !
+<5>[   19.814196] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.821103] [AppLaunch] LCD frame buffer update done !
+<5>[   19.841148] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.856294] [AppLaunch] LCD frame buffer update done !
+<5>[   19.858810] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.873303] [AppLaunch] LCD frame buffer update done !
+<5>[   19.884792] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.890727] [AppLaunch] LCD frame buffer update done !
+<5>[   19.901146] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.908197] [AppLaunch] LCD frame buffer update done !
+<5>[   19.928468] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.943396] [AppLaunch] LCD frame buffer update done !
+<5>[   19.945402] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.960479] [AppLaunch] LCD frame buffer update done !
+<5>[   19.972146] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.977842] [AppLaunch] LCD frame buffer update done !
+<5>[   19.988122] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   19.995268] [AppLaunch] LCD frame buffer update done !
+<5>[   20.015068] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.030537] [AppLaunch] LCD frame buffer update done !
+<5>[   20.032053] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.047552] [AppLaunch] LCD frame buffer update done !
+<5>[   20.058316] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.064978] [AppLaunch] LCD frame buffer update done !
+<5>[   20.075366] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.082399] [AppLaunch] LCD frame buffer update done !
+<5>[   20.101955] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.117690] [AppLaunch] LCD frame buffer update done !
+<5>[   20.119072] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.134693] [AppLaunch] LCD frame buffer update done !
+<5>[   20.146042] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.152153] [AppLaunch] LCD frame buffer update done !
+<5>[   20.162428] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.169581] [AppLaunch] LCD frame buffer update done !
+<5>[   20.189445] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.204921] [AppLaunch] LCD frame buffer update done !
+<5>[   20.206664] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.221857] [AppLaunch] LCD frame buffer update done !
+<5>[   20.233103] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.239250] [AppLaunch] LCD frame buffer update done !
+<5>[   20.244673] [Power/Battery] [use_chip_trim_value] 722 -> 725
+<5>[   20.249561] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.256702] [AppLaunch] LCD frame buffer update done !
+<5>[   20.259351] [Power/Battery] [use_chip_trim_value] 722 -> 725
+<5>[   20.262451] [Power/Battery] [use_chip_trim_value] 0 -> 0
+<5>[   20.271400] [Power/Battery] [FGADC] 1,725,0,0,3816,40,40,40,1245,1254,-18,0,0,1000,0,3801,1000,60,60,708,102,103
+<5>[   20.276210] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.292050] [AppLaunch] LCD frame buffer update done !
+<5>[   20.293283] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.308937] [AppLaunch] LCD frame buffer update done !
+<5>[   20.321075] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.326456] [AppLaunch] LCD frame buffer update done !
+<5>[   20.336560] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.343808] [AppLaunch] LCD frame buffer update done !
+<5>[   20.363887] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.379047] [AppLaunch] LCD frame buffer update done !
+<5>[   20.380479] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.396068] [AppLaunch] LCD frame buffer update done !
+<5>[   20.407463] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.413542] [AppLaunch] LCD frame buffer update done !
+<5>[   20.423667] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.430922] [AppLaunch] LCD frame buffer update done !
+<5>[   20.451078] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.466221] [AppLaunch] LCD frame buffer update done !
+<5>[   20.467159] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.483195] [AppLaunch] LCD frame buffer update done !
+<5>[   20.494736] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.500677] [AppLaunch] LCD frame buffer update done !
+<5>[   20.510689] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.518084] [AppLaunch] LCD frame buffer update done !
+<5>[   20.538177] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.553484] [AppLaunch] LCD frame buffer update done !
+<5>[   20.554584] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.570342] [AppLaunch] LCD frame buffer update done !
+<5>[   20.581812] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.587767] [AppLaunch] LCD frame buffer update done !
+<5>[   20.597726] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.605221] [AppLaunch] LCD frame buffer update done !
+<5>[   20.625849] [AppLaunch] mtkfb_pan_display_proxy.
+<5>[   20.640474] [AppLaunch] LCD frame buffer update done !
+<5>[   20.641783] [AppLaunch] mtkfb_pan_display_proxy.
